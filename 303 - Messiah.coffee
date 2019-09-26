@@ -1,4 +1,4 @@
-a=1.5
+a = 1.5
 return model =
   name: 'Messiah'
   level: 3
