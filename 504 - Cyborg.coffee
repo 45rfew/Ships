@@ -1,9 +1,9 @@
-a=2
-s=8
-d=8
-q=4
-h=50
-t=-20
+a = 2
+s = 8
+d = 8
+q = 4
+h = 50
+t = -20
 model = 
   name: "Cyborg"
   level: 5
