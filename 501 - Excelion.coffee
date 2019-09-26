@@ -1,9 +1,9 @@
-b=1.2
-c=.66
-h=.7
-f=180
-g=100
-a=-50
+b = 1.2
+c = .66
+h = .7
+f = 180
+g = 100
+a = -50
 model =
   name: 'Excelion'
   level: 5
