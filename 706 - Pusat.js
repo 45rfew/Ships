@@ -1,3 +1,4 @@
+a = 0.6
 return model =
   name: "Pusat"
   level: 7
@@ -24,34 +25,27 @@ return model =
         y: 0
         z: 0
       position:
-        x: [0,0,0,0,0,0,0,0,0,0,0,0,0]
-        y: [-130,-128,-115,-70,-40,0,40,70,80,90,100,85]
-        z: [0,0,0,0,0,0,0,0,0,0,0,0]
-      width: [0,5,10,25,25,25,25,35,35,35,30,0,0]
-      height: [0,5,8.4,20,20,20,20,20,20,20,15,0,0]
-      texture: [12,3,3,4,63,63,4,4,5,5,17]
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,0,40,70,80,90,100,85]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,25,25,25,25,35,35,35,30,0,0]
+      height: [0,15,20,20,20,20,20,20,15,0,0]
+      texture: [63,63,63,63,4,4,5,5,17]
       propeller:true
-      laser:
-        damage: [70,70]
-        rate: 3
-        type: 1
-        speed: [300,300]
-        number: 1
-        error: 0
-        recoil: 100
-    air:
-      section_segments: 40
+    main2:
+      section_segments: 18
       offset:
         x: 0
         y: 0
         z: 0
       position:
-        x: [0,0,0,0,0,0,0,0,0]
-        y: [0,-80,-30,-10,10,30,50,80]
-        z: [0,0,0,0,0,0,0,0,0]
-      width: [0,0,0,20,27+3,30,25,0]
-      height: [0,2,20-5,20-5,20,20,20,0]
-      texture: [4,3,2,2,2,3]        
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-130,-128,-115,-70,-40,-5,-5,-5,-5,-5,-5,5]
+        z: [0,0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,25,25,25,0]
+      height: [0,5,8.4,20,20,15,0]
+      texture: [12,3,3,4,63,63,4,4,5,5,17]
+      propeller:true  
       laser:
         damage: [100,100]
         rate: 1
@@ -59,7 +53,7 @@ return model =
         speed: [240,240]
         number: 1
         error: 0
-        recoil: 80      
+        recoil: 80         
     cockpit:
       section_segments: 12
       offset:
@@ -74,6 +68,19 @@ return model =
       height: [0,10,15,15,5,10,0]
       texture: [9,9,9,7,4]
       propeller: false
+    cockpit2:
+      section_segments: 40
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [0,-80,-30,-10,10,30,50,80]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,0,0,20,27+3,30,25,0]
+      height: [0,2,20-5,20-5,20,20,20,0]
+      texture: [4,3,2,2,2,3]        
     cannons_main:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
@@ -232,6 +239,182 @@ return model =
       height: [0,2,0.3,0]
       texture: [17]
       angle:180
+    hub1:
+      section_segments: 12
+      angle: 0
+      offset:
+        x: 0
+        y: 14
+        z: -68
+      position:
+        x: [0,0,0,0,0]
+        y: [-0.5*5,30/4,30/4,5.5*5/4,5.5*5/4]
+        z: [0,0,0,0,0]
+      width: [2.2*5-0.6,2.2*5-0.6,10-0.6,10-0.6,10-0.6]
+      height: [2.2*5-0.6,2.2*5-0.6,10-0.6,10-0.6,0]
+      texture: [2,2,2,15]
+      vertical: true
+    hub2:
+      section_segments: 8
+      angle: 0
+      offset:
+        x: 0
+        y: 19
+        z: -68
+      position:
+        x: [0,0,0,0]
+        y: [-10,-10,0,5]
+        z: [0,0,0,0]
+      width: [0,10,10,0]
+      height: [0,10,10,0]
+      texture: [11]
+      vertical:true
+    hub3:
+      section_segments: 12
+      angle: 0
+      offset:
+        x: 0
+        y: 13
+        z: -68
+      position:
+        x: [0,0,0,0,0]
+        y: [-0.5*5,30/4,30/4,5.5*5/4,5.5*5/4]
+        z: [0,0,0,0,0]
+      width: [3.2*5,3.2*5,14,14,0]
+      height: [3.2*5,3.2*5,14,14,0]
+      texture: [3,17,3,18]
+      vertical: true      
+    body_deco:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 12
+        y: 0-15
+        z: 14
+      position:
+        x: [0,0,0,5,5,5]
+        y: [-8*5,-8*5,-5,5,25,25]
+        z: [3,3,1,0,0,0]
+      width: [0,0.4*5,0.4*5,0.4*5,0.4*5,0]
+      height: [0,0.6*5,0.6*5,0.6*5,0.6*5,0]
+      texture: [3] 
+    body_deco2:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 11.2
+        y: 0-15
+        z: 13.99
+      position:
+        x: [-5,-5,0,0,0,0]
+        y: [-4.95,-4.95,5,8*5,8*5,7.99*5]
+        z: [0,0,1,3,3,3,3]
+      width: [0,0.4*5,0.4*5,0.4*5,0.4*5,0]
+      height: [0,0.6*5,0.6*5,0.6*5,0.6*5,0]
+      texture: [7,18,17,7,7]   
+      angle:180
+    body_deco3:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 11.2
+        y: 0-15
+        z: 13.99
+      position:
+        x: [5,5,5]
+        y: [5,25,25]
+        z: [0,0,0]
+      width: [0.4*5,0.4*5,0.4*5]
+      height: [0.6*5,0.6*5,0.6*5]
+      texture: [17]       
+    cannon_base:
+      section_segments: [45,135,225,315]
+      angle: 0
+      offset:
+        x: 0
+        y: -48
+        z: 17
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-22,-22,-10,-5,25,25]
+        z: [0,0,0,0,-1,-1]
+      width: [0,10,2.5*5,1.8*5,1.8*5,0]
+      height: [0,5,5,5,5,0]
+      texture: [7]
+    cannon_base_deco:
+      section_segments: [45,135,225,315]
+      angle: 0
+      offset:
+        x: 0
+        y: -31
+        z: 19
+      position:
+        x: [0,0,0,0]
+        y: [-1.5*5,-1.5*5,1.5*5,1.5*5]
+        z: [0,0,0,0]
+      width: [0,1.2*5,1.2*5,0]
+      height: [0,0.5*5,0.5*5,0]
+      texture: [4,15,4]
+    cannon_base_deco2:
+      section_segments: [45,135,225,315]
+      angle: 0
+      offset:
+        x: 5
+        y: -62.4
+        z: 20
+      position:
+        x: [0.5,0.4*5,0,0.5,0.5,0.5]
+        y: [-3.8*2,4.5,1.7*5,2.8*5,7.9*5,7.9*5]
+        z: [0,0,0,0,-0.8,-0.8]
+      width: [0.8,1,1,1,1,0]
+      height: [1,1,1,1,1,0]
+      texture: [63]  
+    cannon_front:
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      offset:
+        x: 0
+        y: 20
+        z: 23
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-93,-96,-92,-90,-50-3,-47-3,-45-3,-43.5,-43.5]
+        z: [0,0,0,0,0,0,0,-2,-2]
+      width: [0,6*a,7*a,6.7*a,6.7*a,8*a,8*a,8*a,0]
+      height: [0,4*a,5*a,3*a,3*a,4*a,5*a,5*a,0]
+      texture: [17,13,5,1,5,17,3,4]
+      laser:
+        damage: [70,70]
+        rate: 3
+        type: 1
+        speed: [300,300]
+        number: 1
+        error: 0
+        recoil: 100
+    front_cannon_deco:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -32.5
+        z: 24
+      position:
+        x: [-2.3,-2.3,-2.4,-2.2]
+        y: [0,0,38,0]
+        z: [0,0,0,0]
+      width: [0,1.5*a,1.5*a,0]
+      height: [0,1*a,1*a,0]
+      texture: [7.5]
+      angle: 187
+    front_cannon_deco2:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -32.5
+        z: 24
+      position:
+        x: [2.3,2.3,2.4,2.2]
+        y: [0,0,38,0]
+        z: [0,0,0,0]
+      width: [0,1.5*a,1.5*a,0]
+      height: [0,1*a,1*a,0]
+      texture: [7.5]
+      angle: -187
   wings:
     main1:
       doubleside: true
