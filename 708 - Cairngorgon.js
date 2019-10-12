@@ -1,3 +1,9 @@
+multiplyArray = (arr, m) ->
+  k = [];
+  for i in [0..arr.length]
+    k.push(arr[i]*m)
+  return k;
+a = 1.1
 return model =
   name: "Cairngorgon"
   level: 7
@@ -326,7 +332,7 @@ return model =
       height: [0,1,1,0]
       texture: [17]
       angle: 180        
-    back:
+    engine:
       section_segments: [40,140,220,320]
       offset:
         x: 0
@@ -340,7 +346,7 @@ return model =
       height: [23,23,25,28,30,30,28,25,23,23]
       texture: [4]
       propeller: false
-    back2:
+    engine2:
       section_segments: [40,140,220,320]
       offset:
         x: 0
@@ -354,7 +360,7 @@ return model =
       height: [23,23,25,28,30,30,28,25,23,23]
       texture: [3]
       propeller: false
-    back3:
+    engine3:
       section_segments: [40,140,220,320]
       offset:
         x: 0
@@ -401,13 +407,13 @@ return model =
       offset:
         x: 100
         y: 32
-        z: -140
+        z: -140*a+(a*10)
       position:
         x: [0,0,0,0,0,0]
-        y: [-0.5*5,30/4,30/4,5.5*5/4,3.5*5/4,5.5*5/4]
+        y: multiplyArray([-0.5*5,30/4,30/4,5.5*5/4,3.5*5/4,5.5*5/4],a)
         z: [0,0,0,0,0,0]
-      width: [10,10,8,8,3,0]
-      height: [10,10,8,8,3,0]
+      width: multiplyArray([10,10,8,8,3,0],a)
+      height: multiplyArray([10,10,8,8,3,0],a)
       texture: [3,17,3,18,17]
       vertical: true
     hub4:
@@ -415,13 +421,13 @@ return model =
       offset:
         x: 100
         y: 32
-        z: -105
+        z: -105*a+(a*10)
       position:
         x: [0,0,0,0,0,0]
-        y: [-0.5*5,30/4,30/4,5.5*5/4,3.5*5/4,5.5*5/4]
+        y: multiplyArray([-0.5*5,30/4,30/4,5.5*5/4,3.5*5/4,5.5*5/4],a)
         z: [0,0,0,0,0,0]
-      width: [10,10,8,8,3,0]
-      height: [10,10,8,8,3,0]
+      width: multiplyArray([10,10,8,8,3,0],a)
+      height: multiplyArray([10,10,8,8,3,0],a)
       texture: [3,17,3,18,17]
       vertical: true                 
     hub_joints:
@@ -441,14 +447,14 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 100
-        y: 123
+        y: 123*a-(a*10)
         z: 31.4
       position:
         x: [0,0,0,0]
-        y: [-10,-10,11,11]
+        y: multiplyArray([-10,-10,11,11],a)
         z: [0,0,0,0]
-      width: [0,10,10,0]
-      height: [0,10,10,0]
+      width: multiplyArray([0,10,10,0],a)
+      height: multiplyArray([0,10,10,0],a)
       texture: [8]      
     hub_joints_deco:
       section_segments: [45,135,225,315]
@@ -482,28 +488,28 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 100
-        y: 117
+        y: 117*a-(a*10)
         z: 38
       position:
         x: [0,0,0,0,0,0]
-        y: [-10,-10,-8,8,10,10]
-        z: [-5,-5,0,0,-5,-5]
-      width: [0,2,2,2,2,0]
-      height: [0,3,3,3,3,0]
+        y: multiplyArray([-10,-10,-8,8,10,10],a)
+        z: multiplyArray([-5,-5,0,0,-5,-5],a)
+      width: multiplyArray([0,2,2,2,2,0],a)
+      height: multiplyArray([0,3,3,3,3,0],a)
       texture: [1,1,10,1,1]      
       angle: 90      
     hub_joints_deco4:
       section_segments: [45,135,225,315]
       offset:
         x: 100
-        y: 127
+        y: 127*a-(a*10)
         z: 38
       position:
         x: [0,0,0,0,0,0]
-        y: [-10,-10,-8,8,10,10]
-        z: [-5,-5,0,0,-5,-5]
-      width: [0,2,2,2,2,0]
-      height: [0,3,3,3,3,0]
+        y: multiplyArray([-10,-10,-8,8,10,10],a)
+        z: multiplyArray([-5,-5,0,0,-5,-5],a)
+      width: multiplyArray([0,2,2,2,2,0],a)
+      height: multiplyArray([0,3,3,3,3,0],a)
       texture: [1,1,10,1,1]      
       angle: 90
     front_deco:
@@ -546,7 +552,195 @@ return model =
       width: [0,2,2,0]
       height: [0,2,2,0]
       texture: [1,7,1]               
-      
+    back:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 0
+        y: 10
+        z: 37
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-62,-62,-42,-32,12,22,45,45]
+        z: [-1,-1,0,0,0,0,-3,-3]
+      width: [0,21,20,20,20,20,12,0]
+      height: [0,4,5,5,5,5,2,0]
+      texture: [7,7,8,5,8,7]               
+    back2:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 0
+        y: 15
+        z: 37.1
+      position:
+        x: [0,0,0,0]
+        y: [-12,-12,12,12]
+        z: [0,0,0,0]
+      width: [0,19.9,19.9,0]
+      height: [0,5,5,0]
+      texture: [5,17,5]                 
+    back3:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 0
+        y: -15
+        z: 37.1
+      position:
+        x: [0,0,0,0]
+        y: [-12,-12,12,12]
+        z: [0,0,0,0]
+      width: [0,19.9,19.9,0]
+      height: [0,5,5,0]
+      texture: [5,17,5]  
+      angle: 180
+    back4:
+      section_segments: [45,50,55,60,65,70,105,255,290,295,300,305,310,315]
+      offset:
+        x: 0
+        y: -27
+        z: 37
+      position:
+        x: [0,0,0,0]
+        y: [-1.5,-1.5,1,1]
+        z: [0,0,0,0]
+      width: [0,17,17,0]
+      height: [0,10,10,0]
+      texture: [63]  
+      angle: 180      
+    back5:
+      section_segments: [45,50,55,60,65,70,105,255,290,295,300,305,310,315]
+      offset:
+        x: 0
+        y: -5.5
+        z: 36
+      position:
+        x: [0,0,0,0]
+        y: [-1.5,-1.5,1,1]
+        z: [0,0,0,0]
+      width: [0,16,16,0]
+      height: [0,10,10,0]
+      texture: [63]  
+      angle: 180    
+    back6:
+      section_segments: [45,50,55,60,65,70,105,255,290,295,300,305,310,315]
+      offset:
+        x: 0
+        y: 5.5
+        z: 36
+      position:
+        x: [0,0,0,0]
+        y: [-1.5,-1.5,1,1]
+        z: [0,0,0,0]
+      width: [0,16,16,0]
+      height: [0,10,10,0]
+      texture: [63]  
+      angle: 180          
+    back7:
+      section_segments: [45,50,55,60,65,70,105,255,290,295,300,305,310,315]
+      offset:
+        x: 0
+        y: 27
+        z: 37
+      position:
+        x: [0,0,0,0]
+        y: [-1.5,-1.5,1,1]
+        z: [0,0,0,0]
+      width: [0,17,17,0]
+      height: [0,10,10,0]
+      texture: [63]  
+      angle: 180          
+    front:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 12.6
+        y: -72
+        z: 36.7
+      position:
+        x: [1,1,1,6,1,1,6,1,0.2,0.2]
+        y: [-38,-38,-25,-20,-15,5,10,15,40,40]
+        z: [0,0,0,0,0,0,0,0,2,2]
+      width: [0,2,2,2,2,2,2,2,2,0]
+      height: [0,3,3,3,3,3,3,3,3,0]
+      texture: [63]  
+    front2:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 12.7
+        y: 42
+        z: 39
+      position:
+        x: [0,0,-5.6,-5.6]
+        y: [-10,-10,13,13]
+        z: [0,0,-5.6,-5.6]
+      width: [0,2,2,0]
+      height: [0,3,3,0]
+      texture: [63]        
+    front3:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 5
+        y: -72
+        z: 36
+      position:
+        x: [1,1,1,6,1,1,6,1,1,1]
+        y: [-38,-38,-25,-20,-15,5,10,15,20,20]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,10,0]
+      height: [0,3,3,2,3,3,2,3,4,0]
+      texture: [7,7,13,13,7,13,13,7,7]  
+    front4:
+      section_segments: 4
+      offset:
+        x: 6
+        y: -110
+        z: 36
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [0,0,13,13,23,23,23,43,43,53,53,78,78]
+        z: [0,0,0,0,0,0,0,0,0,0,0,2,2]
+      width: [0,7,7,0,0,0,7,7,0,0,7,7,0]
+      height: [0,3,4,0,0,0,4,4,0,0,4,4,0]
+      texture: [7]   
+    front5:
+      section_segments: 4
+      offset:
+        x: 6
+        y: 42
+        z: 36
+      position:
+        x: [0,0,0,-6,-6]
+        y: [-10,-10,-9,13,13]
+        z: [1.7,1.7,2.5,-2.5,-2.5]
+      width: [0,8,7,7,0]
+      height: [0,4,4,4,0]
+      texture: [7]  
+    diamond:
+      section_segments: 4
+      offset:
+        x: 0
+        y: 38.7
+        z: 92
+      position:
+        x: [0,0,0]
+        y: [-1,-1,0]
+        z: [0,0,0]
+      width: [0,4,0]
+      height: [0,4,0]
+      texture: [17]
+      vertical: true
+    diamond2:
+      section_segments: 4
+      offset:
+        x: 0
+        y: 38.7
+        z: 62
+      position:
+        x: [0,0,0]
+        y: [-1,-1,0]
+        z: [0,0,0]
+      width: [0,4,0]
+      height: [0,4,0]
+      texture: 17
+      vertical: true      
   wings:
     topjoin:
       offset:
@@ -631,4 +825,4 @@ return model =
       texture: [63]
       bump:
         position: -10
-        size: 30        
+        size: 30    
