@@ -1,3 +1,8 @@
+multiplyArray = (arr, m) ->
+  k = [];
+  for i in [0..arr.length]
+    k.push(arr[i]*m)
+  return k;
 a = 2
 b = 2
 c = 0.4
@@ -6,7 +11,8 @@ b1 = 2
 s = 1
 s1 = 1
 d = -4
-f=-47
+f = -47
+u = 1.5
 return model =
   name: 'Epiloguer'
   level: 7
@@ -53,7 +59,7 @@ return model =
         z: [-8,-3,-7,-7,-10]
       width: [30-17,35-17,30-17,23-17,0]
       height: [20-15,30-15,30-15,23-15,0]
-      texture: [9]
+      texture: [7,9,9,9]
       propeller: false      
     main_body_sides:
       section_segments: [240,270,300,330,335]#[60,90,120,150]
@@ -97,21 +103,6 @@ return model =
       height: [2,2,2,2]
       texture: [2]
       propeller: false
-    disc:
-      section_segments: 34
-      offset:
-        x: 0
-        y: 3-f
-        z: 10-6
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0]
-        y: [0,0,-10,-10,-10,10,10,10,0,0]
-        z: [0,0,0,0,0,0,0,0,0,0]
-      width: [25,25,25,35,35,35,35,25,25,25]
-      height: [25,25,25,35,35,35,35,25,25,25]
-      texture: [2.4]
-      propeller: false
-      angle: [90] 
     reactor:
       section_segments: 3
       angle: 0
@@ -127,6 +118,21 @@ return model =
       height: [0,26*c,36*c,43*c,49*c,54*c,57*c,60*c,63*c,65*c,67*c,68*c,69*c,69.8*c,70*c,69.8*c,69*c,68*c,67*c,65*c,63*c,60*c,57*c,54*c,49*c,43*c,36*c,26*c,0]
       propeller: true
       texture: [17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111] 
+    reactor21:
+      section_segments: 3
+      angle: 0
+      offset:
+        x: 1
+        y: -71-f
+        z: 3-0.0001
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-68*c,-65*c,-60*c,-55*c,-50*c,-45*c,-40*c,-35*c,-30*c,-25*c,-20*c,-15*c,-10*c,-5*c,0,5*c,10*c,15*c,20*c,25*c,30*c,35*c,40*c,45*c,50*c,55*c,60*c,65*c,68*c]
+        z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,26*c,36*c,43*c,49*c,54*c,57*c,60*c,63*c,65*c,67*c,68*c,69*c,69.8*c,70*c,69.8*c,69*c,68*c,67*c,65*c,63*c,60*c,57*c,54*c,49*c,43*c,36*c,26*c,0]
+      height: [0,26*c,36*c,43*c,49*c,54*c,57*c,60*c,63*c,65*c,67*c,68*c,69*c,69.8*c,70*c,69.8*c,69*c,68*c,67*c,65*c,63*c,60*c,57*c,54*c,49*c,43*c,36*c,26*c,0]
+      propeller: true
+      texture: [111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17,111,17] 
     grid1:
       section_segments: 6
       offset:
@@ -325,7 +331,132 @@ return model =
       width: [0,12,13,23,15,0]
       height: [5,12,12,12,5,0]
       texture: [3,13,3,4,13]
-      propeller: false        
+      propeller: false     
+    wing_cross:  
+      section_segments: 10
+      offset:
+        x: 0
+        y: 65
+        z: 28
+      position:
+        x: [0,0,0,0]
+        y: multiplyArray([-15,-15,20,20],u)
+        z: [0,0,0,0]
+      width: [0,6,6,0]
+      height: [0,1,1,0]
+      texture: [5,17]      
+      angle: 180
+    wing_cross2:  
+      section_segments: 10
+      offset:
+        x: 0
+        y: 45
+        z: 28
+      position:
+        x: [0,0,0,0]
+        y: multiplyArray([-15,-15,1,1],u)
+        z: [0,0,0,0]
+      width: [0,6,6,0]
+      height: [0,1,1,0]
+      texture: [5,17]      
+      angle: 0  
+    wing_cross3:  
+      section_segments: 10
+      offset:
+        x: 0.01
+        y: 50
+        z: 27.5
+      position:
+        x: [0,0,0,0]
+        y: multiplyArray([-18,-18,0,0],u)
+        z: [0,0,0,0]
+      width: [0,6,6,0]
+      height: [0,1,1,0]
+      texture: [5,17]      
+      angle: 90        
+    wing_cross4:  
+      section_segments: 10
+      offset:
+        x: 3
+        y: 50
+        z: 28.5
+      position:
+        x: [0,0,0,0]
+        y: multiplyArray([-18,-18,25,25],u)
+        z: [0,0,0,0]
+      width: [0,0.5,0.5,0]
+      height: [0,1,1,0]
+      texture: [5]    
+      angle: 0       
+    wing_cross5:  
+      section_segments: 10
+      offset:
+        x: 0
+        y: 52
+        z: 28.5
+      position:
+        x: [0,0,0,0,0]
+        y: multiplyArray([-18,-18,0,18,18],u)
+        z: [0,0,0,0,0]
+      width: [0,0.5,0.5,0.5,0]
+      height: [0,1,1,1,0]
+      texture: [5]      
+      angle: 90         
+    wing_cross6:  
+      section_segments: 10
+      offset:
+        x: 0
+        y: 47
+        z: 28.5
+      position:
+        x: [0,0,0,0,0]
+        y: multiplyArray([-18,-18,0,18,18],u)
+        z: [0,0,0,0,0]
+      width: [0,0.5,0.5,0.5,0]
+      height: [0,1,1,1,0]
+      texture: [5]      
+      angle: 90   
+    hubs:  
+      section_segments: 30
+      offset:
+        x: 0
+        y: 28+15
+        z: 12.5-62.5
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-20,-13,-10,-12,-12.5,-10,-10,-12]
+        z: [0,0,0,0,0,0,0,0]
+      width: [13,13,10,9,6,4.2,4,0]
+      height: [13,13,10,9,6,4.2,4,0]
+      texture: [1,3,18,17,18,16,17]
+      vertical: true
+    hub_support:  
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      offset:
+        x: 0
+        y: -12+62.5
+        z: 16+15
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-15,-15,-10,10,15,15]
+        z: [-2.8,-2.8,0,0,-2.8,-2.8]
+      width: [0,1.5,1.5,1.5,1.5,0]
+      height: [0,3,3,3,3,0]
+      texture: [4]      
+    hub_support2:  
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      offset:
+        x: 0
+        y: -12+62
+        z: 16+15
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-15,-15,-10,10,15,15]
+        z: [-2.8,-2.8,0,0,-2.8,-2.8]
+      width: [0,1.5,1.5,1.5,1.5,0]
+      height: [0,3,3,3,3,0]
+      texture: [4]       
+      angle: 90 
     propeller:
       section_segments: 10
       offset:
