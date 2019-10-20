@@ -1,5 +1,5 @@
 return model =
-  name: "V-Vanquisher"
+  name: "Vanquisher"
   level: 7
   model: 2
   size: 3
@@ -763,6 +763,20 @@ return model =
       height: [15,15]
       propeller: true
       texture: [63,12]
+    wing_light:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 37
+        y: 50
+        z: 0
+      position:
+        x: [0.3,0.3,0,0]
+        y: [34,34,100-3,100-3]
+        z: [8,8,0,0]
+      width: [0,2,2,0]
+      height: [0,0.1,0.1,0]
+      texture: [17]      
+      angle:180
   wings:
     main1:
       doubleside: true
@@ -834,6 +848,7 @@ return model =
       bump:
         position: 30
         size: 10
+        size: 10
     main6:
       doubleside: true
       offset:
@@ -848,6 +863,20 @@ return model =
       bump:
         position: 0
         size: 0
+    lights:
+      doubleside: true
+      offset:
+        x: 0
+        y: 10
+        z: 0
+      length: [38.4,0,0]
+      width: [10,10,0]
+      angle: [0,0,0]
+      position: [-120,-53,0]
+      texture: 17
+      bump:
+        position: 0
+        size: 1        
     main7:
       doubleside: true
       offset:
@@ -862,6 +891,20 @@ return model =
       bump:
         position: 0
         size: 0
+    lights2:
+      doubleside: true
+      offset:
+        x: 0
+        y: 97
+        z: 0
+      length: [40,0,0]
+      width: [33,13,0]
+      angle: [0,0,0]
+      position: [-30,-10,0]
+      texture: 17
+      bump:
+        position: 0
+        size: 1        
     rocketlauncherholders:
       doubleside: true
       offset:
