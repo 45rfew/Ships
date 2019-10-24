@@ -1,5 +1,5 @@
 m = 50
-n = 0.4
+n = 0.5
 r = -290
 a = 3.5
 b = 220
@@ -16,154 +16,14 @@ model =
       capacity: [750,750]
       reload: [20,20]
     generator:
-      capacity: [2300,2300]
-      reload: [2300,2300]
+      capacity: [1700,1700]
+      reload: [1700,1700]
     ship:
       mass: 500
       speed: [120,120]
       rotation: [80,80]
       acceleration: [50,50]
   bodies:
-    lights:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 0.01
-        y: -135
-        z: 0
-      position:
-        x: [0,18.5,10,0,0]
-        y: [-59,-59,-39,10,10]
-        z: [0,0,0,0,0]
-      width: [0,0.5,0.5,0.4,0]
-      height: [0,0.2,0.2,0.2,0]
-      texture: [17]   
-      angle: 180    
-    lights1:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 0.01
-        y: -135
-        z: 0
-      position:
-        x: [11,12.9,6.7,0,0]
-        y: [-59,-59,-39,10,10]
-        z: [0,5.4,5.3,0,0]
-      width: [0,0.5,0.5,0.4,0]
-      height: [0,1,1,0.2,0]
-      texture: [17]   
-      angle: 180
-    lights2:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 13.59
-        y: -56
-        z: 7.2
-      position:
-        x: [0,0,0,0]
-        y: [-20,-20,20,20]
-        z: [0.5,0.5,0,0]
-      width: [0,0.5,0.5,0]
-      height: [0,0.2,0.2,0]
-      texture: [17]   
-      angle: 180
-    lights3:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 19
-        y: -56
-        z: 0
-      position:
-        x: [0,0,-0.9,0]
-        y: [-20,-20,20,20]
-        z: [0.5,0.5,0,0]
-      width: [0,0.5,0.5,0]
-      height: [0,0.2,0.2,0]
-      texture: [17]   
-      angle: 180      
-    lights4:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 4.7
-        y: -45
-        z: 10
-      position:
-        x: [0,-1,1.5,0]
-        y: [-10,-10,5,5]
-        z: [-0.4,-0.4,0,0]
-      width: [0,0.5,0.5,0]
-      height: [0,0.2,0.2,0]
-      texture: [17]   
-      angle: 180 
-    lights5:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 0
-        y: -42
-        z: 11.35
-      position:
-        x: [0,0,0,0]
-        y: [-6,-6,5,5]
-        z: [0,0,0.4,0.4]
-      width: [0,0.5,0.5,0]
-      height: [0,0.5,0.5,0]
-      texture: [17]   
-      angle: 180       
-    lights6:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 19.5
-        y: -31
-        z: 0
-      position:
-        x: [-40,-40,0,0]
-        y: [-50,-50,5,5]
-        z: [0,0,0.4,0.4]
-      width: [0,0.5,0.5,0]
-      height: [0,0.5,0.5,0]
-      texture: [17]   
-      angle: 180 
-    lights7:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 13.5
-        y: -31
-        z: 8
-      position:
-        x: [-20,-29,0,0]
-        y: [-50,-50,5,5]
-        z: [0,0,0.4,0.4]
-      width: [0,0.5,0.5,0]
-      height: [0,0.8,0.5,0]
-      texture: [17]   
-      angle: 180
-    lights8:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 0
-        y: -31
-        z: 11.4
-      position:
-        x: [0,0,0,0]
-        y: [-50,-50,5,5]
-        z: [0.2,0.2,0.4,0.4]
-      width: [0,0.5,0.5,0]
-      height: [0,0.8,0.5,0]
-      texture: [17]   
-      angle: 180    
-    lights9:
-      section_segments: [90,180,270,360]
-      offset:
-        x: 5.5
-        y: -31
-        z: 10
-      position:
-        x: [0,-4,0,0]
-        y: [-50,-50,5,5]
-        z: [1,1,0.4,0.4]
-      width: [0,0.5,0.5,0]
-      height: [0,0.8,0.5,0]
-      texture: [17]   
-      angle: 180          
     main:
       section_segments: 8
       offset:
@@ -205,7 +65,7 @@ model =
       texture: [17,16,12,1,5,17,3,4]
       laser:
         damage: [150,150]
-        rate: 0.6
+        rate: 0.5
         type: 1
         speed: [150,150]
         recoil: 250
@@ -418,6 +278,174 @@ model =
       height: [0,1.5,1.5,0]
       texture: [2]
       angle: 90
+    lights:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 0.01
+        y: -135
+        z: 0
+      position:
+        x: [0,18.5,10,0,0]
+        y: [-59,-59,-39,10,10]
+        z: [0,0,0,0,0]
+      width: [0,0.5,0.5,0.4,0]
+      height: [0,0.2,0.2,0.2,0]
+      texture: [17]   
+      angle: 180    
+    lights1:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 0.01
+        y: -135
+        z: 0
+      position:
+        x: [11,12.9,6.7,0,0]
+        y: [-59,-59,-39,10,10]
+        z: [0,5.4,5.3,0,0]
+      width: [0,0.75,0.75,0.4,0]
+      height: [0,1,1,0.2,0]
+      texture: [17]   
+      angle: 180
+    lights2:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 13.59
+        y: -56
+        z: 7.2
+      position:
+        x: [0,0,0,0]
+        y: [-20,-20,20,20]
+        z: [0.5,0.5,0,0]
+      width: [0,0.75,0.75,0]
+      height: [0,0.2,0.2,0]
+      texture: [17]   
+      angle: 180
+    lights3:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 19
+        y: -56
+        z: 0
+      position:
+        x: [0,0,-0.9,0]
+        y: [-20,-20,20,20]
+        z: [0.5,0.5,0,0]
+      width: [0,0.75,0.75,0]
+      height: [0,0.2,0.2,0]
+      texture: [17]   
+      angle: 180      
+    lights4:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 4.7
+        y: -45
+        z: 10
+      position:
+        x: [0,-1,1.5,0]
+        y: [-10,-10,5,5]
+        z: [-0.4,-0.4,0,0]
+      width: [0,0.75,0.75,0]
+      height: [0,0.2,0.2,0]
+      texture: [17]   
+      angle: 180 
+    lights5:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 0
+        y: -42
+        z: 11.35
+      position:
+        x: [0,0,0,0]
+        y: [-6,-6,5,5]
+        z: [0,0,0.4,0.4]
+      width: [0,0.75,0.75,0]
+      height: [0,0.5,0.5,0]
+      texture: [17]   
+      angle: 180       
+    lights6:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 19.5
+        y: -31
+        z: 0
+      position:
+        x: [-40,-40,0,0]
+        y: [-50,-50,5,5]
+        z: [0,0,0.4,0.4]
+      width: [0,0.75,0.75,0]
+      height: [0,0.5,0.5,0]
+      texture: [17]   
+      angle: 180 
+    lights7:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 13.5
+        y: -31
+        z: 8
+      position:
+        x: [-20,-29,0,0]
+        y: [-50,-50,5,5]
+        z: [0,0,0.4,0.4]
+      width: [0,0.75,0.75,0]
+      height: [0,0.8,0.5,0]
+      texture: [17]   
+      angle: 180
+    lights8:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 0
+        y: -31
+        z: 11.4
+      position:
+        x: [0,0,0,0]
+        y: [-50,-50,5,5]
+        z: [0.2,0.2,0.4,0.4]
+      width: [0,0.75,0.75,0]
+      height: [0,0.8,0.5,0]
+      texture: [17]   
+      angle: 180    
+    lights9:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 5.5
+        y: -31
+        z: 10
+      position:
+        x: [0,-4,0,0]
+        y: [-50,-50,5,5]
+        z: [1,1,0.4,0.4]
+      width: [0,0.75,0.75,0]
+      height: [0,0.8,0.5,0]
+      texture: [17]   
+      angle: 180 
+    lights10:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 40
+        y: 45
+        z: 0
+      position:
+        x: [25,25,0,0]
+        y: [-10,-10,10,10]
+        z: [0,0,0,0]
+      width: [0,0.75,0.75,0]
+      height: [0,0.8,0.8,0]
+      texture: [17]   
+      angle: 180     
+    lights11:
+      section_segments: [90,180,270,360]
+      offset:
+        x: 28
+        y: 45
+        z: 14
+      position:
+        x: [17,17,0,0]
+        y: [-10,-10,10,10]
+        z: [-3,-3,0,0]
+      width: [0,0.75,0.75,0]
+      height: [0,0.8,0.8,0]
+      texture: [17]   
+      angle: 180                   
     reactor_center:
       section_segments: 8
       offset:
@@ -1003,24 +1031,6 @@ model =
     mainlaser1:
       section_segments: [45,135,225,315]
       offset:
-        x: 50
-        y: -1050
-        z: 0
-      position:
-        x: [0]
-        y: [0]
-        z: [0]
-      width: [1]
-      height: [1]
-      texture: [1]
-      laser:
-        damage: [m,m]
-        rate: n
-        speed: [0.01,0.01]
-        number: 1
-    mainlaser2:
-      section_segments: [45,135,225,315]
-      offset:
         x: 30
         y: -100
         z: 0
@@ -1237,7 +1247,7 @@ model =
     mainlaser14:
       section_segments: [45,135,225,315]
       offset:
-        x: 30
+        x: 50
         y: -700
         z: 0
       position:
@@ -1261,4 +1271,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;        
+return model;       
