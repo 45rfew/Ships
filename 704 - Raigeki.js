@@ -1,5 +1,5 @@
 m = 50
-n = 0.5
+n = 0.4
 r = -290
 a = 3.5
 b = 220
@@ -13,7 +13,7 @@ model =
   zoom: 0.9
   specs:
     shield:
-      capacity: [750,750]
+      capacity: [700,700]
       reload: [20,20]
     generator:
       capacity: [1700,1700]
