@@ -65,10 +65,10 @@ model =
       texture: [17,16,12,1,5,17,3,4]
       laser:
         damage: [150,150]
-        rate: 0.5
+        rate: n
         type: 1
-        speed: [150,150]
-        recoil: 250
+        speed: [120,120]
+        recoil: 200
         number: 1
         error: 0
     cannon_deco:
