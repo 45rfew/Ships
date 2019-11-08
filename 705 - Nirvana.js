@@ -107,33 +107,18 @@ return model =
       texture: [5,63,8,8,3,15]
       propeller: false
     cube:
-      section_segments: 4
+      section_segments: [40,45,130,135,140,220,225,230,310,315,320]
       offset:
         x: 10
-        y: 68
-        z: 5
+        y: 75
+        z: 0
       position:
-        x: [0,0,0,0,0,20,20,-20,-20]
-        y: [-20,20,20,-20,-20,-19.9,20,-19.9,20]
-        z: [-10,-10,10,10,-10,0,0,0,0]
-      width: [20,20,20,20,20,0,0,0,0]
-      height: [0,0,0,0,0,10,10,10,10]
-      texture: [10]
-      angle: 180
-      propeller: false
-    anothercube:
-      section_segments: 4
-      offset:
-        x: 10
-        y: 68
-        z: 5
-      position:
-        x: [0,0,0,0,0,20,20,-20,-20]
-        y: [-20,20,20,-20,-20,-19.9,20,-19.9,20]
-        z: [-10,-10,10,10,-10,0,0,0,0]
-      width: [20,20,20,20,20,0,0,0,0]
-      height: [0,0,0,0,0,10,10,10,10]
-      texture: [10]
+        x: [0,0,0,0]
+        y: [-25,-25,25,25]
+        z: [0,0,0,0]
+      width: [0,20,20,0]
+      height: [0,20,20,0]
+      texture: [1,10.185,1]
       angle: 180
       propeller: false
     fire:
@@ -301,10 +286,10 @@ return model =
         y: 60
         z: 0
       position:
-        x: [-15,27,27,19,27,25,20,0,0]
+        x: [-15,27,29,27,27,25,20,0,0]
         y: [0,-50,-43,-39,-35,-30,-20,0,0]
         z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,20,30,40,25,20,20,10,0]
+      width: [0,20,28,30,25,20,20,10,0]
       height: [0,1,15,17,15,15,15,15,0]
       angle: 90
       texture: [3,1,3.9,3.9,2.9,16.9,3]
@@ -550,6 +535,146 @@ return model =
         angle: 0
         error: 0
         recoil: 0
+    cube_deco:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -75+130
+        z: 10
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [63]    
+      angle: 90
+    cube_deco2:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -74+130
+        z: 9.99
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [1]    
+      angle: 90      
+    cube_deco3:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -65+130
+        z: 10
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [63]    
+      angle: 90
+    cube_deco4:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -64+130
+        z: 9.99
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [1]    
+      angle: 90        
+    cube_deco4:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -55+130
+        z: 10
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [63]    
+      angle: 90
+    cube_deco5:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -54+130
+        z: 9.9
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [1]    
+      angle: 90        
+    cube_deco6:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -45+130
+        z: 10
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [63]    
+      angle: 90  
+    cube_deco7:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -44+130
+        z: 9.99
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [1]    
+      angle: 90        
+    cube_deco8:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -35+130
+        z: 10
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [63]    
+      angle: 90  
+    cube_deco9:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 30
+        y: -34+130
+        z: 9.99
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,-7,10,10]
+        z: [0,0,-0.5,-10,-10]
+      width: [0,2.5,2.5,2.5,0]
+      height: [0,10,10,10,0]
+      texture: [1]    
+      angle: 90             
   wings:
     main:
       offset:
@@ -673,6 +798,20 @@ return model =
       bump:
         position: 80
         size: 10
+    side3:
+      doubleside: true
+      offset:
+        x: 1
+        y: 87
+        z: 4
+      length: [120]
+      width: [15,0]
+      angle: [165.5]
+      position: [15,93]
+      texture: [17]
+      bump:
+        position: 0
+        size: 0        
     rocketlauncherholders:
       doubleside: true
       offset:
