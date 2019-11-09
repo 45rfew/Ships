@@ -30,7 +30,7 @@ multiplyArray = (arr, m) ->
 model =
   name: 'Daedalus'
   level: 3
-  model: 2
+  model: 3
   size: 2.35
   specs:
     shield:
@@ -202,11 +202,11 @@ model =
         z: [0,0,0,0,0,0,2,2,2,2,2,2]
       width: [0,0,0,0,0,0,0]
       height: [0,0,0,0,0,0,0]
-      angle: 1.5
+      angle: 1
       texture: [16.9,5,4,11,17,2,11,4,4]  
       laser:
         damage: [5,7]
-        rate: 3
+        rate: 5
         type: 1
         speed: [120,150]
         number: 1           
