@@ -53,12 +53,12 @@ model =
         z: 0
       position:
         x: [0,0,0,0,0,0,0,0,0,0]
-        y: [-65,-60,-50,0,30,50,65,75,60]
+        y: [-65,-60,-50,10,15,50,65,75,60]
         z: [0,0,0,0,0,0,0,0,0]
       width: multiplyArray([0,8,10,15,15,16,18,15,0],1.1)
       height: [0,4,5.12,14.4,15,15,15,10,0]
       propeller: true
-      texture: [3,3,3,3,3,3,3,17]
+      texture: [3,3,3,4,18,4,13,17]
     cockpit:
       section_segments: 6
       offset:
@@ -136,7 +136,7 @@ model =
       angle: 180+10
       texture: [17]       
     propeller:
-      section_segments: 6
+      section_segments: 10
       offset:
         x: 65
         y: 70
@@ -145,10 +145,10 @@ model =
         x: [3,3,3,0,0,0]
         y: [-20,-20,-15,10,15,10]
         z: [0,0,0,0,0,0]
-      width: [0,2,6,8,6,0]
+      width: [0,2,8,10,8,0]
       height: [0,5,12,12,10,0]
       propeller: true
-      texture: [3,3,3,13]   
+      texture: [3,3,4,13]   
     propeller2:
       section_segments: 6
       offset:
@@ -363,4 +363,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;      
+return model;     
