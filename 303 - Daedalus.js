@@ -31,7 +31,7 @@ model =
   name: 'Daedalus'
   level: 3
   model: 3
-  size: 2.35
+  size: 2
   specs:
     shield:
       capacity: [200,260]
@@ -41,9 +41,9 @@ model =
       reload: [30,40]
     ship:
       mass: 360
-      speed: [90,110]
+      speed: [100,110]
       rotation: [50,65]
-      acceleration: [60,70]
+      acceleration: [80,100]
   bodies:
     main:
       section_segments: 10
