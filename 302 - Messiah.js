@@ -2,7 +2,7 @@ a = 1.5
 return model =
   name: 'Messiah'
   level: 3
-  model: 3
+  model: 2
   size: 1.5
   specs:
     shield:
@@ -12,7 +12,7 @@ return model =
       capacity: [140,220]
       reload: [40,60]
     ship:
-      mass: 380
+      mass: 320
       speed: [125,140]
       rotation: [60,80]
       acceleration: [80,100]
@@ -102,18 +102,100 @@ return model =
         type: 2
         speed: [130,170]
         number: 1
-        error: 0  
-  wings: main:
-    length: [50,30]
-    width: [70,30,10]
-    angle: [-10,10]
-    position: [-15,0,10]
-    doubleside: true
-    offset:
-      x: 0
-      y: 45
-      z: 10
-    bump:
-      position: 30
-      size: 0
-    texture: [10,1]      
+        error: 0
+    cannon_deco:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 78
+        y: 53
+        z: 7
+      position:
+        x: [0,0,1,1]
+        y: [-21,-21,15,15]
+        z: [0,0,0.7,0.7]
+      width: [0,1,1,0]
+      height: [0,1,1,0]
+      texture: [63]   
+    cannon_deco2:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 68
+        y: 53
+        z: 7
+      position:
+        x: [0,0,-1,-1]
+        y: [-21,-21,15,15]
+        z: [0,0,0.7,0.7]
+      width: [0,1,1,0]
+      height: [0,1,1,0]
+      texture: [63]     
+    cannon_deco3:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 77
+        y: 53
+        z: 6.99
+      position:
+        x: [-1,-1,0,0]
+        y: [-15,-15,21,21]
+        z: [0.7,1,0,0]
+      width: [0,1,1,0]
+      height: [0,1,1,0]
+      texture: [17]   
+      angle: 180
+    cannon_deco4:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 69
+        y: 53
+        z: 6.99
+      position:
+        x: [1,1,0,0]
+        y: [-15,-15,21,21]
+        z: [0.7,1,0,0]
+      width: [0,1,1,0]
+      height: [0,1,1,0]
+      texture: [17]   
+      angle: 180        
+  wings: 
+    main:
+      length: [22,28,30]
+      width: [70,70,40,20]
+      angle: [-10,-10,10]
+      position: [-15,-15,0,10]
+      doubleside: true
+      offset:
+        x: 0
+        y: 47
+        z: 10
+      bump:
+        position: 35
+        size: 10
+      texture: [63,1,10]  
+    main2:
+      length: [22,28,30]
+      width: [70,70,40,20]
+      angle: [-10,-10,10]
+      position: [-15,-15,0,10]
+      doubleside: true
+      offset:
+        x: 0
+        y: 44
+        z: 10
+      bump:
+        position: 35
+        size: 0
+      texture: [17,17]  
+    winglets:
+      length: [40]
+      width: [40,15,30]
+      angle: [10,-10]
+      position: [-40,0,-55]
+      bump:
+        position: 20
+        size: 10
+      texture: 63
+      offset:
+        x: 0
+        y: -25
+        z: 5      
