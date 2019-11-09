@@ -3,6 +3,7 @@ return model =
   level: 5
   model: 3
   size: 1.7
+  zoom: 0.85
   specs:
     shield:
       capacity: [250,360]
@@ -84,7 +85,7 @@ return model =
         z: [0,0,0,0,0,0]
       width: [0,0,0,0,0,0]
       height: [0,0,0,0,0,0]
-      angle: 5
+      angle: 1.5
       laser:
         damage: [15,25]
         rate: 3.5
