@@ -2,7 +2,7 @@ return model =
   name: "Spectrum"
   level: 4
   model: 2
-  size: 1.8
+  size: 1.6
   specs:
     shield:
       capacity: [215,285]
@@ -13,8 +13,8 @@ return model =
     ship:
       mass: 400
       speed: [100,120]
-      rotation: [100,120]
-      acceleration: [120,140]
+      rotation: [80,100]
+      acceleration: [80,100]
   bodies:
     main:
       section_segments:  [40,45,50,130,135,140,220,225,230,310,315,320]
