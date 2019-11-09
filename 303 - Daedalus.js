@@ -31,7 +31,7 @@ model =
   name: 'Daedalus'
   level: 3
   model: 3
-  size: 2
+  size: 1.8
   specs:
     shield:
       capacity: [200,260]
