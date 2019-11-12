@@ -27,7 +27,7 @@ return model =
       reload: [20,28]
     generator:
       capacity: [400,600]
-      reload: [180,260]
+      reload: [180,220]
     ship:
       mass: 520
       speed: [90,130]
@@ -318,7 +318,7 @@ return model =
       texture: [17,4,4,13,3,17,3]
       angle: 0
       laser:
-        damage: [80,120]
+        damage: [40,60]
         rate: 2
         type: 2
         speed: [200,240]
