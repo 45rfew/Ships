@@ -14,8 +14,8 @@ model =
   next: [707,708]
   specs:
     shield:
-      capacity: [400,500]
-      reload: [30,45]
+      capacity: [500,600]
+      reload: [30,40]
     generator:
       capacity: [1000,1200]
       reload: [100,300]
@@ -97,7 +97,7 @@ model =
         z: [-1,-1,-0.5,-0.5,-0.5,-1,-1]
       width: [0,17,9,9,9,17,0]
       height: [0,3,3,3,3,3,0]
-      texture: [0]
+      texture: [3]
       angle: 90
     main_support2:
       section_segments: [45,135,225,315]
@@ -111,7 +111,7 @@ model =
         z: [0,-0.9,-26,-26]
       width: [0,1,1,0]
       height: [0,19,16,0]
-      texture: [0]
+      texture: [3]
       vertical: true               
     main_support3:
       section_segments: [45,135,225,315]
@@ -125,7 +125,7 @@ model =
         z: [0,0,0,0]
       width: [0,3,3,0]
       height: [0,2,2,0]
-      texture: [0]
+      texture: [3]
       angle: 90
     main_support4:
       section_segments: [45,135,225,315]
@@ -139,7 +139,7 @@ model =
         z: [0,0,-22.0,-21.4]
       width: [0,2,2,0]
       height: [0,3.3,2.95,0]
-      texture: [0]
+      texture: [3]
       vertical: true 
     main_support5:
       section_segments: [45,135,225,315]
@@ -153,7 +153,7 @@ model =
         z: [0,-0.06,-27,-27]
       width: [0,2,2,0]
       height: [0,3.3,2.95,0]
-      texture: [0]
+      texture: [3]
       vertical: true     
     cockpit:
       section_segments: [25,135,225,335]
@@ -333,7 +333,7 @@ model =
       texture: [4,13,4]
       vertical: true    
     sides:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 37
         y: -90
@@ -353,9 +353,9 @@ model =
         number: 1
         error: 2       
     sides_deco:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
-        x: 35.55
+        x: 35
         y: -90
         z: -8
       position:
@@ -364,7 +364,7 @@ model =
         z: [0,0,0,0]
       width: [0,7,18,0]
       height: [0,1,11,0]
-      texture: [18]
+      texture: [17]
     sides_deco2:
       section_segments: [45,135,225,315]
       offset:
@@ -382,14 +382,14 @@ model =
     sides2:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
-        x: 34
+        x: 34.1
         y: 90
         z: 1
       position:
-        x: [0,0,0,0,-18,-18]
+        x: [0,5,0,0,-18,-18]
         y: [-50,-50,-10,65,110,110]
         z: [0,0,24,24,30,30]
-      width: [0,16,14,14,5,0]
+      width: [0,19,14,14,5,0]
       height: [0,2,2,2,2,0]
       texture: [63]
     sides2_winglets:
@@ -459,7 +459,7 @@ model =
         z: [0,0,0,0,0,0]
       width: [0,4,6,4,4,0]
       height: [0,2,2,2,2,0]
-      texture: [0]
+      texture: [2]
       angle:90
     sides2_support2:
       section_segments: [45,135,225,315]
@@ -473,7 +473,7 @@ model =
         z: [0,0,0,0,0,0]
       width: [0,4,6,4,4,0]
       height: [0,2,2,2,2,0]
-      texture: [0]
+      texture: [2]
       angle:90      
     rear:
       section_segments: [45,135,225,315]
@@ -554,7 +554,7 @@ model =
         z: [0,0,0,0]
       width: [0.1,16,30,0]
       height: [16.5,16.6,16.6,0]
-      texture: [0]
+      texture: [3]
       angle: 90     
     rear_support4:
       section_segments: [45,135,225,315]
@@ -568,7 +568,7 @@ model =
         z: [0,0,0,0]
       width: [0.1,3,4,0]
       height: [16.5,16.6,16.6,0]
-      texture: [0]
+      texture: [3]
       angle: 90    
     engine:
       section_segments: [45,135,225,315]
@@ -937,7 +937,4 @@ if (1)
   for y,v of model.wings
     v.offset.y = v.offset.y + t  
 return model;
-      
-      
-      
       
