@@ -2,17 +2,17 @@ return model =
   name: "Shadow-X 0"
   level: 1
   model: 1
-  size: 1.2
+  size: 1.05
   specs:
     shield:
-      capacity: [130,170]
+      capacity: [130,160]
       reload: [5,7]
     generator:
       capacity: [100,200]
       reload: [10,20]
     ship:
       mass: 100
-      speed: [250,270]
+      speed: [150,180]
       rotation: [110,130]
       acceleration: [80,100]
   bodies:
@@ -50,7 +50,7 @@ return model =
       height: [0,0,25,10,0]
       texture: [9,9,9,4]
     propulsors:
-      section_segments: 4
+      section_segments: 10
       offset:
         x: 0
         y: -10
@@ -78,6 +78,20 @@ return model =
       bump:
         position: 20
         size: 5
+    main2:
+      doubleside: true
+      offset:
+        x: 10
+        y: 45
+        z: -10
+      length: [70,20]
+      width: [60,10]
+      angle: [30,0]
+      position: [-20,50]
+      texture: [17]
+      bump:
+        position: 20
+        size: 0      
     winglets:
       doubleside: true
       offset:
@@ -92,3 +106,17 @@ return model =
       bump:
         position: 30
         size: 30
+    winglets2:
+      doubleside: true
+      offset:
+        x: 8
+        y: 23
+        z: 10
+      length: [40,100,20]
+      width: [40,60,20]
+      angle: [-30,55,90]
+      position: [0,-40,130,0]
+      texture: [17]
+      bump:
+        position: 30
+        size: 0        
