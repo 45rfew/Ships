@@ -15,7 +15,7 @@ return model =
       mass: 550
       speed: [120,150]
       rotation: [100,120]
-      acceleration: [260,280]
+      acceleration: [80,100]
   bodies:
     main:
       section_segments: [30,60,120,150,210,240,300,330,360]
@@ -28,8 +28,8 @@ return model =
         y: [-242,-228,-175,10,60,61]
         z: [0,0,0,0,0]
       width: [1,6,14,19,23,18,10]
-      height: [0,9,13,18,18,18,10]
-      texture: [1,2,2,2]
+      height: [0.1,9,13,18,18,18,10]
+      texture: [2,2,2,2]
       propeller: false
       laser:
         damage: [50,75]
