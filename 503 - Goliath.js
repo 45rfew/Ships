@@ -1,7 +1,7 @@
 return model =
   name: "Goliath"
   level: 5
-  model: 5
+  model: 3
   size: 1.8
   specs:
     shield:
@@ -9,7 +9,7 @@ return model =
       reload: [10,17]
     generator:
       capacity: [400,610]
-      reload: [100,130]
+      reload: [130,160]
     ship:
       mass: 500
       speed: [110,130]
@@ -43,6 +43,19 @@ return model =
       width: [0,5,15,19,15,15,15,10]
       height: [0,5,15,16,15,15,13,0]
       texture: [5,4,4,4,4,3,3]
+    claws2:
+      section_segments: 10
+      offset:
+        x: 47
+        y: -35
+        z: 0
+      position:
+        x: [-27.5,-21,5,20,25,20,0,-50]
+        y: [-100,-95,-70,-40,-10,20,50,90]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,5,15,19,15,15,15,10]
+      height: [0,2,2,2,2,2,2,0]
+      texture: [63]      
     cockpit:
       section_segments: 8
       offset:
@@ -139,12 +152,26 @@ return model =
         y: -60
         z: 0
       position:
-        x: [0,-4,-0.7,4.4,3,2.4000000000000004,0.30000000000000004,0.30000000000000004]
+        x: [0,-4,-0.7,4.4,3,2.4,0.3,0.3]
         y: [-46,-49,-38.5,0,6,10.5,21,24]
         z: [0,0,0,0,0,0,0,0]
       width: [0,15,18,18,18,17.5,17,0]
       height: [0,15,16.5,17,16.5,16.6,15.6,0]
       texture: [3,3,3,4,4,4,3]
+    claw_armor2:
+      section_segments: 20
+      angle: 175
+      offset:
+        x: -66
+        y: -60
+        z: 0
+      position:
+        x: [0,-4,-0.7,4.4,3,2.4,0.3,0.3]
+        y: [-46,-49,-38.5,0,6,10.5,21,24]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,15,18,18,18,17.5,17,0]
+      height: [0,2,2,2,2,2,2,0]
+      texture: [63]      
     claw_amrmor2:
       section_segments: 20
       angle: 170
@@ -167,7 +194,7 @@ return model =
         z: 15
       position:
         x: [0,0,0,0,0,0,0,0,0]
-        y: [-7.9799999999999995,-7.6,-6.46,-3.8,0,3.8,6.46,7.6,7.9799999999999995]
+        y: [-8,-7.6,-6.46,-3.8,0,3.8,6.46,7.6,8]
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [0,1.9,4.56,7.6,9.5,7.6,4.56,1.9,0]
       height: [0,1,1,1,1,1,1,1,0]
@@ -180,7 +207,7 @@ return model =
         z: 15.5
       position:
         x: [0,0,0,0,0,0,0,0,0]
-        y: [-6.46,-5.699999999999999,-4.9399999999999995,-2.28,0,2.28,4.9399999999999995,5.699999999999999,6.46]
+        y: [-6.46,-5.7,-5,-2.28,0,2.28,5,5.7,6.46]
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [0,0.38,3.04,6.08,7.6,6.08,3.04,0.38,0]
       height: [0,1,1,1,1,1,1,1,0]
@@ -229,6 +256,20 @@ return model =
       bump:
         position: 40
         size: 12
+    side_wings2:
+      doubleside: true
+      offset:
+        x: 81
+        y: -33
+        z: 0
+      length: [50]
+      width: [60,10,40]
+      angle: [-5,20]
+      position: [-20,0,0]
+      texture: 63
+      bump:
+        position: 40
+        size: 0        
     back_wings:
       doubleside: true
       offset:
@@ -243,6 +284,20 @@ return model =
       bump:
         position: 40
         size: 10
+    back_wings1:
+      doubleside: true
+      offset:
+        x: 1
+        y: 104
+        z: 0
+      length: [90]
+      width: [80,10,40]
+      angle: [0,20]
+      position: [-35,0,0]
+      texture: 63 
+      bump:
+        position: 40
+        size: 0        
     top_side_wings:
       doubleside: true
       offset:
@@ -270,3 +325,16 @@ return model =
       texture: 3.3
       bump:
         position: 40
+    back_wings3:
+      doubleside: true
+      offset:
+        x: 31
+        y: 105
+        z: 0
+      length: [60]
+      width: [56,10,40]
+      angle: [50,0]
+      position: [-25,0,0]
+      texture: 63
+      bump:
+        position: 42        
