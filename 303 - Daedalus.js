@@ -74,33 +74,33 @@ model =
       propeller: false
       texture: [7,7,9,9,9,4]      
     outer_arms:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      section_segments: 10
       offset:
         x: 58
         y: -10
         z: -8
       position:
-        x: [8.8,4,4,8,11,14,16,16,14,12,10,7,0]
-        y: [-93,-85,-85,-60,-40,-20,-0,20,40,60,80,90,90]
+        x: [1.5,4.5,4.5,8,11,14,16,16,14,12,10,7,0]
+        y: [-100,-85,-85,-60,-40,-20,-0,20,40,60,80,90,90]
         z: [0,0,0,0,0,0,0,0,0,0,0,-5,0]
-      width: multiplyArray([0.01,7,7,8,8,8,8,8,8,7,5,4,0],1.1)
-      height: [6,6,6,6,6,7,9,12,15,15,10,10,0]
+      width: multiplyArray([0.5,2,6,8,8,8,8,8,8,7,5,4,0],1.1)
+      height: [0.5,2,6,6,6,7,9,12,15,15,10,10,0]
       propeller: false
-      texture: [7]  
-    cannon:
-      section_segments: 8
+      texture: [6,7]
+    outer_arms2:
+      section_segments: 10
       offset:
-        x: 61
-        y: -70
-        z: -9
+        x: 56.5
+        y: -10
+        z: -8
       position:
-        x: [0,0,0,0,0,0,0,0,0,0,0,0,0]
-        y: [-35,-40,-37,-30,-25,0,25,30,35,40,40]
-        z: [0,0,0,0,0,0,2,2,2,2,2,2]
-      width: [0,3,3,3,3,3,3,3,3,3,3,0]
-      height: [0,3,3,3,3,3,3,3,3,3,0]
-      angle: 10
-      texture: [16.9,5,4,11,17,2,11,4,4]  
+        x: [4.5,4.5,8,11,14,16,16,14,12,10,7,0]
+        y: [-85,-85,-60,-40,-20,-0,20,40,60,80,90,90]
+        z: [0,0,0,0,0,0,0,0,0,0,-5,0]
+      width: multiplyArray([2,6,8,8,8,8,8,8,7,5,4,0],1.1)
+      height: [1,1,1,1,1,1,1,1,1,1]
+      propeller: false
+      texture: [63]       
     can1non:
       section_segments: 8
       offset:
@@ -138,7 +138,7 @@ model =
     propeller:
       section_segments: 10
       offset:
-        x: 65
+        x: 66.5
         y: 70
         z: -5
       position:
@@ -152,7 +152,7 @@ model =
     propeller2:
       section_segments: 6
       offset:
-        x: 65
+        x: 66.5
         y: 95
         z: -5
       position:
@@ -176,6 +176,20 @@ model =
       height: [0,5,5,5,5,5,5,0]
       propeller: false
       texture: [7]  
+    inner_arm2:
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      offset:
+        x: 41.5
+        y: -70
+        z: -11
+      position:
+        x: [0.5,-3,0,0,0,0]
+        y: [40,40,60,80,100,100]
+        z: [0,0,0,0,0,0]
+      width: [5,10,10,12,12,0]
+      height: [1,1,1,1,1,0]
+      propeller: false
+      texture: [63]        
     cannon3:
       section_segments: 8
       offset:
