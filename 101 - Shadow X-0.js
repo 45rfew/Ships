@@ -1,17 +1,17 @@
 return model =
-  name: "Shadow-X 0"
+  name: "Shadow X-0"
   level: 1
   model: 1
-  size: 1.05
+  size: 1
   specs:
     shield:
       capacity: [130,160]
       reload: [5,7]
     generator:
-      capacity: [100,200]
-      reload: [10,20]
+      capacity: [80,100]
+      reload: [20,30]
     ship:
-      mass: 100
+      mass: 140
       speed: [150,180]
       rotation: [110,130]
       acceleration: [80,100]
@@ -30,10 +30,10 @@ return model =
       height: [0,2,40,30,2]
       texture: [63,3,2,63]
       laser:
-        damage: [30,50]
-        rate: 5
+        damage: [30,40]
+        rate: 1
         type: 1
-        speed: [80,150]
+        speed: [120,150]
         number: 1
         recoil: 20
     cockpit:
@@ -119,4 +119,4 @@ return model =
       texture: [17]
       bump:
         position: 30
-        size: 0        
+        size: 0    
