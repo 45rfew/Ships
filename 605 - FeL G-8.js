@@ -9,11 +9,11 @@ return model =
       capacity: [600,700]
       reload: [10,15]
     generator:
-      capacity: [550,600]
-      reload: [150,250]
+      capacity: [450,500]
+      reload: [150,230]
     ship:
       mass: 550
-      speed: [120,150]
+      speed: [120,140]
       rotation: [100,120]
       acceleration: [80,100]
   bodies:
@@ -197,7 +197,7 @@ return model =
       texture: [3.5,3.3]
       angle: 180
     wingsRail:
-      section_segments: 6
+      section_segments: [45,135,225,315]
       offset:
         x: 135
         y: 74.5
@@ -211,21 +211,21 @@ return model =
       texture: [63]
       angle: 2
     wingsRail2:
-      section_segments: 6
+      section_segments: [45,135,225,315]
       offset:
         x: 88
         y: 67
-        z: 12
+        z: 11
       position:
         x: [0,0,0,0,0,0,0,0]
-        y: [-7,-5,10,11]
+        y: [-6,-5,10,11]
         z: [-2,0,0,-1,0,0,0,0,0]
       width: [1,2,2,0]
       height: [1,2,2,0]
       texture: [63.8]
       angle: 90
     wingsRail3:
-      section_segments: 6
+      section_segments: [45,135,225,315]
       offset:
         x: 90
         y: 80
@@ -239,11 +239,11 @@ return model =
       texture: [63]
       angle: 90
     wingsRail4:
-      section_segments: 4
+      section_segments: [45,135,225,315]
       offset:
         x: 88
         y: 35
-        z: 13
+        z: 12
       position:
         x: [0,0,0,0,0,0,0,0]
         y: [-7,-5,9,10]
@@ -253,11 +253,11 @@ return model =
       texture: [63]
       angle: 0
     wingsRail5:
-      section_segments: 4
+      section_segments: [45,135,225,315]
       offset:
         x: 93.5
         y: 35
-        z: 11.5
+        z: 11
       position:
         x: [0,0,0,0,0,0,0,0]
         y: [-7,-5,9,10]
@@ -267,7 +267,7 @@ return model =
       texture: [63]
       angle: 0
     wingstail:
-      section_segments: 8
+      section_segments: 6
       offset:
         x: 65.5
         y: 67
@@ -295,7 +295,7 @@ return model =
       texture: [3]
       angle: 75
     wingsRail6:
-      section_segments: 6
+      section_segments: [45,135,225,315]
       offset:
         x: 59
         y: 107
@@ -309,7 +309,7 @@ return model =
       texture: [63]
       angle: -1
     wingsRail7:
-      section_segments: 6
+      section_segments: [45,135,225,315]
       offset:
         x: 29
         y: 107
@@ -337,7 +337,7 @@ return model =
       texture: [12]
       angle: 91
     wingsRail9:
-      section_segments: 8
+      section_segments: [45,135,225,315]
       offset:
         x: 19
         y: 17
@@ -351,7 +351,7 @@ return model =
       texture: [63]
       angle: 87
     wingsRai10:
-      section_segments: 8
+      section_segments: [45,135,225,315]
       offset:
         x: 19
         y: 4
