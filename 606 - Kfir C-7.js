@@ -2,19 +2,19 @@ return model =
   name: "Kfir C-7"
   level: 6
   model: 6
-  size: 2.036
+  size: 2
   zoom: 0.85
   specs:
     shield:
       capacity: [400,550]
-      reload: [20,30]
+      reload: [10,20]
     generator:
-      capacity: [650,700]
-      reload: [150,300]
+      capacity: [350,400]
+      reload: [200,300]
     ship:
       mass: 350
-      speed: [170,219]
-      rotation: [230,240]
+      speed: [140,160]
+      rotation: [140,180]
       acceleration: [120,140]
   bodies:
     main:
@@ -31,14 +31,6 @@ return model =
       height: [0,9,13,18,18,18,10]
       texture: [0,0,0,0]
       propeller: false
-      laser:
-        damage: [200,250]
-        rate: 1
-        type: 1
-        speed: [230,250]
-        number: 1
-        angle: 0
-        error: 0
     cockpit:
       section_segments: 8
       offset:
@@ -52,6 +44,14 @@ return model =
       width: [0,5,10,10,0]
       height: [0,5,10,12,0]
       texture: [9]
+      laser:
+        damage: [200,250]
+        rate: 1.5
+        type: 1
+        speed: [200,240]
+        number: 1
+        angle: 0
+        error: 0      
     frontsupport:
       section_segments: 6
       offset:
@@ -73,11 +73,11 @@ return model =
         y: -40
         z: 10
       position:
-        x: [-5,17,17,9,17,15,10,0,0]
+        x: [17,17,19,9,17,15,10,0,0]
         y: [0,-8,-8,0,-3,0,0,0,0]
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [0,10,5,30,5,0,0,0,0]
-      height: [0,1,5,7,5,5,5,5,0]
+      height: [0,0,5,7,5,0,0,0,0]
       angle: -90
       texture: [4,4,4]
     wingsRail:
@@ -157,13 +157,13 @@ return model =
         y: 95
         z: 0
       position:
-        x: [0,2,0,0,0,0,0]
-        y: [-25,-30,5,20,20,20]
-        z: [2,2,0,0,0,0,0]
-      width: [0,15,15,10,10,0]
-      height: [0,12.5,15,10,10,0]
+        x: [3,3,3,0,0,0,0,0]
+        y: [-25,-32,-30,5,20,20,20]
+        z: [2,2,2,0,0,0,0,0]
+      width: [0,11,15,15,10,10,0]
+      height: [0,8.5,11.5,15,10,10,0]
       propeller: false
-      texture: [17,1,1,1,1]
+      texture: [17,13,1,1,1,1]
       angle: 183
     cannon:
       section_segments: 6
@@ -181,7 +181,7 @@ return model =
       propeller: false
       texture: [2.8,2.8,2.8,2.8]
       laser:
-        damage: [50,75]
+        damage: [50,60]
         rate: 2
         type: 2
         speed: [360,380]
