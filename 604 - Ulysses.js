@@ -6,6 +6,7 @@ model =
   model: 4
   size: 2.5
   zoom: 0.95
+  next: [703,704]
   specs:
     shield:
       capacity: [350,420]
