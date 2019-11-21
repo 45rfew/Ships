@@ -34,15 +34,15 @@ model =
   size: 1.8
   specs:
     shield:
-      capacity: [200,260]
+      capacity: [220,260]
       reload: [5,9]
     generator:
-      capacity: [150,200]
-      reload: [30,40]
+      capacity: [150,240]
+      reload: [60,80]
     ship:
       mass: 360
-      speed: [100,110]
-      rotation: [50,65]
+      speed: [100,115]
+      rotation: [70,90]
       acceleration: [80,100]
   bodies:
     main:
