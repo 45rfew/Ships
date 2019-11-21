@@ -78,7 +78,7 @@ return model =
         error: 0
       propeller: false
       texture: [6,4,10,4,63,63]
-    slashybois:
+    arms:
       section_segments: 12
       offset:
         x: 1
@@ -92,7 +92,7 @@ return model =
       height: [0,0,5,5,5,0,0,0]
       texture: [4,4,4,4,4,4,4]
       angle: 235
-    slashybois_color:
+    color:
       section_segments: 12
       offset:
         x: -30
@@ -106,7 +106,21 @@ return model =
       height: [0,0,10,10,10,0,0,0]
       texture: [3,3,7,7,7,7,7]
       angle: 230
-    dunno_tech:
+    color2:
+      section_segments: 12
+      offset:
+        x: -30
+        y: 144
+        z: -23
+      position:
+        x: [0,15,45,50,40,-10,-20,-30]
+        y: [-30,10,130,210,290,350,355,400]
+        z: [10,10,10,5,0,0,0,0]
+      width: [0,40,30,25,20,0,0,0]
+      height: [0,0,10,10,10,0,0,0]
+      texture: [63]
+      angle: 230      
+    tech:
       section_segments: 12
       angle: 90
       offset:
@@ -120,6 +134,20 @@ return model =
       width: [0,30,35,0,0,0,0,35,30,0]
       height: [0,30,35,0,0,0,0,35,30,0]
       texture: [4,7,4,4,4,4,4,7,4]
+    deco:
+      section_segments: [45,135,225,315]
+      angle: 4.5
+      offset:
+        x: 262
+        y: -150
+        z: -24
+      position:
+        x: [0,0,0,0]
+        y: [-65,-65,30,30]
+        z: [3.5,3.5,0,0]
+      width: [0,0.5,2,0]
+      height: [0,1,1,0]
+      texture: [5,17]      
   wings:
     front1_below:
       offset:
@@ -175,3 +203,30 @@ return model =
         x: 12
         y: 70
         z: 10
+    lights:
+      length: [30,20]
+      width: [50,10,120]
+      angle: [40,20]
+      position: [70,75,190]
+      texture: 4
+      bump:
+        position: 0
+        size: 20
+      offset:
+        x: 12
+        y: 70
+        z: 10    
+    lights:
+      length: [30,65,44,60,28]
+      width: [20,20,20,20,20,20]
+      angle: [0,0,-5,-5,-5]
+      position: [150,63,26,3,-46,-119]
+      doubleside: true
+      offset:
+        x: 40
+        y: 0
+        z: -13
+      bump:
+        position: 0
+        size: 0
+      texture: [17]        
