@@ -37,7 +37,7 @@ model =
       capacity: [220,260]
       reload: [5,9]
     generator:
-      capacity: [150,240]
+      capacity: [150,170]
       reload: [60,80]
     ship:
       mass: 360
@@ -117,7 +117,7 @@ model =
       texture: [16.9,5,4,11,17,2,11,4,4]  
       laser:
         damage: [40,60]
-        rate: 2
+        rate: 1
         type: 1
         speed: [180,200]
         number: 1              
@@ -377,4 +377,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;     
+return model;    
