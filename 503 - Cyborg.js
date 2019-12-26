@@ -12,13 +12,13 @@ model =
   specs:
     shield:
       capacity: [230,270]
-      reload: [15,20]
+      reload: [12,15]
     generator:
       capacity: [300,400]
       reload: [50,100]
     ship:
       mass: 350
-      speed: [130,150]
+      speed: [100,110]
       rotation: [70,85]
       acceleration: [100,130]
   bodies:
