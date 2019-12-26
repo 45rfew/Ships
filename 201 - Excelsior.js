@@ -5,14 +5,14 @@ model =
   size: 1.4
   specs:
     shield:
-      capacity: [140,160]
-      reload: [4,6]
+      capacity: [160,180]
+      reload: [5,7]
     generator:
       capacity: [100,120]
       reload: [30,40]
     ship:
-      mass: 190
-      speed: [90,120]
+      mass: 180
+      speed: [120,150]
       rotation: [80,100]
       acceleration: [70,80]
   bodies:
