@@ -6,10 +6,10 @@ return model =
   specs:
     shield:
       capacity: [200,280]
-      reload: [10,14]
+      reload: [6,8]
     generator:
       capacity: [200,300]
-      reload: [130,170]
+      reload: [100,120]
     ship:
       mass: 255
       speed: [100,130]
