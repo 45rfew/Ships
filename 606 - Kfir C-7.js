@@ -3,32 +3,32 @@ return model =
   level: 6
   model: 6
   size: 2
-  zoom: 0.85
+  zoom: 0.9
   specs:
     shield:
-      capacity: [400,550]
-      reload: [10,20]
+      capacity: [420,460]
+      reload: [12,18]
     generator:
-      capacity: [350,400]
-      reload: [200,300]
+      capacity: [250,290]
+      reload: [200,230]
     ship:
-      mass: 350
-      speed: [140,160]
-      rotation: [140,180]
-      acceleration: [120,140]
+      mass: 380
+      speed: [110,135]
+      rotation: [100,120]
+      acceleration: [80,100]
   bodies:
     main:
       section_segments: [30,60,120,150,210,240,300,330,360]
       offset:
-        x: 1
+        x: 0
         y: 10
         z: 0
       position:
-        x: [0,0,0,0,0]
-        y: [-172,-158,-125,70,120,121]
-        z: [0,0,0,0,0]
-      width: [1,6,13,18,23,18,10]
-      height: [0,9,13,18,18,18,10]
+        x: [0,0,0,0,0,0,0,0]
+        y: [-173,-172,-158,-125,70,120,121]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,1,6,13,18,23,18,10]
+      height: [0,1,9,13,18,18,18,10]
       texture: [0,0,0,0]
       propeller: false
     cockpit:
@@ -45,10 +45,10 @@ return model =
       height: [0,5,10,12,0]
       texture: [9]
       laser:
-        damage: [200,250]
+        damage: [200,230]
         rate: 1.5
         type: 1
-        speed: [200,240]
+        speed: [180,200]
         number: 1
         angle: 0
         error: 0      
@@ -73,13 +73,13 @@ return model =
         y: -40
         z: 10
       position:
-        x: [17,17,19,9,17,15,10,0,0]
-        y: [0,-8,-8,0,-3,0,0,0,0]
+        x: [-5,17,17,9,17,15,10,0,0]
+        y: [0,-8,-8,0,2,0,0,0,0]
         z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,5,30,5,0,0,0,0]
-      height: [0,0,5,7,5,0,0,0,0]
+      width: [0,0,5,30,0,0,0,0,0]
+      height: [0,1,5,7,0,5,5,5,0]
       angle: -90
-      texture: [4,4,4]
+      texture: [4]      
     wingsRail:
       section_segments: 4
       offset:
@@ -113,13 +113,13 @@ return model =
       offset:
         x: 38
         y: -25
-        z: -2
+        z: -3
       position:
-        x: [0,0,0,0,0,0,0]
-        y: [0,-27,0,0]
-        z: [0,0,0,0,0,0,0,0,0]
-      width: [1,2,2,1.6]
-      height: [1,1,1,1]
+        x: [0,0,-2,-2]
+        y: [-27,-27,0,0]
+        z: [0,0,1.4,1.4]
+      width: [0,2,2,0]
+      height: [0,1,1,0]
       texture: [4.8]
       angle: 0
     wingsRail3:
@@ -147,7 +147,7 @@ return model =
         y: [-45,-45,0,25,50,44]
         z: [0,0,0,0,0,0,0]
       width: [0,10,10,10,10,0]
-      height: [0,12.5,15,10,10,0]
+      height: [0,12.5,12.5,10,10,0]
       texture: [1,1,3,4,15]
       angle: 183
     backengines:
@@ -184,8 +184,8 @@ return model =
         damage: [50,60]
         rate: 2
         type: 2
-        speed: [360,380]
-        number: 25
+        speed: [220,250]
+        number: 1
         error: 0
     propulsor:
       section_segments: [30,60,120,150,210,240,300,330,360]
@@ -217,12 +217,12 @@ return model =
       texture: [111]
       laser:
         damage: [15,26]
-        rate: 6.2
+        rate: 6
         type: 2
-        speed: [360,400]
+        speed: [160,180]
         number: 3
         error: 0
-        angle: 1
+        angle: 0
   wings:
     front:
       offset:
