@@ -1,17 +1,12 @@
-b = 0.5 #size1
-u = 0.23 #size2
-
-c = 1 #idk
-
-q = 0.1 #height1
-i = 0.1 #height2
-
-a = 140 #x1
-v = 78 #x2
-
-f = 120 #y2 
-d = 45 #z2
-
+b = 0.5
+u = 0.23
+c = 1
+q = 0.1
+i = 0.1
+a = 140
+v = 78 
+f = 120 
+d = 45 
 h = 0
 x = 1.8
 n = 1.6
@@ -24,15 +19,15 @@ return model =
   specs:
     shield:
       capacity: [400,500]
-      reload: [20,28]
+      reload: [10,14]
     generator:
-      capacity: [400,600]
-      reload: [180,220]
+      capacity: [400,460]
+      reload: [130,150]
     ship:
       mass: 520
-      speed: [90,130]
+      speed: [90,110]
       rotation: [60,80]
-      acceleration: [60,80]
+      acceleration: [80,100]
   bodies:
     main:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
@@ -75,7 +70,7 @@ return model =
       width: [0,30,30,5,0]
       height: [0,40-0.1,40-0.1,40-0.1,0]
       texture: [2]
-      angle:90      
+      angle: 90      
     cannons:
       section_segments: [42,45,48,132,135,138,222,225,228,312,315,318]
       offset:
