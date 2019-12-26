@@ -13,10 +13,10 @@ model =
       reload: [10,15]
     generator:
       capacity: [200,300]
-      reload: [150,250]
+      reload: [180,280]
     ship:
-      mass: 350
-      speed: [120,140]
+      mass: 420
+      speed: [120,130]
       rotation: [100,120]
       acceleration: [80,120]
   bodies:
@@ -95,7 +95,7 @@ model =
       texture: [4,63,2]
       laser:
         damage: [15,18]
-        rate: 7
+        rate: 10
         type: 2
         speed: [170,200]
         number: 1
