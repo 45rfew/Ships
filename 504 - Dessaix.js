@@ -7,15 +7,15 @@ model =
   specs:
     shield:
       capacity: [250,360]
-      reload: [7,14]
+      reload: [7,10]
     generator:
       capacity: [300,380]
       reload: [100,120]
     ship:
       mass: 400
-      speed: [125,150]
-      rotation: [120,160]
-      acceleration: [80,100]
+      speed: [110,135]
+      rotation: [90,120]
+      acceleration: [120,140]
   bodies:
     wings:
       section_segments: [45,135,225,315]
