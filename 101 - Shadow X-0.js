@@ -6,7 +6,7 @@ return model =
   specs:
     shield:
       capacity: [130,160]
-      reload: [5,7]
+      reload: [5,6]
     generator:
       capacity: [80,100]
       reload: [20,30]
@@ -27,11 +27,11 @@ return model =
         y: [-100,-100,45,75,85]
         z: [0,0,0,0,0]
       width: [0,17,35,30,20]
-      height: [0,2,40,30,2]
+      height: [0,2,40,30,8]
       texture: [63,3,2,63]
       laser:
         damage: [30,40]
-        rate: 1
+        rate: 2
         type: 1
         speed: [120,150]
         number: 1
