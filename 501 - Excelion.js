@@ -11,16 +11,16 @@ model =
   size: 1.1
   specs:
     shield:
-      capacity: [150,280]
+      capacity: [230,300]
       reload: [9,13]
     generator:
-      capacity: [500,600]
-      reload: [250,300]
+      capacity: [300,400]
+      reload: [130,160]
     ship:
       mass: 425
-      speed: [120,150]
-      rotation: [60,98]
-      acceleration: [140,160]  
+      speed: [100,120]
+      rotation: [80,100]
+      acceleration: [80,90]  
   bodies:
     main:
       section_segments: 12
@@ -227,7 +227,7 @@ model =
       bump:
         position: 30
         size: 4
-t=25
+t = 25
 if(1)
   for y,v of model.bodies
     if(v.vertical)
