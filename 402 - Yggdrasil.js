@@ -5,16 +5,16 @@ return model =
   size: 1.4
   specs:
     shield:
-      capacity: [220,240]
+      capacity: [260,300]
       reload: [8,11]
     generator:
       capacity: [150,200]
       reload: [50,60]
     ship:
       mass: 400
-      speed: [80,100]
+      speed: [100,110]
       rotation: [60,80]
-      acceleration: [60,80]
+      acceleration: [80,100]
   bodies:
     main:
       section_segments: 8
@@ -36,7 +36,7 @@ return model =
         speed: [100,150]
         number: 1
         angle: 0
-        recoil: 200
+        recoil: 220
         error: 0
     cockpit:
       section_segments: 8
@@ -70,7 +70,7 @@ return model =
         type: 1
         speed: [140,160]
         number: 1
-        recoil: 169
+        recoil: 189
         error: 0
     back:
       section_segments: [45,135,225,315]
@@ -226,6 +226,4 @@ return model =
       height: [0,2.7,1,0]
       texture: [2]      
       angle: 0      
-      
-      
       
