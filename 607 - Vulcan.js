@@ -7,8 +7,8 @@ return model =
   next: [707,708]
   specs:
     shield:
-      capacity: [450,600]
-      reload: [15,30]
+      capacity: [450,500]
+      reload: [15,20]
     generator:
       capacity: [400,600]
       reload: [100,150]
