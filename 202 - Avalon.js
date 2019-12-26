@@ -6,14 +6,14 @@ model =
   specs:
     shield:
       capacity: [180,200]
-      reload: [6,8]
+      reload: [6,7]
     generator:
       capacity: [80,120]
       reload: [30,40]
     ship:
-      mass: 220
-      speed: [100,130]
-      rotation: [60,80]
+      mass: 200
+      speed: [120,145]
+      rotation: [80,100]
       acceleration: [80,100]
   bodies:
     main:
@@ -116,4 +116,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;             
+return model;       
