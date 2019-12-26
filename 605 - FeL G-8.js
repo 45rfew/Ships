@@ -2,33 +2,33 @@ return model =
   name: "FeL G-8"
   level: 6
   model: 5
-  size: 2.036
+  size: 2
   next: [705,706]
   specs:
     shield:
-      capacity: [600,700]
+      capacity: [400,480]
       reload: [10,15]
     generator:
-      capacity: [450,500]
-      reload: [150,230]
+      capacity: [350,400]
+      reload: [160,200]
     ship:
-      mass: 550
-      speed: [120,140]
+      mass: 510
+      speed: [100,120]
       rotation: [100,120]
       acceleration: [80,100]
   bodies:
     main:
       section_segments: [30,60,120,150,210,240,300,330,360]
       offset:
-        x: 1
+        x: 0
         y: 70
         z: 0
       position:
-        x: [0,0,0,0,0]
-        y: [-242,-228,-175,10,60,61]
-        z: [0,0,0,0,0]
-      width: [1,6,14,19,23,18,10]
-      height: [0.1,9,13,18,18,18,10]
+        x: [0,0,0,0,0,0,0,0]
+        y: [-243,-242,-228,-175,10,60,61]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,1,6,17,20,24,19,10]
+      height: [0,1,9,13,18,18,18,10]
       texture: [2,2,2,2]
       propeller: false
       laser:
@@ -74,12 +74,12 @@ return model =
         z: 10
       position:
         x: [-5,17,17,9,17,15,10,0,0]
-        y: [0,-8,-8,0,-3,0,0,0,0]
+        y: [0,-8,-8,0,2,0,0,0,0]
         z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,5,30,5,0,0,0,0]
-      height: [0,1,5,7,5,5,5,5,0]
+      width: [0,0,5,30,0,0,0,0,0]
+      height: [0,1,5,7,0,5,5,5,0]
       angle: -90
-      texture: [4,4,4]
+      texture: [4]
     engines:
       section_segments: [40,45,50,130,135,140,220,225,230,270,310,315,320]
       offset:
@@ -102,12 +102,12 @@ return model =
         z: 0
       position:
         x: [0,0,-2,-2,0,0,0,0,0]
-        y: [0,0,-40,-45,5,10,10,10]
+        y: [0,-40,-40,-45,5,10,10,10]
         z: [0,0,2,2,0,0,0,0,0]
-      width: [0,0,0,10,15,7,7,0]
+      width: [0,0,10,10,15,7,7,0]
       height: [0,0,0,10,15,13,13,0]
       propeller: false
-      texture: [17,3,3,3,3]
+      texture: [3,3,13,3]
       angle: 180
     engines1:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
@@ -182,7 +182,7 @@ return model =
         error: 0
         angle: 1
     backengines1:
-      section_segments: [10,40,45,50,80,130,135,140,170,220,225,230,260,310,315,320,350]
+      section_segments: 8#[10,40,45,50,80,130,135,140,170,220,225,230,260,310,315,320,350]
       offset:
         x: 90
         y: 45
@@ -194,7 +194,7 @@ return model =
       width: [0,0,0,10,12,9,9,0]
       height: [0,0,0,12,13,11,11,0]
       propeller: true
-      texture: [3.5,3.3]
+      texture: [3,3,17,3,3,3,12]
       angle: 180
     wingsRail:
       section_segments: [45,135,225,315]
