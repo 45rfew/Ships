@@ -14,14 +14,14 @@ model =
   next: [707,708]
   specs:
     shield:
-      capacity: [500,600]
-      reload: [30,40]
+      capacity: [500,550]
+      reload: [20,24]
     generator:
-      capacity: [1000,1200]
-      reload: [100,300]
+      capacity: [290,550]
+      reload: [150,300]
     ship:
-      mass: 800
-      speed: [90,120]
+      mass: 600
+      speed: [90,100]
       rotation: [60,90]
       acceleration: [65,100]
   bodies:
@@ -39,10 +39,10 @@ model =
       height: [0,20,20,20,0]
       texture: [4,2,2]
       laser:
-        damage: [500,1000]
+        damage: [250,500]
         rate: 0.8
         type: 1
-        speed: [70,100]
+        speed: [80,110]
         number: 1
         recoil: 600
         error: 0      
@@ -937,4 +937,3 @@ if (1)
   for y,v of model.wings
     v.offset.y = v.offset.y + t  
 return model;
-      
