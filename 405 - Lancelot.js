@@ -5,16 +5,16 @@ return model =
   size: 1.5
   specs:
     shield:
-      capacity: [400,500]
-      reload: [10,20]
+      capacity: [260,320]
+      reload: [7,10]
     generator:
-      capacity: [430,500]
-      reload: [70,110]
+      capacity: [200,260]
+      reload: [40,60]
     ship:
       mass: 400
-      speed: [120,140]
-      rotation: [100,150]
-      acceleration: [60,110]
+      speed: [100,120]
+      rotation: [100,120]
+      acceleration: [70,100]
   bodies:
     main:
       section_segments: 8
@@ -31,10 +31,10 @@ return model =
       texture: [4,63,63,10,1,12]
       propeller: true
       laser:
-        damage: [150,200]
+        damage: [100,120]
         rate: 1
-        type: 2
-        speed: [120,200]
+        type: 1
+        speed: [120,150]
         recoil: 200
         number: 1
         error: 0
