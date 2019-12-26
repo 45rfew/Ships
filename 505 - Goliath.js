@@ -5,15 +5,15 @@ return model =
   size: 1.8
   specs:
     shield:
-      capacity: [400,550]
+      capacity: [340,380]
       reload: [10,17]
     generator:
-      capacity: [400,610]
+      capacity: [240,320]
       reload: [130,160]
     ship:
-      mass: 500
-      speed: [110,130]
-      rotation: [130,180]
+      mass: 450
+      speed: [90,100]
+      rotation: [90,120]
       acceleration: [60,80]
   bodies:
     main:
@@ -23,12 +23,12 @@ return model =
         y: 15
         z: 0
       position:
-        x: [0,0,0,0,0,0,0,0,0,0]
-        y: [-20,-15,0,10,20,25,30,40,100,90]
-        z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,20,20,20,20,20,20,10,0]
-      height: [0,5,15,15,15,16,17,18,10,0]
-      texture: [4,3,3,3,3,3,3]
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [-20,-15,0,10,20,25,30,40,100,100,95]
+        z: [0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,10,20,20,20,20,20,20,10,9,0]
+      height: [0,5,15,15,15,16,17,18,10,9,0]
+      texture: [4,3,3,3,3,3,3,3,13,16.9]
       propeller: true
     claws:
       section_segments: 10
@@ -83,8 +83,8 @@ return model =
       height: [0,5,8,8,10,5]
       angle: 0
       laser:
-        damage: [170,200]
-        rate: 2
+        damage: [150,180]
+        rate: 1.5
         type: 1
         speed: [160,180]
         number: 1
@@ -126,7 +126,7 @@ return model =
       width: [0,20,20,20,20,20,20,20,0]
       height: [0,15,15,15,15,15,15,15,0]
       propeller: false
-      texture: [3,3,3,4,4,3,3,3]
+      texture: [2.9,3,3,4,4,3,3,3]
       vertical: true
     trianglethings2:
       section_segments: [20,30,40,140,150,160,300,310,320]
@@ -141,7 +141,7 @@ return model =
       width: [0,20,20,20,20,20,20,20,0]
       height: [0,15,15,15,15,15,15,15,0]
       propeller: false
-      texture: [3,3,3,4,4,3,3,3]
+      texture: [2.9,3,3,4,4,3,3,3]
       vertical: true
       angle: 180
     claw_armor:
@@ -212,21 +212,6 @@ return model =
       width: [0,0.38,3.04,6.08,7.6,6.08,3.04,0.38,0]
       height: [0,1,1,1,1,1,1,1,0]
       texture: [5]
-    hub:
-      vertical: true
-      section_segments: 8
-      offset:
-        x: 0
-        y: -45
-        z: -100
-      position:
-        x: [0,0,0,0,0,0,0]
-        y: [0,7,5,5,7,6]
-        z: [0,0,0,0,0,0,0]
-      width: [13,11,6,5,3,0]
-      height: [13,11,6,5,3,0]
-      texture: [3,17,18,18,16]
-      angle: 180
     cannon_lighting:
       section_segments: 15
       offset:
@@ -337,4 +322,4 @@ return model =
       position: [-25,0,0]
       texture: 63
       bump:
-        position: 42        
+        position: 42     
