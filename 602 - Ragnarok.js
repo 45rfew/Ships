@@ -1,3 +1,4 @@
+  
 a = 7
 d = 20
 q = 1.5
@@ -5,20 +6,20 @@ t = 20
 return model =
   name: "Ragnarok"
   level: 6
-  model: 7
+  model: 2
   size: 2
-  next:[707,708]
+  next: [707,708]
   specs:
     shield:
       capacity: [350,400]
-      reload: [20,30]
+      reload: [17,22]
     generator:
-      capacity: [325,425]
+      capacity: [385,485]
       reload: [175,225]
     ship:
-      mass: 550
-      speed: [140,180]
-      rotation: [140,180]
+      mass: 500
+      speed: [110,125]
+      rotation: [100,130]
       acceleration: [80,100]
       dash:
         rate: 0.5
@@ -345,12 +346,10 @@ return model =
       height: [1]
       angle:180
       laser:
-        damage: [10,10]
+        damage: [30,40]
         rate: 10
         type: 2
-        speed: [20,40]
+        speed: [120,140]
         number: 1
         error: 20
-        recoil:130
-        
-      
+        recoil: 130
