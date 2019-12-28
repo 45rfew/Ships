@@ -2,7 +2,7 @@ return model =
   name: 'Yggdrasil'
   level: 4
   model: 2
-  size: 1.4
+  size: 1.2
   specs:
     shield:
       capacity: [260,300]
