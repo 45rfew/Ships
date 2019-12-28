@@ -13,9 +13,9 @@ return model =
       reload: [250,250]
     ship:
       mass: 560
-      speed: [120,120]
-      rotation: [90,90]
-      acceleration: [160,160]
+      speed: [90,90]
+      rotation: [80,80]
+      acceleration: [120,120]
   bodies:
     main:
       section_segments: 12
