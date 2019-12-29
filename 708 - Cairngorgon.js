@@ -12,15 +12,15 @@ return model =
   specs:
     shield:
       capacity: [3200,3200]
-      reload: [60,60]
+      reload: [50,50]
     generator:
       capacity: [550,550]
       reload: [200,200]
     ship:
       mass: 1500
-      speed: [75,75]
+      speed: [70,70]
       rotation: [50,50]
-      acceleration: [130,130]
+      acceleration: [120,120]
   bodies:
     sideEngineBody:
       section_segments: 10
