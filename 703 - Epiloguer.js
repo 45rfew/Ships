@@ -18,7 +18,7 @@ return model =
   level: 7
   model: 3
   size: 2
-  zoom:0.9
+  zoom: 0.9
   specs:
     shield:
       capacity: [780,780]
@@ -28,7 +28,7 @@ return model =
       reload: [220,220]
     ship:
       mass: 600
-      speed: [135,135]
+      speed: [105,105]
       rotation: [80,80]
       acceleration: [70,70]  
   bodies:
