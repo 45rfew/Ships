@@ -5,16 +5,16 @@ return model =
   size: 1.7
   specs:
     shield:
-      capacity: [800,800]
-      reload: [45,45]
+      capacity: [720,720]
+      reload: [40,40]
     generator:
       capacity: [700,700]
       reload: [210,210]
     ship:
       mass: 700
-      speed: [140,140]
+      speed: [100,100]
       rotation: [130,130]
-      acceleration: [100,100]
+      acceleration: [70,70]
   bodies:
     main:
       section_segments: 8
@@ -466,7 +466,7 @@ return model =
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 0
-        y: -12
+        y: -12.5
         z: 16
       position:
         x: [0,0,0,0,0,0]
