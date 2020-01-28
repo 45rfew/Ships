@@ -227,7 +227,7 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 0
-        y: 288
+        y: 287.7
         z: 0
       position:
         x: [0,0,0,0].add(0)
@@ -241,13 +241,13 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 0
-        y: 196
-        z: 0
+        y: 195.5
+        z: -0.1
       position:
-        x: [0,0,20,20,41,41].add(135)
+        x: [0,0,20,20,41,41].add(134)
         y: [90,90,110,145,163,163].add(0)
         z: [0,0,0,0,0,0]
-      width: [0,3.5,3.5,3.5,3.5,0]
+      width: [0,4,4,4,4,0]
       height: [0,30,30,30,30,0]
       texture: [4]        
     transistor8:  
@@ -377,7 +377,7 @@ return model =
         y: 130
         z: 0
       position:
-        x: [0,0,-0.5,-0.5].add(200+i*2)
+        x: [0,0,-0.3,-0.3].add(200+i*2)
         y: [0,0,70,70].add(250+i)
         z: [0,0,0,0]
       width: [0,4,4,0]
@@ -403,7 +403,7 @@ return model =
       offset:
         x: 0
         y: -70
-        z: 0
+        z: -0.1
       position:
         x: [10,10,10,-15,-15,10,10,10]
         y: [0,0,190,215,245,270,325,325]
@@ -417,7 +417,7 @@ return model =
       offset:
         x: 0
         y: -240
-        z: 0
+        z: -0.2
       position:
         x: [10,10,60,60,60]
         y: [0,0,50,100,100]
@@ -431,7 +431,7 @@ return model =
       offset:
         x: 0
         y: -120
-        z: 0
+        z: -0.2
       position:
         x: [10,10,40,40,40]
         y: [0,0,30,80,80]
@@ -445,7 +445,7 @@ return model =
       offset:
         x: 0
         y: -188
-        z: 0
+        z: -0.2
       position:
         x: [40,40,90,90,90]
         y: [-30,-30,20,60,60]
@@ -459,7 +459,7 @@ return model =
       offset:
         x: 0
         y: -270
-        z: 0
+        z: -0.2
       position:
         x: [95,95,115,115]
         y: [0,0,20,20]
@@ -473,7 +473,7 @@ return model =
       offset:
         x: 0
         y: -288
-        z: 0
+        z: -0.2
       position:
         x: [0,0,0,0]
         y: [111,111,136,136]
@@ -486,13 +486,13 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 0
-        y: -196
-        z: 0
+        y: -195.7
+        z: -0.2
       position:
-        x: [135,135,155,155,176,176]
+        x: [135,135,155,155,176,176].add(-1)
         y: [90,90,110,145,163,163]
         z: [0,0,0,0,0,0]
-      width: [0,3.5,3.5,3.5,3.5,0]
+      width: [0,4,4,4,4,0]
       height: [0,30,30,30,30,0]
       texture: [4]
       angle: 180
@@ -501,7 +501,7 @@ return model =
       offset:
         x: 0
         y: -70
-        z: 0
+        z: -0.3
       position:
         x: [-10,-10,-10,-15,-15]
         y: [0,0,70,75,75]
@@ -515,7 +515,7 @@ return model =
       offset:
         x: 0
         y: -165
-        z: 0
+        z: -0.2
       position:
         x: [-30,-30,-65,-65,-65]
         y: [4,4,55,64,64]
@@ -529,9 +529,9 @@ return model =
       offset:
         x: 0
         y: -255
-        z: 0
+        z: -0.2
       position:
-        x: [-65,-65,-65,-95,-95,-110,-110]
+        x: [-65,-65,-65,-95,-95,-109.3,-109.3]
         y: [0,0,45,90,130,145,145]
         z: [0,0,0,0,0,0,0]
       width: [0,5,5,5,5,5,0]
@@ -546,7 +546,7 @@ return model =
         z: 0
       position:
         x: [-30,-30,-30,-120,-120,-120]
-        y: [0,0,10,150,210,210]
+        y: [0,0,10,150,211,211]
         z: [0,0,0,0,0,0]
       width: [0,5,5,5,5,0]
       height: [0,30,30,30,30,0]
@@ -629,7 +629,7 @@ return model =
         y: -130
         z: 0
       position:
-        x: [0,0,-0.5,-0.5].add(200+i*2)
+        x: [0,0,-0.3,-0.3].add(200+i*2)
         y: [0,0,70,70].add(250+i)
         z: [0,0,0,0]
       width: [0,4,4,0]
@@ -1186,11 +1186,11 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 0
-        y: 325
+        y: 324.6
         z: 0
       position:
         x: [0,0,0,0].add(134.5)
-        y: [0,0,40,40].add(245)
+        y: [0,0,40.4,40.4].add(245)
         z: [0,0,0,0]
       width: [0,4,4,0]
       height: [0,30,30,0]
@@ -1242,10 +1242,10 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 0
-        y: 325
+        y: 324.4
         z: 0
       position:
-        x: [0,0,0,0].add(134.5+-325)
+        x: [0,0,-1,-1].add(134.5+-324.3)
         y: [0,0,40,40].add(-80)
         z: [0,0,0,0]
       width: [0,4,4,0]
@@ -1298,7 +1298,7 @@ return model =
       section_segments: [45,135,225,315]
       offset:
         x: 0
-        y: 325
+        y: 325.4
         z: 0
       position:
         x: [0,0,0,0].add(134.5+-649)
@@ -1351,7 +1351,7 @@ return model =
       texture: [4]
       angle: 55+90      
     inductors:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1365,7 +1365,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true
     inductors2:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1379,7 +1379,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true      
     inductors3:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1393,13 +1393,13 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true        
     inductors4:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
-        z: -260
+        z: -260.4
       position:
-        x: [40,40,40,40,40,40,40,40,40,40].add(42)
+        x: [40,40,40,40,40,40,40,40,40,40].add(43)
         y: [7,7,0,0,0,2,6,7,7,7].mult(3)
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [10,10,10,14,14,14,14,14,10,10].mult(1.3)
@@ -1407,10 +1407,10 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true      
     inductors5:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 0.2
+        y: 0.3
         z: -372
       position:
         x: [40,40,40,40,40,40,40,40,40,40].add(142)
@@ -1421,10 +1421,10 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true      
     inductors6:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 0.2
+        y: 0.3
         z: -157
       position:
         x: [40,40,40,40,40,40,40,40,40,40].add(-62)
@@ -1435,7 +1435,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true       
     inductors7:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1449,13 +1449,13 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true         
     inductors8:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 0.2
-        z: -392
+        y: 0.3
+        z: -391.5
       position:
-        x: [40,40,40,40,40,40,40,40,40,40].add(-163)
+        x: [40,40,40,40,40,40,40,40,40,40].add(-163.2)
         y: [7,7,0,0,0,2,6,7,7,7].mult(3)
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [10,10,10,14,14,14,14,14,10,10].mult(1.3)
@@ -1463,7 +1463,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true       
     inductors9:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1477,7 +1477,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true       
     inductors10:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1491,7 +1491,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true               
     inductors11:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -1505,10 +1505,10 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true      
     inductors12:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 410
       position:
         x: [10,10,10,10,10,10,10,10,10,10]
@@ -1520,10 +1520,10 @@ return model =
       vertical: true
       angle: 180
     inductors13:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 355
       position:
         x: [60,60,60,60,60,60,60,60,60,60]
@@ -1535,10 +1535,10 @@ return model =
       vertical: true
       angle: 180
     inductors14:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 215
       position:
         x: [50,50,50,50,50,50,50,50,50,50]
@@ -1550,13 +1550,13 @@ return model =
       vertical: true
       angle: 180
     inductors15:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 260
       position:
-        x: [82,82,82,82,82,82,82,82,82,82]
+        x: [82,82,82,82,82,82,82,82,82,82].add(0.5)
         y: [21,21,0,0,0,6,18,21,21,21].mult(2)
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [13,13,13,18.2,18.2,18.2,18.2,18.2,13,13]
@@ -1565,10 +1565,10 @@ return model =
       vertical: true
       angle: 180
     inductors16:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 372
       position:
         x: [182,182,182,182,182,182,182,182,182,182]
@@ -1580,10 +1580,10 @@ return model =
       vertical: true
       angle: 180
     inductors17:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 157
       position:
         x: [-22,-22,-22,-22,-22,-22,-22,-22,-22,-22]
@@ -1595,10 +1595,10 @@ return model =
       vertical: true
       angle: 180
     inductors18:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 241
       position:
         x: [-66,-66,-66,-66,-66,-66,-66,-66,-66,-66]
@@ -1610,10 +1610,10 @@ return model =
       vertical: true
       angle: 180
     inductors19:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 392
       position:
         x: [-123,-123,-123,-123,-123,-123,-123,-123,-123,-123]
@@ -1625,10 +1625,10 @@ return model =
       vertical: true
       angle: 180
     inductors20:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 295
       position:
         x: [-115,-115,-115,-115,-115,-115,-115,-115,-115,-115]
@@ -1640,10 +1640,10 @@ return model =
       vertical: true
       angle: 180
     inductors21:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 212
       position:
         x: [176,176,176,176,176,176,176,176,176,176]
@@ -1655,10 +1655,10 @@ return model =
       vertical: true
       angle: 180
     inductors22:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 342
       position:
         x: [225,225,225,225,225,225,225,225,225,225]
@@ -1670,10 +1670,10 @@ return model =
       vertical: true
       angle: 180      
     inductors23:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [10,10,10,10,10,10,10,10,10,10].add(-420)
@@ -1685,10 +1685,10 @@ return model =
       vertical: true
       angle: 180      
     inductors24:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [60,60,60,60,60,60,60,60,60,60].add(-415)
@@ -1700,10 +1700,10 @@ return model =
       vertical: true
       angle: 180      
     inductors25:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [50,50,50,50,50,50,50,50,50,50].add(-265)
@@ -1715,10 +1715,10 @@ return model =
       vertical: true
       angle: 180      
     inductors26:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [82,82,82,82,82,82,82,82,82,82].add(-260+-82)
@@ -1730,10 +1730,10 @@ return model =
       vertical: true
       angle: 180      
     inductors27:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [182,182,182,182,182,182,182,182,182,182].add(-372+-182)
@@ -1745,10 +1745,10 @@ return model =
       vertical: true
       angle: 180      
     inductors28:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-22,-22,-22,-22,-22,-22,-22,-22,-22,-22].add(-157+22)
@@ -1760,10 +1760,10 @@ return model =
       vertical: true
       angle: 180
     inductors29:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-66,-66,-66,-66,-66,-66,-66,-66,-66,-66].add(-241+66)
@@ -1775,10 +1775,10 @@ return model =
       vertical: true
       angle: 180
     inductors30:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-123,-123,-123,-123,-123,-123,-123,-123,-123,-123].add(-392+123)
@@ -1790,10 +1790,10 @@ return model =
       vertical: true
       angle: 180      
     inductors31:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-115,-115,-115,-115,-115,-115,-115,-115,-115,-115].add(-295+115)
@@ -1805,10 +1805,10 @@ return model =
       vertical: true
       angle: 180      
     inductors32:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [176,176,176,176,176,176,176,176,176,176].add(-212+-176)
@@ -1820,10 +1820,10 @@ return model =
       vertical: true
       angle: 180
     inductors33:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [225,225,225,225,225,225,225,225,225,225].add(-342+-225)
@@ -1835,10 +1835,10 @@ return model =
       vertical: true
       angle: 180      
     inductors34:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [10,10,10,10,10,10,10,10,10,10].add(400)
@@ -1850,10 +1850,10 @@ return model =
       vertical: true
       angle: 180      
     inductors35:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [60,60,60,60,60,60,60,60,60,60].add(415-120)
@@ -1865,10 +1865,10 @@ return model =
       vertical: true
       angle: 180      
     inductors36:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [50,50,50,50,50,50,50,50,50,50].add(265-100)
@@ -1880,10 +1880,10 @@ return model =
       vertical: true
       angle: 180      
     inductors37:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [82,82,82,82,82,82,82,82,82,82].add(260+-82)
@@ -1895,10 +1895,10 @@ return model =
       vertical: true
       angle: 180      
     inductors38:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [182,182,182,182,182,182,182,182,182,182].add(372+-182)
@@ -1910,10 +1910,10 @@ return model =
       vertical: true
       angle: 180      
     inductors39:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-22,-22,-22,-22,-22,-22,-22,-22,-22,-22].add(157+22)
@@ -1925,10 +1925,10 @@ return model =
       vertical: true
       angle: 180
     inductors40:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-66,-66,-66,-66,-66,-66,-66,-66,-66,-66].add(241+66)
@@ -1940,10 +1940,10 @@ return model =
       vertical: true
       angle: 180
     inductors41:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-123,-123,-123,-123,-123,-123,-123,-123,-123,-123].add(392+123)
@@ -1955,10 +1955,10 @@ return model =
       vertical: true
       angle: 180      
     inductors42:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [-115,-115,-115,-115,-115,-115,-115,-115,-115,-115].add(295+115)
@@ -1970,10 +1970,10 @@ return model =
       vertical: true
       angle: 180      
     inductors43:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [176,176,176,176,176,176,176,176,176,176].add(212+-176)
@@ -1985,10 +1985,10 @@ return model =
       vertical: true
       angle: 180
     inductors44:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [225,225,225,225,225,225,225,225,225,225].add(342+-225)
@@ -2000,10 +2000,10 @@ return model =
       vertical: true
       angle: 180      
     inductors45:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [225,225,225,225,225,225,225,225,225,225].add(-322+-225)
@@ -2015,7 +2015,7 @@ return model =
       vertical: true
       angle: 180          
     inductors46:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -2029,7 +2029,7 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true      
     inductors47:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -2043,10 +2043,10 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true         
     inductors48:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [225,225,225,225,225,225,225,225,225,225].add(-322+325)
@@ -2058,7 +2058,7 @@ return model =
       vertical: true
       angle: 180     
     inductors49:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -2072,10 +2072,10 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true         
     inductors50:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [225,225,225,225,225,225,225,225,225,225].add(-225+325)
@@ -2087,7 +2087,7 @@ return model =
       vertical: true
       angle: 180     
     inductors51:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
         y: 0.2
@@ -2101,10 +2101,10 @@ return model =
       texture: [4,17,4,4,4,17,4]      
       vertical: true         
     inductors52:
-      section_segments: 16
+      section_segments: 30
       offset:
         x: 0
-        y: 21
+        y: 21.2
         z: 0
       position:
         x: [225,225,225,225,225,225,225,225,225,225].add(-95+-325)
