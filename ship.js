@@ -222,22 +222,29 @@ bodyStarY = (name, number, aroundX, aroundY, aoffset = 0, offx = 0, spawn) ->
       laser: b.laser  
 eng_ypos = 50
 model =
-  name: 'Odyssey'
+  name: 'Zeroboros'
   level: 7
   model: 1
-  size: 4
+  size: 2
   specs:
     shield:
-      capacity: [750,750]
-      reload: [15,15]
+      capacity: [900,900]
+      reload: [20,20]
     generator:
-      capacity: [330,330]
-      reload: [150,150]
+      capacity: [320+90*4,320+90*4]
+      reload: [200,200]
     ship:
-      mass: 700
-      speed: [45,45]
-      rotation: [20,20]
-      acceleration: [150,150]
+      mass: 940
+      speed: [55,55]
+      rotation: [22,22]
+      acceleration: [180,180]
+      dash:
+        rate: 2
+        burst_speed: [230,230]
+        speed: [120,120]
+        acceleration: [40,40]
+        initial_energy: [250,250]
+        energy: [200,200]      
   tori: 
     ring: torus(100,65,20,8,[1,10.02,10.02,1,1,1,1,1,1,1,10.02,10.02,1,1,10.02,10.02,1,1,1,1,1,1,1,10.02,10.02,1])
     ring2: torus(100,135,20,8,[1,10.02,10.02,1,1,1,1,1,1,1,10.02,10.02,1,1,10.02,10.02,1,1,1,1,1,1,1,10.02,10.02,1])
@@ -249,8 +256,8 @@ model =
     ring8: torus(96,590-eng_ypos,13,8,4)  
     ring9: torus(45,590-eng_ypos,13,8,4)  
   bodies:
-    dish: dish(0,-190,0,180,26,[2,2,2,2,2,2,2,2,17,18,4,3,3,4,18,17,2,2,2,4],12,12,24)
-    dish2: dish(0,-220,0,180,6,[13,13,4,5,6,7,86,3,17.9,16.9,11.9,1.9],8,9,18)
+    dish: dish(0,-190,0,180,26,[2,2,2,2,2,2,2,2,17,18,4,3,3,4,18,17,2,2,2,4],12,16,28)
+    dish2: dish(0,-230,0,180,6,[13,13,4,5,6,7,86,3,17.9,16.9,11.9,1.9],8,12,22)
     spring: spring(0,-200+7,0,0) 
     spring2: spring(0,-152+7,0,0)
     spring3: spring(0,-106+7,0,0) 
@@ -957,8 +964,8 @@ model =
       bump:
         position: 45
         size: 4            
-bodyStarY("star",200,0,0)   
-bodyStarY("star2",150,0,0) 
+#bodyStarY("star",200,0,0)   
+#bodyStarY("star2",150,0,0) 
 for i in [1...19]
   model.bodies['bar'+i] =
     section_segments: [45,135,225,315]
@@ -1518,7 +1525,7 @@ for i in [1...5]
     ring((52+i*10)-10,3-i*9+9,(-560-i*2.5)+2.5+eng_ypos,[45,135,225,315],(25-i*3)+3,4,1,0.2,1,[17,18,17,18,17,18,17,18,17],120)
   model.bodies['rear_support_deco3'+i] = 
     ring((38+i*13)-25,(-33-i*4.2)-10,(-560-i*2.5)+2.5+eng_ypos,[45,135,225,315],(25-i*3)+3,4,1,0.2,1,[17,18,17,18,17,18,17,18,17],120)
-t = -200        
+t = -220        
 if (1)
   for y,v of model.bodies
     if(v.vertical)
