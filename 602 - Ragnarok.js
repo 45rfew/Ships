@@ -1,4 +1,3 @@
-  
 a = 7
 d = 20
 q = 1.5
@@ -8,7 +7,7 @@ return model =
   level: 6
   model: 2
   size: 2
-  next: [707,708]
+  next: [701,702]
   specs:
     shield:
       capacity: [350,400]
