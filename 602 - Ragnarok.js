@@ -105,13 +105,13 @@ return model =
   next: [701,702]
   specs:
     shield:
-      capacity: [350,400]
+      capacity: [250,320]
       reload: [17,22]
     generator:
       capacity: [385,485]
       reload: [175,225]
     ship:
-      mass: 500
+      mass: 250
       speed: [110,125]
       rotation: [100,130]
       acceleration: [80,100]
