@@ -2,7 +2,7 @@ r = 1.2
 t = 1
 s = 20
 ypos = []
-for i in [0...50] by 0.14
+for i in [0...15] by 0.14
   ypos.push(i*1)
 xpos = []
 for i in [0...5*s] by 0.4
@@ -11,7 +11,7 @@ zpos = []
 for i in [0...5*s] by 0.4
   zpos.push(r*Math.cos(i))
 tub = []
-for i in [0...50*s] by 10
+for i in [0...5*s] by 1
   tub.push(t)
 spring = (px,py,pz,ang)->
   angle: ang
@@ -51,8 +51,7 @@ model =
   name: "Ulysses"
   level: 6
   model: 4
-  size: 2.5
-  zoom: 0.95
+  size: 2.4
   next: [703,704]
   specs:
     shield:
@@ -1110,4 +1109,3 @@ if(1)
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
 return model;        
-    
