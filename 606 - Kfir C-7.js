@@ -3,7 +3,7 @@ return model =
   level: 6
   model: 6
   size: 2
-  zoom: 0.9
+  zoom: 1
   specs:
     shield:
       capacity: [420,460]
@@ -45,10 +45,10 @@ return model =
       height: [0,5,10,12,0]
       texture: [9]
       laser:
-        damage: [200,230]
-        rate: 1.5
+        damage: [180,200]
+        rate: 1
         type: 1
-        speed: [180,200]
+        speed: [160,180]
         number: 1
         angle: 0
         error: 0      
@@ -181,10 +181,10 @@ return model =
       propeller: false
       texture: [2.8,2.8,2.8,2.8]
       laser:
-        damage: [50,60]
+        damage: [30,40]
         rate: 2
         type: 2
-        speed: [220,250]
+        speed: [160,180]
         number: 1
         error: 0
     propulsor:
