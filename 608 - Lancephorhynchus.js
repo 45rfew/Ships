@@ -1,6 +1,23 @@
-multiplyArray = (arr, m) ->
+Array::add = (mod) -> @map (val) -> val + mod
+Array::mult = (mod) -> @map (val) -> val * mod
+Array::div = (mod) -> @map (val) -> val / mod
+Array::step = (step) -> i for i in @ by step
+Array::fill = (val, len) -> val for i in (
+  if len
+  then [0...len]
+  else if @length == 1
+  then [0...@[0]]
+  else @
+)
+for key, value of []
+  delete Array::[key]
+  Object.defineProperty Array::, key,
+    value: value
+    configurable: true
+    enumerable: false
+multiplyArray = (arr,m) ->
   k = [];
-  for i in [0..arr.length]
+  for i in [0..arr.length-1]
     k.push(arr[i]*m)
   return k;
 a = 0.7
@@ -17,8 +34,8 @@ model =
       capacity: [500,550]
       reload: [20,24]
     generator:
-      capacity: [290,550]
-      reload: [150,300]
+      capacity: [440,550]
+      reload: [150,250]
     ship:
       mass: 600
       speed: [90,100]
@@ -39,11 +56,11 @@ model =
       height: [0,20,20,20,0]
       texture: [4,2,2]
       laser:
-        damage: [250,500]
+        damage: [200,250]
         rate: 0.8
         type: 1
         speed: [80,110]
-        number: 1
+        number: 2
         recoil: 600
         error: 0      
     main_deco:
@@ -53,11 +70,11 @@ model =
         y: 0
         z: 0
       position:
-        x: [0,0,0,0,0,0,0]
-        y: [-90,-90,-60,-40,-10,81,83]
-        z: [0,-0.6,0,-1,5,14,14]
-      width: [0,31.2,32,32,32,32,0]
-      height: [0,20,22.6,26.5,23,21,0]
+        x: [0,0,0,0,0,0,0,0]
+        y: [-99.9,-99.9,-90,-60,-40,-10,81,83]
+        z: [0,0,-0.6,0,-1,5,14,14]
+      width: [0,31.2,31.2,32,32,32,32,0]
+      height: [0,19.9,20.7,22.6,26.5,23,21,0]
       texture: [63]
     main_deco2:
       section_segments: [45,135,225,315]
@@ -86,75 +103,61 @@ model =
       height: [0,2,2,2,2,2,0]
       texture: [63]
     main_support:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 0
         y: 16
         z: 24
       position:
-        x: [10,10,4,4,4,10,10]
-        y: [-25,-25,-11,0,11,25,25]
-        z: [-1,-1,-0.5,-0.5,-0.5,-1,-1]
-      width: [0,17,9,9,9,17,0]
-      height: [0,3,3,3,3,3,0]
+        x: [9.5,9.5,9.5,4,4,4,9.5,9.5,9.5]
+        y: [-25,-25,-22,-11,0,11,22,25,25]
+        z: [-3,-3,-1,-0.5,-0.5,-0.5,-1,-3,-3]
+      width: [0,17,17,9,9,9,16,16,0]
+      height: [0,3,3,3,3,3,3,3,0]
       texture: [3]
       angle: 90
     main_support2:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
-        x: 24.29
-        y: -2.8
-        z: 19.7
+        x: 24.24
+        y: -6
+        z: 19.6
       position:
         x: [0,0,0,0]
         y: [-25,-25,25,25]
-        z: [0,-0.9,-26,-26]
+        z: [0,1,-26,-26]
       width: [0,1,1,0]
-      height: [0,19,16,0]
+      height: [0,11,16,0]
       texture: [3]
       vertical: true               
     main_support3:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 0
         y: 30
         z: 25
       position:
-        x: [0,0,0,0]
-        y: [-25,-25,25,25]
-        z: [0,0,0,0]
-      width: [0,3,3,0]
-      height: [0,2,2,0]
+        x: [0,0,0,0,0,0,0]
+        y: [-25,-25,-22,22,25,25]
+        z: [-2.2,-2.2,0,0,-2.2,-2.2]
+      width: [0,3,3,3,3,0]
+      height: [0,2,2,2,2,0]
       texture: [3]
       angle: 90
     main_support4:
-      section_segments: [45,135,225,315]
+      section_segments:[40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
-        x: 23.5
+        x: 23.47
         y: -1.46
         z: -8
       position:
         x: [0,0,0,0]
-        y: [-24,-23.55,25,25]
-        z: [0,0,-22.0,-21.4]
+        y: [-20.55,-20.55,23,25]
+        z: [0,0,-21.9,-22]
       width: [0,2,2,0]
       height: [0,3.3,2.95,0]
       texture: [3]
       vertical: true 
-    main_support5:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 23.585
-        y: -4.1
-        z: 11.1
-      position:
-        x: [0,0,0,0]
-        y: [-24,-23.55,25,25]
-        z: [0,-0.06,-27,-27]
-      width: [0,2,2,0]
-      height: [0,3.3,2.95,0]
-      texture: [3]
-      vertical: true     
     cockpit:
       section_segments: [25,135,225,335]
       offset:
@@ -167,7 +170,7 @@ model =
         z: multiplyArray([-10,-10,-5,-5,-5,3,5,5.4,5,7.4,6.4,6.4],a)
       width: multiplyArray([0,20,25,25,35,36,30,23,19,17,14,0],a)
       height: multiplyArray([0,4,4,4,7,20,15,7,5,4,1,0],a)
-      texture: [63,7,7,7,7,7,7,7,63]
+      texture: [63,7,7,7,7,7,7,7,3.8]
     cockpit2:
       section_segments: [45,135,225,315]
       offset:
@@ -349,22 +352,36 @@ model =
         damage: [20,25]
         rate: 3
         type: 2
-        speed: [100,130]
+        speed: [140,170]
         number: 1
-        error: 2       
-    sides_deco:
+        error: 2 
+    sides_front:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
-        x: 35
+        x: 37
         y: -90
         z: -8
       position:
-        x: [-9,-9,0,0]
-        y: [-190-40,-190-40,0,0]
+        x: [-14,-14,-10,-8,-8,-8,-8]
+        y: [-240,-240,-235,-198,-196,-192,-192]
+        z: [0,0,0,0,0,0,0]
+      width: [0,1,7,9,9,9,0]
+      height: [0,2,2.2,4,4,4,0]
+      texture: [[15],[15],[15],17,2]        
+    sides_deco:
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      offset:
+        x: 25
+        y: -329
+        z: -8
+      position:
+        x: [-9,-9,3,3]
+        y: [-190-100,-190-100,0,0]
         z: [0,0,0,0]
-      width: [0,7,18,0]
-      height: [0,1,11,0]
+      width: [0,18,2,0]
+      height: [0,11,1,0]
       texture: [17]
+      angle: 180
     sides_deco2:
       section_segments: [45,135,225,315]
       offset:
@@ -379,6 +396,19 @@ model =
       height: [0,10,10,2,1,0]
       texture: [4,63,2,17,4]
       angle: 180
+    sides_deco3:
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      offset:
+        x: 31
+        y: -90
+        z: -8
+      position:
+        x: [-7,-7,0,0,0]
+        y: [-196,-196,0,130,130]
+        z: [0,0,0,0,0]
+      width: [0,7,20,20,0].div(2)
+      height: [0,4,12,12,0].mult(1.1)
+      texture: [4]      
     sides2:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
@@ -388,7 +418,7 @@ model =
       position:
         x: [0,5,0,0,-18,-18]
         y: [-50,-50,-10,65,110,110]
-        z: [0,0,24,24,30,30]
+        z: [0,0,24,24,32.5,32.5]
       width: [0,19,14,14,5,0]
       height: [0,2,2,2,2,0]
       texture: [63]
@@ -448,7 +478,7 @@ model =
       texture: [5]     
       angle: -125      
     sides2_support:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 35
         y: 88
@@ -462,7 +492,7 @@ model =
       texture: [2]
       angle:90
     sides2_support2:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 35
         y: 100
@@ -496,7 +526,7 @@ model =
         z: -8
       position:
         x: [0,0,0,0]
-        y: [-21,-17,70,70]
+        y: [-42,-42,70,70]
         z: [-2,0,0,0]
       width: [0,2,2,0]
       height: [0,3,3,0]
@@ -505,16 +535,16 @@ model =
     rear_deco2:
       section_segments: [45,135,225,315]
       offset:
-        x: 54
-        y: 22
+        x: 53
+        y: 0
         z: -8
       position:
         x: [0,0,0,0]
-        y: [-20,-20,10,14]
-        z: [0,0,0,2]
+        y: [-42,-42,70,70]
+        z: [-2,0,0,0]
       width: [0,2,2,0]
-      height: [0,3,3,0]
-      texture: [3,5]
+      height: [0,5,5,0]
+      texture: [5,17,5]
       angle: 180
     rear_support:
       section_segments: [45,135,225,315]
@@ -543,21 +573,21 @@ model =
       height: [16.5,16.5,16.5,0]
       texture: [63,63,2]
     rear_support3:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: -18
         y: -35
         z: -8
       position:
-        x: [-35,-35,0,0]
+        x: [-35,-35,-10,-10]
         y: [37,40,72,72]
         z: [0,0,0,0]
-      width: [0.1,16,30,0]
+      width: [0.1,16,16,0]
       height: [16.5,16.6,16.6,0]
       texture: [3]
       angle: 90     
     rear_support4:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: -18
         y: 10
@@ -571,68 +601,19 @@ model =
       texture: [3]
       angle: 90    
     engine:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 0
         y: 147
         z: 25
       position:
-        x: [0,0,0,0,0,0,0,0,0]
-        y: [-80,-80,8,53,55,75,60,60]
-        z: [-7,-7,-5.7,2,4,4,4,0]
-      width: [0,30,30,15.4,20,20,20,0]
-      height: [0,15,15,15,15,15,15,0]
-      texture: [3,3,8,3,12,4,17]
-    engine_rear:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 0
-        y: 29.6
-        z: -223
-      position:
-        x: [0,0,0,0]
-        y: [-11.2,-11.2,10,10]
-        z: [8,8,0,0]
-      width: [0,19.99,19.99,0]
-      height: [0,10,10,0]
-      texture: [4]
-      vertical: true
-    engine_propeller:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 0
-        y: 230
-        z: 30
-      position:
-        x: [0]
-        y: [0]
-      width: [15]
-      height: [10]
+        x: [0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-70,-70,8,53,55,57,73,75,81,81,70]
+        z: [-7,-7,-5.7,2,4,4,4,4,4,4,4]
+      width: [0,30,30,15.4,20,20,20,20,20,19,0]
+      height: [0,14,14,15,15,15,15,15,15,14,0]
+      texture: [3,3,8,3,17,12,17,4,17]
       propeller: true
-    side_engines_propeller:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 30
-        y: 180
-        z: -10
-      position:
-        x: [0]
-        y: [0]
-      width: [15]
-      height: [20]
-      propeller: true  
-    side_engines_propeller:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 34
-        y: 180
-        z: -10
-      position:
-        x: [0]
-        y: [0]
-      width: [15]
-      height: [20]
-      propeller: true        
     side_engines:
       section_segments: [45,135,225,315]
       offset:
@@ -653,12 +634,24 @@ model =
         y: 53
         z: -10
       position:
-        x: [0,1,0,0,0,0,0]
-        y: [-11,-11,27.8,75,90,80]
-        z: [0,3,6,7,0,0,0]
-      width: [0,18,18,18,18,0]
-      height: [0,14,15,15,15,0]
-      texture: [3,3,3,3,13]      
+        x: [0,1,0,0,0,0,0,0]
+        y: [-11,-11,17.8,45,90,90,80]
+        z: [0,3,6,7,0,0,0,0]
+      width: [0,18,18,18,18,16.5,0]
+      height: [0,14,15,15,15,13.5,0]
+      texture: [3,3,8,3,17] 
+    side_engines_propeller:
+      section_segments: 4
+      offset:
+        x: 34
+        y: 180
+        z: -10
+      position:
+        x: [0]
+        y: [0]
+      width: [15]
+      height: [10]
+      propeller: true         
     pipe:
       section_segments: 10
       offset:
@@ -920,14 +913,28 @@ model =
         z: -10 
       length: [30,15]
       width: [40,18,10]
-      angle: [0,0]
+      angle: [0,-10]
       position: [-6,1,4]
       doubleside: true
       texture: [3]   
       bump:
         position: -30
         size: 3
-t = 50        
+for i in [1...5]
+  model.bodies["front_spot"+i] = 
+    section_segments: [35,45,55,125,135,145,215,225,235,305,315,325]
+    offset:
+      x: 24+i/3
+      y: i*10-334
+      z: -8
+    position:
+      x: [0,0,0,0]
+      y: [0,0,3,3]
+      z: [0,0,0,0]
+    width: [0,2,2,0].add(i/1.5)
+    height: [0,3,3,0].add(i/3)
+    texture: [63]   
+t = 40        
 if (1)
   for y,v of model.bodies
     if(v.vertical)
