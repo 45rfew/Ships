@@ -127,4 +127,4 @@ return model =
       texture: [4,63]
       bump:
         position: 40
-        size: 7
+        size: 7 
