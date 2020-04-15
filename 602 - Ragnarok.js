@@ -116,12 +116,12 @@ return model =
       rotation: [100,130]
       acceleration: [80,100]
       dash:
-        rate: 0.5
-        burst_speed: [180,220]
-        speed: [140,180]
-        acceleration: [70,70]
-        initial_energy: [25,25]
-        energy: [0.01,0.01]      
+        rate: 0.1
+        burst_speed: [110,125]
+        speed: [110,125]
+        acceleration: [80,100]
+        initial_energy: [1,1]
+        energy: [1,1]      
   bodies:
     #dish: dish(-25,126,0,90,26,[1,1,1,1,1,17,18,17,18],5,5,10,false)
     #dish2: dish(-53,29,-126,0,26,[1,1,1,1,1,17,18,17,18],5,5,10,true)    
@@ -518,9 +518,9 @@ return model =
         z: [1]
       width: [1]
       height: [1]
-      angle:180
+      angle: 180
       laser:
-        damage: [30,40]
+        damage: [20,20]
         rate: 10
         type: 2
         speed: [120,140]
