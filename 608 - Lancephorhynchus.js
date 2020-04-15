@@ -60,7 +60,7 @@ model =
         rate: 0.8
         type: 1
         speed: [80,110]
-        number: 2
+        number: 1
         recoil: 600
         error: 0      
     main_deco:
