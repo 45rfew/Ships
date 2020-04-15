@@ -32,10 +32,10 @@ model =
   specs:
     shield:
       capacity: [500,550]
-      reload: [20,24]
+      reload: [13,16]
     generator:
-      capacity: [440,550]
-      reload: [150,250]
+      capacity: [440,500]
+      reload: [150,220]
     ship:
       mass: 600
       speed: [90,100]
@@ -56,10 +56,10 @@ model =
       height: [0,20,20,20,0]
       texture: [4,2,2]
       laser:
-        damage: [400,500]
+        damage: [400,450]
         rate: 0.8
         type: 1
-        speed: [80,110]
+        speed: [80,100]
         number: 1
         recoil: 600
         error: 0      
