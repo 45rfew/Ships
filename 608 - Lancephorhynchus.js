@@ -56,7 +56,7 @@ model =
       height: [0,20,20,20,0]
       texture: [4,2,2]
       laser:
-        damage: [200,250]
+        damage: [400,500]
         rate: 0.8
         type: 1
         speed: [80,110]
