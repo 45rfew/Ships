@@ -316,7 +316,7 @@ return model =
       angle: 180
       texture: [16.9,5,4,11,17,7,11,4,4]
       laser:
-        damage: [20,30]
+        damage: [15,15]
         rate: 10
         type: 2
         recoil: 120
