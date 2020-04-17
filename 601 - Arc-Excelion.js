@@ -46,7 +46,7 @@ x = 1.8
 model =
   name: 'Arc-Excelion'
   level: 6
-  model: 2
+  model: 1
   size: 1.7
   next:[701,702]
   specs:
