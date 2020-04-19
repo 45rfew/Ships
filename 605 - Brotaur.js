@@ -105,7 +105,7 @@ model =
         angle: 0
         error: 3
     cockpit:
-      section_segments: 8
+      section_segments: 6
       offset:
         x: 0
         y: -120
