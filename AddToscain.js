@@ -154,6 +154,22 @@ addToscain = (id, xx, yy, zz) ->
     propeller: true
     texture: [12]         
 model =
+  name: 'Toscain'
+  level: 1
+  model: 1
+  size: 1.05
+  specs:
+    shield:
+      capacity: [75,100]
+      reload: [2,3]
+    generator:
+      capacity: [40,60]
+      reload: [10,15]
+    ship:
+      mass: 60
+      speed: [125,145]
+      rotation: [110,130]
+      acceleration: [100,120]
 model.bodies = []
 model.wings = []
 for z in [0..1]
