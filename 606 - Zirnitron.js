@@ -107,12 +107,6 @@ model =
       height: [0,10,10,10,10,9,3,2,1,0]
       texture: [3,3,3,3,3,13,17,13]
       angle: 182
-      laser:
-        damage: [25,34]
-        rate: 3
-        type: 2
-        speed: [160,185]
-        number: 1      
     backengines:
       section_segments: 18
       offset:
@@ -506,4 +500,4 @@ if (1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t     
-return model;               
+return model;      
