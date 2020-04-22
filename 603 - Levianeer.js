@@ -30,7 +30,23 @@ hub = (x,y,z,s,w,h,v,a,t) ->
     height: [18,15,13,12,10,2,0].div(10).mult(w)
     texture: t     
     vertical: v     
-    angle: a         
+    angle: a     
+ring = (xx, yy, zz, segments, l, w, t, tcc, vert, tx, angle, z) ->
+  return k =
+    section_segments: segments
+    offset:
+      x: xx
+      y: yy
+      z: zz
+    position:
+      x: [].fill(0,13)
+      y: [-2.25,-1.75,-1.25,0,1.25,1.75,2.25,1.75,1.25,0,-1.25,-1.75,-2.25].mult(t+tcc)
+      z: [].fill(0,13)
+    width: [w,w+1*t,w+2*t,w+2.5*t,w+2*t,w+1*t,w,w-1*t,w-2*t,w-2.5*t,w-2*t,w-1*t,w]
+    height: [l,l+1*t,l+2*t,l+2.5*t,l+2*t,l+1*t,l,l-1*t,l-2*t,l-2.5*t,l-2*t,l-1*t,l]
+    vertical: vert
+    texture: tx
+    angle: angle     
 h = 0
 x = 1.8
 return model =
@@ -51,10 +67,52 @@ return model =
       rotation: [60,80]
       acceleration: [80,100]
   bodies:
-    reactor: hub(0,62,-130,[40,45,50,130,135,140,220,225,230,310,315,320],10,6,1,0,[18,17,17,18,18,17])
-    reactor2: hub(0,62,0,20,10,6,1,0,[18,17,17,18,18,17])
+    detail5:
+      section_segments: 6
+      offset:
+        x: 0
+        y: -82
+        z: 20+4
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-20,-18,-14,12,45,63,53,56,57,57]
+        z: [-12,-12,-8,10,31,32,8,8,2,2]
+      width: [0,9,10,18,18,18,18,13,11,0].div(1.1)
+      height: [0,4,4,8,10,10,10,10,8,0]
+      texture: [63,63,9,9,4,10.241,15,3.9]    
+    detail7:
+      section_segments: [0,60,120,180]
+      offset:
+        x: -14
+        y: -70
+        z: 23+4
+      position:
+        x: [6,8,0,0,0,0,0]
+        y: [-35,-38,0,38,40,50,50]
+        z: [-21,-21,0,26,26,33,38]
+      width: [0,5,10,10,10,10,0]
+      height: [0,5,14,14,14,10,0]
+      texture: [17.3,1,18,63,4]      
+    detail71:
+      section_segments: [0,60,120,180]
+      offset:
+        x: -13.9
+        y: -70
+        z: 23+4
+      position:
+        x: [6,8,0,0,0,0,0]
+        y: [-34,-38,0,38,40,50,50]
+        z: [-21,-21,0,26,26,33,38]
+      width: [0,5,10,10,10,10,0]
+      height: [0,5,14,14,14,10,0]
+      texture: [63]     
+    ring: ring(18,-46,44+4,6,6,6,.4,.8,0,[17,4,17,4,17,4],0)
+    ring2: ring(18,-55,38+4,6,6,6,.4,.8,0,[17,4,17,4,17,4],0)
+    ring3: ring(12,-17,55+4,6,6,15.2,.4,1,0,[17,4,16.9,4,17,4],90)
+    reactor: hub(0,62+4,-130,[40,45,50,130,135,140,220,225,230,310,315,320],10,6,1,0,[18,17,17,18,18,17])
+    reactor2: hub(0,62+4,0,20,10,6,1,0,[18,17,17,18,18,17])
     main:
-      section_segments: [45,135,225,315]
+      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 0
         y: 0
@@ -67,7 +125,7 @@ return model =
       height: [0,10,20,60,60,60,60,60,60,55,0]
       propeller: true
       texture: [4,3,8.96,4,17,18,17,12,17]
-    cockpit:
+    head:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
         x: 0
@@ -77,22 +135,9 @@ return model =
         x: [0,0,0,0,0]
         y: [-135,-130,-100,-20,-20]
         z: [-32,-32,-27,0,0]
-      width: [0,30,35,35,0]
-      height: [0,10,19,59,0]
-      texture: [4,3,7,4]  
-    cockpit2:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
-      offset:
-        x: 0
-        y: 0
-        z: 20
-      position:
-        x: [0,0,0,0,0]
-        y: [-135,-130,-100,-20,-20]
-        z: [-32,-32,-27,0,0]
-      width: [0,29,34,34,0]
-      height: [0,10,21,62,0]
-      texture: [4,3,8.96,4]       
+      width: [0,29,34,35,0]
+      height: [0,10,21,60,0]
+      texture: [3,2,3,4]       
     side:
       section_segments: 6
       offset:
@@ -120,7 +165,7 @@ return model =
       height: [0,21,23,30,40,40,40,40,40,40,40,10,0]
       texture: [12.9,17,1,10,17,11,10,16.9,11,16.9,3.9]    
     u_wings:
-      section_segments: 6
+      section_segments: 12
       offset:
         x: 138
         y: 45
@@ -134,7 +179,7 @@ return model =
       propeller: true
       texture: [2.9,1,11,9.995,11,17,12,16.9]
     u_wings2:
-      section_segments: 6
+      section_segments: 12
       offset:
         x: 139
         y: 45
@@ -291,7 +336,7 @@ return model =
       offset:
         x: 0
         y: 65
-        z: 64
+        z: 64+4
       position:
         x: [0,0,0,0,0,0,0,0,0,0,0,0]
         y: [-53,-52,-45,-43,-25,-23,8,10,43,45,50,50]
@@ -304,7 +349,7 @@ return model =
       offset:
         x: 0.1
         y: 57
-        z: -57.5
+        z: -57.5+4
       position:
         x: [0,0,0,0,0]
         y: [-5,-5,14,16,16]
@@ -319,7 +364,7 @@ return model =
       offset:
         x: 0
         y: 65
-        z: 65
+        z: 65+4
       position:
         x: [0,0,0,0]
         y: [0,0,3,3]
@@ -332,7 +377,7 @@ return model =
       offset:
         x: 0
         y: 47
-        z: 65
+        z: 65+4
       position:
         x: [0,0,0,0]
         y: [0,0,3,3]
@@ -345,7 +390,7 @@ return model =
       offset:
         x: 0
         y: 56
-        z: 65
+        z: 65+4
       position:
         x: [0,0,0,0]
         y: [0,0,3,3]
@@ -358,7 +403,7 @@ return model =
       offset:
         x: 8
         y: 51.5
-        z: 64
+        z: 64+4
       position:
         x: [0,0,0,0]
         y: [0,0,3,3]
@@ -371,7 +416,7 @@ return model =
       offset:
         x: 8
         y: 60.5
-        z: 64
+        z: 64+4
       position:
         x: [0,0,0,0]
         y: [0,0,3,3]
@@ -384,7 +429,7 @@ return model =
       offset:
         x: 0
         y: 90
-        z: 64.1
+        z: 64.1+4
       position:
         x: [0,0,0,0]
         y: [0,0,3,3]
@@ -396,12 +441,12 @@ return model =
     main:
       offset:
         x: 0
-        y: 15
-        z: -10
+        y: 15-10
+        z: -10+8+8
       length: [40,14,70]
       width: [70,70,70,60]
-      angle: [0,0,0]
-      position: [0,0,0,0] 
+      angle: [-10,-7,-10]
+      position: [-21,-13,-10,0] 
       doubleside: true
       texture: [2,63,2]
       bump:
@@ -410,17 +455,17 @@ return model =
     main2:
       offset:
         x: 0
-        y: 12
-        z: -10.5
+        y: 12-10
+        z: -2.5+8
       length: [40,14,70]
       width: [70,70,70,60]
-      angle: [0,0,0]
-      position: [0,0,0,0] 
+      angle: [-10,-7,-10]
+      position: [-21,-13,-10,0] 
       doubleside: true
       texture: [17,17,17]
       bump:
         position: 20
-        size: 10     
+        size: 0     
     side_cover:
       doubleside: true
       offset:
@@ -482,7 +527,7 @@ return model =
       offset:
         x: 20
         y: 140
-        z: 58.5
+        z: 58.5+4
       length: [0,0,-3,-1,-19,-7,-10].mult(1)
       width: [0,20,20,60,60,20,10,0].mult(2)
       angle: [280,280,315-60,315-20,335-6.8,350+93,0]
@@ -496,7 +541,7 @@ return model =
       offset:
         x: 20
         y: 141
-        z: 58.5
+        z: 58.5+4
       length: [0,0,-3,-1,-19,-7,-10].mult(1)
       width: [0,20,20,60,60,20,10,0].mult(2)
       angle: [280,280,315-60,315-20,335-6.8,350+93,0]
@@ -509,8 +554,8 @@ return model =
       doubleside: true
       offset:
         x: 25
-        y: 10
-        z: -10
+        y: 10-20
+        z: -10+10
       length: [0,2,5]
       width: [40,100,100,0]
       angle: [0,0,0,0]
@@ -524,7 +569,7 @@ return model =
       offset:
         x: 12
         y: 60
-        z: 60
+        z: 60+4
       length: [0,2,5]
       width: [100,100,100,0]
       angle: [20,20,20,20]
@@ -536,14 +581,14 @@ return model =
     main_cover:
       doubleside: true
       offset:
-        x: 10
+        x: 10-2
         y: 98
-        z: 62.5
-      length: [15,50,0]
-      width: [60,150,60,0]
-      angle: [360,270,360]
-      position: [47,2,48,47]
-      texture: [17,63,17]
+        z: 62.5+4
+      length: [15,8,50,0]
+      width: [60,135,150,60,0]
+      angle: [360,300,270,360]
+      position: [47,2,2,48,47]
+      texture: [17,17,63]
       bump:
         position: -30
         size: -0        
