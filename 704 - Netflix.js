@@ -1,7 +1,7 @@
 return model =
   name: "Netflix"
   level: 7
-  model: 7
+  model: 4
   size: 1.7
   specs:
     shield:
