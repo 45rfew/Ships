@@ -8,7 +8,7 @@ f = 16
 model =
   name: "Raigeki"
   level: 7
-  model: 4
+  model: 3
   size: 4
   zoom: 0.9
   specs:
