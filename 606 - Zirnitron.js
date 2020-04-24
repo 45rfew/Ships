@@ -59,7 +59,7 @@ model =
       reload: [12,18]
     generator:
       capacity: [250,290]
-      reload: [200,230]
+      reload: [150,190]
     ship:
       mass: 380
       speed: [110,135]
@@ -152,6 +152,7 @@ model =
       laser:
         damage: [180,200]
         rate: 1
+        recoil: 50
         type: 1
         speed: [160,180]
         number: 1      
