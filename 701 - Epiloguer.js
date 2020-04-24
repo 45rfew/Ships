@@ -16,7 +16,7 @@ u = 1.5
 return model =
   name: 'Epiloguer'
   level: 7
-  model: 3
+  model: 1
   size: 2
   zoom: 0.9
   specs:
