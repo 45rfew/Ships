@@ -1,7 +1,7 @@
 a =
   name: "Armityle"
-  level: 2
-  model: 1
+  level: 5
+  model: 4
   size: 1.5
   specs:
     shield:
