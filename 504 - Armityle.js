@@ -38,12 +38,38 @@ a =
         z: 8
       position:
         x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        y: [0,1,15,40,50,54,90,110,150,180,180]
+        y: [-4.5,-4,10,40,50,54,90,110,150,180,180]
         z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
       width: [0,2,12,18,12,12,11,20,20,10,0]
       height: [0,1,8,13,10,10,12,12,12,10,0]
       texture: [3,9,9,3,3,8]
-      propeller: false
+    cockpit2:
+      section_segments: 6
+      offset:
+        x: 0
+        y: -99
+        z: 5
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-5,-5,10,32,38,38].mult(1.4)
+        z: [0,0,0,0,0,0]
+      width: [0,2,12,17,17,12].mult(1.4)
+      height: [0,3,5.5,10,10,10]
+      texture: [63]    
+    blocc:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 12
+        y: -27
+        z: 0
+      position:
+        x: [0,0,0,0,0]
+        y: [-10,-10,14,16,16]
+        z: [0,0,0,0,0]
+      width: [0,18,18,15,0]
+      height: [0,5,5,5,0]
+      texture: [63,17,63]
+      angle: 88      
     cannon:
       section_segments: 6
       offset:
@@ -170,6 +196,20 @@ a =
       height: [0,4,4,4,0]
       texture: [63,63,16.8] 
       angle: -15
+    light:
+      section_segments: 6
+      offset:
+        x: 0
+        y: -95
+        z: 15
+      position:
+        x: [0,0,0,0]
+        y: [-50,-50,25,25]
+        z: [-4,-4,-10.5,-10.5]
+      width: [0,5,2,0]
+      height: [0,5,.5,0]
+      texture: [3.9,16.9,3.9]
+      angle: 180      
   wings:
     main:
       offset:
