@@ -19,6 +19,30 @@ ring = (xx, yy, zz, segments, l, w, t, tcc, vert, tx, angle, z) ->
     vertical: vert
     texture: tx
     angle: angle 
+ball = (xx, yy, zz, length, radius, segments, l_segments, tx, vertical, angle) ->
+  xzpos = []
+  ypos = []
+  width = []
+  for i in [0..segments]
+    ang = (i/segments)*Math.PI
+    width.push(Math.sin(ang)*radius)
+    ypos.push(-Math.cos(ang)*length)
+    xzpos.push(0)
+  return k = 
+    section_segments: l_segments
+    offset:
+      x: xx
+      y: yy
+      z: zz
+    position:
+      x: xzpos
+      y: ypos
+      z: xzpos
+    width: width
+    height: width
+    texture: tx
+    vertical: vertical
+    angle: angle      
 b = 1.2
 c = .66
 h = .7
@@ -43,6 +67,7 @@ model =
       rotation: [80,100]
       acceleration: [50,60]  
   bodies:
+    ball: ball(0.01,105,23,75,80,10,3,7,0,0)
     ring: ring(58,41,70,[45,135,225,315],5,13,1.5,.1,1,[4,17,4,4,17,18,18,17,4],18)
     ring2: ring(58,41,40,[45,135,225,315],5,13,1.5,.1,1,[4,17,4,4,17,18,18,17,4],18)
     ring3: ring(58,41,10,[45,135,225,315],5,13,1.5,.1,1,[4,17,4,4,17,18,18,17,4],18)
@@ -81,21 +106,6 @@ model =
       width: [80,80,85,80,80,60,30,0]
       height: [40,40,45,40,65,40,0,0]
       texture: [3]
-    cockpit:
-      section_segments: 3
-      angle: 0
-      offset:
-        x: 1
-        y: -120+f-a
-        z: 120-g
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        y: [-68*b,-65*b,-60*b,-55*b,-50*b,-45*b,-40*b,-35*b,-30*b,-25*b,-20*b,-15*b,-10*b,-5*b,0,5*b,10*b,15*b,20*b,25*b,30*b,35*b,40*b,45*b,50*b,55*b,60*b,65*b,68*b]
-        z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-      width: [0,26*b,36*b,43*b,49*b,54*b,57*b,60*b,63*b,65*b,67*b,68*b,69*b,69.8*b,70*b,69.8*b,69*b,68*b,67*b,65*b,63*b,60*b,57*b,54*b,49*b,43*b,36*b,26*b,0]
-      height: [0,26*b,36*b,43*b,49*b,54*b,57*b,60*b,63*b,65*b,67*b,68*b,69*b,69.8*b,70*b,69.8*b,69*b,68*b,67*b,65*b,63*b,60*b,57*b,54*b,49*b,43*b,36*b,26*b,0]
-      propeller: true
-      texture: [13.75]
     cockpit_front:
       section_segments: 4
       angle: 0
