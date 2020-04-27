@@ -85,7 +85,7 @@ model =
       reload: [12,15]
     generator:
       capacity: [300,400]
-      reload: [50,100]
+      reload: [120,150]
     ship:
       mass: 350
       speed: [95,110]
@@ -182,7 +182,7 @@ model =
         damage: [7,10]
         rate: 10
         type: 1
-        speed: [160,180]
+        speed: [165,200]
         number: 1
         error: 1.5
       propeller: false
@@ -204,7 +204,7 @@ model =
         damage: [7,10]
         rate: 10
         type: 1
-        speed: [160,180]
+        speed: [165,200]
         number: 1
         error: 1.5   
     laser_deco:
