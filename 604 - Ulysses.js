@@ -2,7 +2,7 @@ r = 1.2
 t = 1
 s = 20
 ypos = []
-for i in [0...15] by 0.14
+for i in [0...15] by 0.24
   ypos.push(i*1)
 xpos = []
 for i in [0...5*s] by 0.4
@@ -59,7 +59,7 @@ model =
       reload: [10,15]
     generator:
       capacity: [200,300]
-      reload: [180,280]
+      reload: [180,240]
     ship:
       mass: 420
       speed: [120,130]
