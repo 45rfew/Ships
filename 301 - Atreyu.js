@@ -186,7 +186,7 @@ model =
       height: [0,5,2,0]
       texture: [3.9,16.9,3.9]
       angle: 180
-    detail21:
+    bump:
       section_segments: [45,135,225,315]
       offset:
         x: 8
@@ -201,7 +201,7 @@ model =
       texture: [63,17,63]
       angle: 30
       vertical: true   
-    detail16:
+    stab:
       section_segments: 6
       offset:
         x: 29.5
