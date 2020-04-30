@@ -57,8 +57,8 @@ model =
       capacity: [220,260]
       reload: [5,9]
     generator:
-      capacity: [150,170]
-      reload: [60,80]
+      capacity: [90,140]
+      reload: [50,70]
     ship:
       mass: 360
       speed: [100,115]
@@ -151,8 +151,14 @@ model =
         z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
       width: [0.5,2,5,6,8,8,8,8,8,8,7,5,4,0].mult(1.1)
       height: [0.5,2,5,6,6,6,7,9,12,15,15,8,8,0]
-      propeller: false
       texture: [16.9,17.9,16.9,3.9,11,2.9,11,16,63,16,[15]]
+      laser:
+        damage: [30,40]
+        rate: 1
+        type: 1
+        speed: [140,170]
+        number: 1
+        error: 1       
     outer_arms2:
       section_segments: 6
       offset:
@@ -264,7 +270,14 @@ model =
       width: [0,2,2.5,3,3,3,3,3,3,3,3,3,0]
       height: [0,2,2.5,3,3,3,3,3,3,3,3,0]
       angle: 7
-      texture: [16.9,16.9,63,4,18,17,2,11,4,4]  
+      texture: [16.9,16.9,63,4,18,17,2,11,4,4]
+      laser:
+        damage: [3,4]
+        rate: 7
+        type: 2
+        speed: [160,180]
+        number: 1
+        error: 3      
     box:
       section_segments: [45,135,225,315]
       offset:
