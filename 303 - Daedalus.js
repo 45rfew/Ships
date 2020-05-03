@@ -58,7 +58,7 @@ model =
       reload: [5,9]
     generator:
       capacity: [90,140]
-      reload: [50,70]
+      reload: [40,60]
     ship:
       mass: 360
       speed: [100,115]
@@ -271,13 +271,27 @@ model =
       height: [0,2,2.5,3,3,3,3,3,3,3,3,0]
       angle: 7
       texture: [16.9,16.9,63,4,18,17,2,11,4,4]
+    cannon2:
+      section_segments: 6
+      offset:
+        x: 37
+        y: -20
+        z: -7.5
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [0,0,0,0,0,0,0]
+        z: [0,0,0,0,0,0,0,2,2,2,2,2,2]
+      width: [0,2,2.5,3,3,3,3,3,3,3,3,3,0]
+      height: [0,2,2.5,3,3,3,3,3,3,3,3,0]
+      angle: 0
+      texture: [16.9,16.9,63,4,18,17,2,11,4,4]
       laser:
-        damage: [3,4]
-        rate: 7
+        damage: [5,6]
+        rate: 5
         type: 2
         speed: [160,180]
         number: 1
-        error: 3      
+        error: 3         
     box:
       section_segments: [45,135,225,315]
       offset:
