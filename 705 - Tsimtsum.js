@@ -34,7 +34,7 @@ ring = (xx, yy, zz, segments, l, w, t, tcc, vert, tx, angle, z) ->
 model =
   name: "Tsimtsum"
   level: 7
-  model: 4
+  model: 5
   size: 1.7
   specs:
     shield:
