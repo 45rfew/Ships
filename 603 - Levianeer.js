@@ -59,7 +59,7 @@ return model =
       capacity: [400,500]
       reload: [10,14]
     generator:
-      capacity: [400,460]
+      capacity: [200,360]
       reload: [130,150]
     ship:
       mass: 520
@@ -67,7 +67,6 @@ return model =
       rotation: [60,80]
       acceleration: [80,100]
   bodies:
-
     ring: ring(18,-46,44+4,6,6,6,.4,.8,0,[17,4,17,4,17,4],0)
     ring2: ring(18,-55,38+4,6,6,6,.4,.8,0,[17,4,17,4,17,4],0)
     ring3: ring(12,-17,55+4,6,6,15.2,.4,1,0,[17,4,16.9,4,17,4],90)
@@ -248,11 +247,11 @@ return model =
       height: [0,4,5,5,3,3,5,5,0].mult(1.8)
       texture: [17,17,4,4,13,3,17,3]
       laser:
-        damage: [65,100]
-        rate: 1
+        damage: [70,120]
+        rate: 2
         type: 1
         speed: [180,230]
-        recoil: 300
+        recoil: 350
         number: 1
         error: 0 
     cannon2:
@@ -273,7 +272,7 @@ return model =
         rate: 2
         type: 2
         speed: [170,220]
-        recoil: 120
+        recoil: 60
         number: 1
         error: 0         
     side_plates:
