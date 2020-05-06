@@ -161,7 +161,7 @@ model =
       height: [10,10,10,0]
       texture: [3]
     detail5:
-      section_segments: 8
+      section_segments: 6
       offset:
         x: 0
         y: 15
@@ -172,7 +172,7 @@ model =
         z: [5.3/a,7/a,3,5/a,5/a,5/a,0/a]
       width: [3/a,10/a,12/a,12/a,12/a,12/a,0]
       height: [0,10/a,15/a,15/a,15/a,15/a,0]
-      texture: [9,9,3]         
+      texture: [9,9,4]         
     detail6:
       section_segments: [45,135,225,315]
       offset:
@@ -213,8 +213,92 @@ model =
         z: [0,0,2,12,-9,-9]
       width: [0,50,50,45,15,0]
       height: [0,1,1,1,1,0]
-      texture: [2,2,2,2,2]
+      texture: [1,18,4,18.2,2]
+      angle: 90      
+    detail85:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 99
+        z: 9.1
+      position:
+        x: [0,0,0,-5,-15,-15]
+        y: [-30,-30,-10,10,60,60]
+        z: [0,0,2,12,-9,-9]
+      width: [0,50,50,45,15,0].div(1.5)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,63]
+      angle: 90    
+    detail852:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 99
+        z: 9.2
+      position:
+        x: [0,0,0,-5,-15,-15]
+        y: [-30,-30,-10,10,60,60]
+        z: [0,0,2,12,-9,-9]
+      width: [0,50,50,45,15,0].div(2.5)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,4,18.2,1]
+      angle: 90   
+    detail88:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 99
+        z: 9.3
+      position:
+        x: [0,0,0,-5,-15,-15]
+        y: [-30,-30,-10,10,60,60]
+        z: [0,0,2,12,-9,-9]
+      width: [0,50,50,45,15,0].div(6)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,63]
+      angle: 90    
+    detail881:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 99
+        z: 9.35
+      position:
+        x: [0,0,0,-5,-15,-15]
+        y: [-30,-30,-10,10,60,60]
+        z: [0,0,2,12,-9,-9]
+      width: [0,50,50,45,15,0].div(30)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,4,17]
+      angle: 90   
+    detail882:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 93
+        z: 9.35
+      position:
+        x: [12,12,12.5,6,-15,-15]
+        y: [-30,-30,-10,10,60,60]
+        z: [0,0,2,12,-9,-9]
+      width: [0,50,50,45,15,0].div(30)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,4,17]
       angle: 90       
+    detail883:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 130
+        z: 9.35
+      position:
+        x: [12,12,12.5,9,10,10]
+        y: [-30,-30,-10,10,60,60]
+        z: [0,0,2,12,-9,-9]
+      width: [0,50,50,45,15,0].div(30)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,4,17]
+      angle: 90             
     detail9:
       section_segments: [45,135,225,315]
       offset:
@@ -227,8 +311,22 @@ model =
         z: [2,2,-5,-7,9,9]
       width: [0,50,50,45,15,0]
       height: [0,1,1,1,1,0]
-      texture: [2,2,2,2,2]
-      angle: 90        
+      texture: [1,18,4,18.2,2]
+      angle: 90    
+    detail95:
+      section_segments: [45,135,225,315]
+      offset:
+        x: 36.8
+        y: 99
+        z: -8.5
+      position:
+        x: [0,0,0,-5,-15,-15]
+        y: [-30,-30,-10,10,60,60]
+        z: [2,2,-5,-7,9,9]
+      width: [0,50,50,45,15,0].div(2)
+      height: [0,1,1,1,1,0]
+      texture: [1,18,63]
+      angle: 90          
     detail10:
       section_segments: [45,135,225,315]
       offset:
@@ -479,104 +577,6 @@ model =
       width: [0,2,2,2,0.75,0]
       height: [0,1,1,1,1,0]
       texture: [63,63,4,3]     
-    detail25:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 81
-        y: 115
-        z: 3.8
-      position:
-        x: [28,28,0,0]
-        y: [-34.2,-34.2,10,10]
-        z: [17.2,17.2,-1,-1]
-      width: [0,7,10,20,0]
-      height: [0,1,1,1,0]
-      texture: [4]     
-      angle: 90
-    detail26:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 57
-        y: 115
-        z: 13
-      position:
-        x: [0,4,0,0]
-        y: [-10,-10,7,7]
-        z: [8,8,1,1]
-      width: [0,25,14,0]
-      height: [0,1,1,0]
-      texture: [3]     
-      angle: 90 
-    detail26_5:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 57
-        y: 115
-        z: 12.99
-      position:
-        x: [0,4,0,0]
-        y: [-10,-10,9,9]
-        z: [8,8,0,1]
-      width: [0,26.7,15,0]
-      height: [0,1,1,0]
-      texture: [17]     
-      angle: 90       
-    detail27:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 40
-        y: 111
-        z: 13.1
-      position:
-        x: [0,8,0,0]
-        y: [-10,-10,7,7]
-        z: [-0.4,-0.4,8,8]
-      width: [0,34,25,0]
-      height: [0,1,1,0]
-      texture: [1]
-      angle: 90  
-    detail27_5:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 40
-        y: 111
-        z: 13.1
-      position:
-        x: [5.5,8,0,0]
-        y: [-13.1,-10,7,7]
-        z: [-1.4,-0.45,8,8]
-      width: [36,36,27,0]
-      height: [0,1.03,1,0]
-      texture: [17]
-      angle: 90   
-    detail27_55:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 40
-        y: 111
-        z: 21.2
-      position:
-        x: [8,8,0,0]
-        y: [-10,-10,7,7]
-        z: [-10,-10,0,0]
-      width: [0,36,27,0]
-      height: [0,1.03,1,0]
-      texture: [17]
-      angle: 90         
-    detail28:
-      section_segments: [45,135,225,315]
-      offset:
-        x: 6
-        y: 75
-        z: 15
-      position:
-        x: [0,0,0,0,0]
-        y: [-20,-20,10,11.5,11.5]
-        z: [-4,-4,0,0,0]
-      width: [0,1,1,1,0]
-      height: [0,2,10,10,0]
-      texture: [1,1,63]
-      angle: 1
     detail29:
       section_segments: [45,135,225,315]
       offset:
@@ -753,7 +753,7 @@ model =
       section_segments: 20
       offset:
         x: 99
-        y: 106.5+1
+        y: 106.5+3
         z: 8
       position:
         x: [0,0,0,0,0,0,0,0,0,0,0]
@@ -766,7 +766,7 @@ model =
       section_segments: 20
       offset:
         x: 99
-        y: 110.5+1
+        y: 110.5+3
         z: 8
       position:
         x: [0,0,0,0,0,0,0,0,0,0,0]
@@ -878,7 +878,7 @@ model =
       offset:
         x: 105+1
         y: 10
-        z: -113+2
+        z: -113
       position:
         x: [0,0,0,0,0,0,0]
         y: [0,10,5,5,10,6].div(3)
