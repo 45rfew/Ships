@@ -72,18 +72,18 @@ model =
   level: 6
   model: 1
   size: 1.7
-  next:[701,702]
+  next: [701,702]
   specs:
     shield:
-      capacity: [380,545]
+      capacity: [380,540]
       reload: [12,16]
     generator:
-      capacity: [500,600]
-      reload: [200,250]
+      capacity: [400,500]
+      reload: [120,190]
     ship:
       mass: 400
-      speed: [90,120]
-      rotation: [60,120]
+      speed: [90,100]
+      rotation: [60,90]
       acceleration: [85,105]
   bodies:
     ball: ball(0.01,5,0,72,65,10,3,7,0,0)
