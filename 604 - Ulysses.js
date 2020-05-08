@@ -78,7 +78,7 @@ model =
         z: [0,0,0,4,4,4,4]
       width: [0,3,10,20,20,20,0]
       height: [0,1,7-3,7,7,7,0]
-      texture: [2.8,2.8,0.8,2.8,2.8]
+      texture: [2.8,3.8,2.8,3.8,3.8]
       laser:
         damage: [50,75]
         rate: 1.5
@@ -99,7 +99,7 @@ model =
         z: [-3,-3,-5.5,-4,-4,-4,-4]
       width: [0,3/1.6,10/1.6,20/1.6,20/1.6,20/1.6,0]
       height: [0,1,7-3,7,7,7,0]
-      texture: [3,3,1,3,3]
+      texture: [3,4,3,4,4]
     detail1:
       section_segments: [45,135,225,315]
       offset:
@@ -185,7 +185,7 @@ model =
         z: [0,0,0,0,0]
       width: [0,1,1,1,0]
       height: [0,30,30,30,0]
-      texture: [2]
+      texture: [4]
       vertical: true
     detail7:
       section_segments: [45,135,225,315]
