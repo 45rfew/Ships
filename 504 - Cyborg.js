@@ -77,7 +77,7 @@ t = -20
 model = 
   name: "Cyborg"
   level: 5
-  model: 3
+  model: 4
   size: 1.9
   specs:
     shield:
