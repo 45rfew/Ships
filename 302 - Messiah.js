@@ -52,6 +52,7 @@ model =
   level: 3
   model: 2
   size: 2
+  Designer: 'Duc Minh'
   specs:
     shield:
       capacity: [180,230]
