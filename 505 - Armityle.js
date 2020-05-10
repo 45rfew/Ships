@@ -1,8 +1,9 @@
 a =
   name: "Armityle"
   level: 5
-  model: 4
+  model: 5
   size: 1.5
+  Designer: 'Duc Minh'
   specs:
     shield:
       capacity: [250,360]
