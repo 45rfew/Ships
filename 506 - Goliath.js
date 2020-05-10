@@ -42,7 +42,7 @@ ball = (xx, yy, zz, length, radius, segments, l_segments, tx, vertical, angle) -
 model =
   name: "Goliath"
   level: 5
-  model: 5
+  model: 6
   size: 1.8
   specs:
     shield:
