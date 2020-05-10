@@ -50,7 +50,7 @@ hub = (x,y,z,s,w,h,v,a,t) ->
 model =
   name: 'Romulus'
   level: 5
-  model: 6
+  model: 7
   size: 1.6
   specs:
     shield:
