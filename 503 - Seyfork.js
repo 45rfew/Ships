@@ -2,18 +2,18 @@ model =
   name: 'Seyfork'
   level: 5
   model: 3
-  size: 1.8
+  size: 2
   Designer: 'Duc Minh'
   specs:
     shield:
       capacity: [260,330]
-      reload: [5,8]
+      reload: [7,10]
     generator:
       capacity: [150,210]
-      reload: [35,45]
+      reload: [70,90]
     ship:
       mass: 320
-      speed: [112,138]
+      speed: [100,120]
       rotation: [50,80]
       acceleration: [80,100]  
   bodies:
