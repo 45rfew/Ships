@@ -244,7 +244,7 @@ for i in [0...5]
     width: [1+i,2+i,2+i,2+i,2+i]
     height: [1+i,2+i,2+i,2+i,1+i]
     texture: [17]       
-t = 0        
+t = -5       
 if (1)
   for y,v of model.bodies
     if(v.vertical)
