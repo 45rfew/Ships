@@ -208,20 +208,6 @@ model =
         position: 30
         size: 0
       texture: [17]        
-    deco:
-      length: [15,15,10]
-      width: [30,25,20,15]
-      angle: [-10,-10,10]
-      position: [0,5,15,25]
-      doubleside: true
-      offset:
-        x: 1110
-        y: 0
-        z: 10
-      bump:
-        position: 30
-        size: 5
-      texture: [63,3,4] 
 for i in [0...7*2-1]
   model.bodies["strike"+i] = 
     section_segments: 6
