@@ -30,7 +30,7 @@ model =
       width: [0,6.2,7,26,20,10,10,30,30,22,20,0]
       height: [0,3.2,4,25,20,20,20,30,30,22,20,0]
       texture: [17,17,10,3,17,13,3,4,17,18,17]
-      propeller: 0
+      propeller: 1
     cockpit:
       section_segments: 6
       offset:
@@ -95,7 +95,7 @@ model =
       width: [0,5,12,15,16.9,18,22,22,0]
       height: [0,5,12,15,16.9,18,20,20,0]
       texture: [17,4,3,3,4,4,18,4]
-      propeller: 0
+      propeller: 1
     lights:
       section_segments: 6
       offset:
