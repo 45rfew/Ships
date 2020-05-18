@@ -1,4 +1,3 @@
-  
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -24,15 +23,15 @@ model =
   scale: 2
   specs:
     shield:
-      capacity: [230,260]
-      reload: [7,10]
+      capacity: [170,200]
+      reload: [4,6]
     generator:
-      capacity: [160,220]
+      capacity: [100,160]
       reload: [65,80]
     ship:
-      mass: 320
-      speed: [105,125]
-      rotation: [110,130]
+      mass: 210
+      speed: [90,110]
+      rotation: [80,100]
       acceleration: [70,90]
   bodies:
     main:
@@ -89,12 +88,12 @@ model =
       height: [0,5,5,8,0]
       texture: [63,63,18,4]
       laser:
-        damage: [20,33]
+        damage: [20,32]
         rate: 2
         type: 1
         speed: [160,200]
         number: 1
-        recoil: 100
+        recoil: 80
         error: 0      
     propulsors:
       section_segments: 8
@@ -366,4 +365,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;        
+return model;       
