@@ -54,15 +54,15 @@ model =
   size: 1.4
   specs:
     shield:
-      capacity: [180,200]
-      reload: [6,7]
+      capacity: [140,185]
+      reload: [5,7]
     generator:
-      capacity: [80,120]
-      reload: [30,40]
+      capacity: [60,90]
+      reload: [25,30]
     ship:
-      mass: 200
-      speed: [120,145]
-      rotation: [80,100]
+      mass: 95
+      speed: [110,130]
+      rotation: [70,85]
       acceleration: [80,100]
   bodies:
     ring: ring(11,29,-60,[40,45,50,130,135,140,220,225,230,310,315],14,9,.6,.2,1,[4,17,18,18,17,4,4],120)
@@ -167,7 +167,7 @@ model =
         damage: [15,20]
         rate: 3
         type: 1
-        speed: [120,180]
+        speed: [120,170]
         number: 1
         error: 0  
     deco:
