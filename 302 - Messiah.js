@@ -51,18 +51,18 @@ model =
   name: 'Messiah'
   level: 3
   model: 2
-  size: 2
+  size: 1.7
   Designer: 'Duc Minh'
   specs:
     shield:
-      capacity: [180,230]
-      reload: [6,8]
+      capacity: [170,210]
+      reload: [3,6]
     generator:
-      capacity: [140,220]
-      reload: [45,70]
+      capacity: [70,100]
+      reload: [30,40]
     ship:
-      mass: 320
-      speed: [125,140]
+      mass: 110
+      speed: [105,120]
       rotation: [60,80]
       acceleration: [80,100]  
   bodies:
@@ -131,7 +131,7 @@ model =
         rate: 8
         type: 1
         speed: [175,185]
-        recoil: 5
+        recoil: 10
         number: 1
         error: 3      
     cannon2:
