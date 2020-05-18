@@ -52,7 +52,7 @@ model =
   name: "Atreyu"
   level: 3
   model: 1
-  size: 1.1
+  size: 1
   specs:
     shield:
       capacity: [160,195]
