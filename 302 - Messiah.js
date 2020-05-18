@@ -51,7 +51,7 @@ model =
   name: 'Messiah'
   level: 3
   model: 2
-  size: 1.7
+  size: 1.5
   Designer: 'Duc Minh'
   specs:
     shield:
