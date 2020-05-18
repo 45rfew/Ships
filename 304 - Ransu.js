@@ -55,23 +55,16 @@ return model =
   Designer: 'Hallower'
   specs:
     shield:
-      capacity: [220,240]
-      reload: [9,12]
+      capacity: [195,240]
+      reload: [5,8]
     generator:
       capacity: [80,130]
       reload: [35,50]
     ship:
-      mass: 300
+      mass: 220
       speed: [80,100]
-      rotation: [80,100]
+      rotation: [40,70]
       acceleration: [65,100]
-      dash:
-        rate: 2
-        burst_speed: [130,160]
-        speed: [40,65]
-        acceleration: [70,100]
-        initial_energy: [25,40]
-        energy: [0.1,0.1]
   bodies:
     ring: ring(10,3,-65,18,12,15,.5,.4,1,17,0,0)
     ring2: ring(10-1,-1,-60,18,12,15,.5,.4,1,17,0,0)
@@ -99,7 +92,7 @@ return model =
         rate: 2
         type: 1
         speed: [100,120]
-        recoil: 0
+        recoil: 40
         number: 1
         error: 0
     cockpit:
