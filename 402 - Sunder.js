@@ -267,7 +267,7 @@ model =
   name: 'Sunder'
   level: 4
   model: 2
-  size: 2
+  size: 1.8
   Designer: 'Serendibite'
   specs:
     shield:
