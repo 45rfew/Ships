@@ -325,7 +325,7 @@ model =
       laser:
         damage: [40,50]
         recoil: 50
-        speed: [90,130]
+        speed: [90,120]
         error: 0
         angle: 0
         rate: 0.8
