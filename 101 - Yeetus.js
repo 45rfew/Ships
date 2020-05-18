@@ -54,16 +54,16 @@ return model =
   size: 1
   specs:
     shield:
-      capacity: [130,160]
-      reload: [5,6]
+      capacity: [95,120]
+      reload: [3,4]
     generator:
-      capacity: [80,100]
-      reload: [20,30]
+      capacity: [50,70]
+      reload: [20,25]
     ship:
-      mass: 120
-      speed: [150,165]
-      rotation: [110,130]
-      acceleration: [80,100]
+      mass: 70
+      speed: [120,138]
+      rotation: [100,120]
+      acceleration: [110,130]
   bodies:
     ring: ring(17,65,0,18,23,15,1,.2,0,[4,17,18,18,17,4,4],0)
     ring2: ring(19,55,0,18,25,15,1,.2,0,[4,17,18,18,17,4,4],0)
@@ -83,10 +83,10 @@ return model =
       height: [0,1.5,3,4,40,30,8]
       texture: [[15],63,17,2.9,1.9,63]
       laser:
-        damage: [30,40]
+        damage: [16,23]
         rate: 2
         type: 1
-        speed: [120,150]
+        speed: [130,155]
         number: 1
         recoil: 30
     main:
