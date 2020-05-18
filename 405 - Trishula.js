@@ -5,15 +5,15 @@ model =
   size: 1.5
   specs:
     shield:
-      capacity: [260,320]
-      reload: [10,13]
+      capacity: [240,300]
+      reload: [6,8]
     generator:
-      capacity: [200,260]
+      capacity: [110,170]
       reload: [40,60]
     ship:
-      mass: 400
-      speed: [100,120]
-      rotation: [100,120]
+      mass: 250
+      speed: [65,90]
+      rotation: [60,80]
       acceleration: [70,100]
   bodies:
     main:
@@ -31,14 +31,14 @@ model =
       texture: [6,63,63,3,8.2,2,4,63,11,8,13,16.9,16.9]
       propeller: true
       laser:
-        damage: [100,120]
+        damage: [50,80]
         rate: 1
         type: 1
         speed: [120,150]
-        recoil: 200
+        recoil: 140
         number: 1
         error: 0
-    detail7:
+    body_support:
       section_segments: [0,60,120,180]
       offset:
         x: -2.5
@@ -51,7 +51,7 @@ model =
       width: [0,15-1,23-1,0]
       height: [0,17-1,18-1,0]
       texture: [16.8,10,16.8]        
-    detai1l7:
+    deco:
       section_segments: [0,40,140,180]
       offset:
         x: -7-6.6
