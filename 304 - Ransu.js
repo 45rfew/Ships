@@ -55,11 +55,11 @@ return model =
   Designer: 'Hallower'
   specs:
     shield:
-      capacity: [195,240]
+      capacity: [195,230]
       reload: [5,8]
     generator:
-      capacity: [80,130]
-      reload: [35,50]
+      capacity: [80,110]
+      reload: [35,40]
     ship:
       mass: 220
       speed: [80,100]
@@ -91,7 +91,7 @@ return model =
         damage: [35,60]
         rate: 2
         type: 1
-        speed: [100,120]
+        speed: [100,130]
         recoil: 40
         number: 1
         error: 0
