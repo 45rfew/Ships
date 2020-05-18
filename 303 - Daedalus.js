@@ -1,4 +1,3 @@
-  
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -58,8 +57,8 @@ model =
       capacity: [180,210]
       reload: [4,7]
     generator:
-      capacity: [90,120]
-      reload: [30,40]
+      capacity: [100,130]
+      reload: [35,45]
     ship:
       mass: 140
       speed: [90,110]
@@ -157,7 +156,7 @@ model =
         damage: [22,30]
         rate: 1
         type: 1
-        speed: [140,170]
+        speed: [150,180]
         number: 1
         error: 1       
     outer_arms2:
