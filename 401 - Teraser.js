@@ -54,15 +54,15 @@ return model =
   size: 1.2
   specs:
     shield:
-      capacity: [160,210]
+      capacity: [170,230]
       reload: [4,5]
     generator:
-      capacity: [100,150]
+      capacity: [100,170]
       reload: [55,65]
     ship:
       mass: 200
       speed: [80,105]
-      rotation: [40,65]
+      rotation: [90,110]
       acceleration: [100,120]
   bodies:
     ring: ring(28,2,0,[45,135,225,315],17,20,1,.2,0,[4,18,17,17,18,4,4],0)
@@ -354,4 +354,3 @@ return model =
       bump:
         position: [-20]
         size: [0]
-        
