@@ -5,11 +5,11 @@ model =
   size: 1.5
   specs:
     shield:
-      capacity: [240,300]
+      capacity: [240,280]
       reload: [6,8]
     generator:
       capacity: [110,170]
-      reload: [40,60]
+      reload: [40,50]
     ship:
       mass: 250
       speed: [65,90]
