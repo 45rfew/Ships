@@ -54,16 +54,16 @@ model =
   size: 1.4
   specs:
     shield:
-      capacity: [160,180]
-      reload: [5,7]
+      capacity: [130,160]
+      reload: [4,5]
     generator:
-      capacity: [100,120]
-      reload: [30,40]
+      capacity: [60,90]
+      reload: [25,35]
     ship:
-      mass: 180
-      speed: [120,150]
-      rotation: [80,100]
-      acceleration: [70,80]
+      mass: 85
+      speed: [110,130]
+      rotation: [100,120]
+      acceleration: [100,125]
   bodies:
     ring: ring(17,80,10,6,5,10,1,.2,0,[4,17,18,18,17,4,4],0)
     ring2: ring(17,70,10,6,5,10,1,.2,0,[4,17,18,18,17,4,4],0)
