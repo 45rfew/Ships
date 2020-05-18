@@ -178,7 +178,7 @@ railgunside = (n, xpos, ypos, zpos, size, angle) ->
       angle: angle
       laser:
         damage: [10,14]
-        speed: [200,240]
+        speed: [160,200]
         number: 1
         rate: 3.5
         error: 3
@@ -271,15 +271,15 @@ model =
   Designer: 'Serendibite'
   specs:
     shield:
-      capacity: [260,300]
-      reload: [8,11]
+      capacity: [220,260]
+      reload: [5,7]
     generator:
       capacity: [160,220]
-      reload: [400,500]
+      reload: [160,250]
     ship:
-      mass: 380
-      speed: [80,100]
-      rotation: [50,60]
+      mass: 250
+      speed: [70,95]
+      rotation: [40,65]
       acceleration: [100,120]
   bodies:
     main:
@@ -325,7 +325,7 @@ model =
       laser:
         damage: [40,50]
         recoil: 50
-        speed: [80,120]
+        speed: [90,130]
         error: 0
         angle: 0
         rate: 0.8
