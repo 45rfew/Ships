@@ -51,18 +51,18 @@ model =
   name: 'Daedalus'
   level: 3
   model: 3
-  size: 1.8
+  size: 1.7
   specs:
     shield:
-      capacity: [220,260]
-      reload: [5,9]
+      capacity: [195,220]
+      reload: [4,7]
     generator:
-      capacity: [90,140]
-      reload: [40,60]
+      capacity: [90,120]
+      reload: [30,40]
     ship:
-      mass: 360
-      speed: [100,115]
-      rotation: [70,90]
+      mass: 140
+      speed: [90,110]
+      rotation: [60,75]
       acceleration: [80,100]
   bodies:
     reactor: hub(0,11,-36.5,16,5,6,1,0,[18,17,17,18,18,17])
@@ -153,7 +153,7 @@ model =
       height: [0.5,2,5,6,6,6,7,9,12,15,15,8,8,0]
       texture: [16.9,17.9,16.9,3.9,11,2.9,11,16,63,16,[15]]
       laser:
-        damage: [30,40]
+        damage: [22,30]
         rate: 1
         type: 1
         speed: [140,170]
@@ -286,8 +286,8 @@ model =
       angle: 0
       texture: [16.9,16.9,63,4,18,17,2,11,4,4]
       laser:
-        damage: [5,6]
-        rate: 5
+        damage: [5,7]
+        rate: 4
         type: 2
         speed: [160,180]
         number: 1
@@ -387,4 +387,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;    
+return model;  
