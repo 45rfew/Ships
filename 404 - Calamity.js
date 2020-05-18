@@ -55,15 +55,15 @@ model =
   specs:
     shield:
       capacity: [175,235]
-      reload: [5,10]
+      reload: [6,8]
     generator:
-      capacity: [300,560]
-      reload: [80,100]
+      capacity: [100,200]
+      reload: [40,50]
     ship:
-      mass: 330
-      speed: [110,135]
-      rotation: [100,125]
-      acceleration: [60,70]
+      mass: 200
+      speed: [80,100]
+      rotation: [60,90]
+      acceleration: [90,110]
   bodies:
     ring: ring(0,20,10,12,7,6,1,-.2,0,16.9,0)
     ring2: ring(0,15,10.5,12,9,7,1,-.2,0,16.9,0)    
@@ -85,13 +85,13 @@ model =
       propeller: true
       angle: 0
       laser:
-        damage: [200,210]
-        rate: 1.2
+        damage: [50,100]
+        rate: 2
         type: 1
-        speed: [100,140]
+        speed: [110,160]
         number: 1
         angle: 0
-        recoil: 900
+        recoil: 690
         error: 0
     shield:
       section_segments: 8
