@@ -54,16 +54,16 @@ return model =
   size: 1.2
   specs:
     shield:
-      capacity: [200,280]
-      reload: [6,8]
+      capacity: [160,210]
+      reload: [4,5]
     generator:
-      capacity: [200,300]
-      reload: [100,120]
+      capacity: [100,150]
+      reload: [55,65]
     ship:
-      mass: 255
-      speed: [100,130]
-      rotation: [70,85]
-      acceleration: [100,130]
+      mass: 200
+      speed: [80,105]
+      rotation: [40,65]
+      acceleration: [100,120]
   bodies:
     ring: ring(28,2,0,[45,135,225,315],17,20,1,.2,0,[4,18,17,17,18,4,4],0)
     ring2: ring(28,-9,1,[45,135,225,315],17,20,1,.2,0,[4,18,17,17,18,4,4],0)
@@ -111,12 +111,12 @@ return model =
       height: [0,3,2,0]
       texture: [6,7]
       laser:
-        damage: [23,40]
+        damage: [3,4]
         rate: 2.5
-        type: 1
-        speed: [80,100]
+        type: 2
+        speed: [100,160]
         number: 1
-        error: 2
+        error: 0
     laser_bottom:
       section_segments: 6
       offset:
@@ -131,12 +131,12 @@ return model =
       height: [0,3,2,0]
       texture: [6,7]
       laser:
-        damage: [23,40]
+        damage: [3,4]
         rate: 2.5
-        type: 1
-        speed: [80,100]
+        type: 2
+        speed: [100,160]
         number: 1
-        error: 2
+        error: 0
     lasers_side:
       section_segments: 6
       offset:
@@ -151,12 +151,12 @@ return model =
       height: [0,3,2,0]
       texture: [6,7]
       laser:
-        damage: [7,10]
-        rate: 6
-        type: 1
-        speed: [80,100]
+        damage: [3,4]
+        rate: 2.5
+        type: 2
+        speed: [100,160]
         number: 1
-        error: 2
+        error: 0
     topVent:
       section_segments: 6
       offset:
@@ -173,9 +173,9 @@ return model =
       propeller: true
       laser:
         damage: [13,18]
-        rate: 8
+        rate: 4
         type: 1
-        speed: [90,110]
+        speed: [120,160]
         number: 1
         error: 0
     bottomVent:
@@ -194,9 +194,9 @@ return model =
       propeller: true
       laser:
         damage: [13,18]
-        rate: 8
+        rate: 4
         type: 1
-        speed: [90,110]
+        speed: [120,160]
         number: 1
         error: 0
   wings:
