@@ -1,3 +1,4 @@
+  
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -54,7 +55,7 @@ model =
   size: 1.7
   specs:
     shield:
-      capacity: [195,220]
+      capacity: [180,210]
       reload: [4,7]
     generator:
       capacity: [90,120]
@@ -387,4 +388,4 @@ if(1)
       v.offset.y = v.offset.y + t
   for y,v of model.wings
     v.offset.y = v.offset.y + t      
-return model;  
+return model; 
