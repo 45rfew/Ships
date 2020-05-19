@@ -53,7 +53,7 @@ model =
   name: 'Excelion'
   level: 5
   model: 1
-  size: 1.1
+  size: 0.9
   specs:
     shield:
       capacity: [220,300]
