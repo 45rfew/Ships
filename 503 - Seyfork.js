@@ -2,7 +2,7 @@ model =
   name: 'Seyfork'
   level: 5
   model: 3
-  size: 2
+  size: 1.8
   Designer: 'Duc Minh'
   specs:
     shield:
