@@ -6,16 +6,16 @@ model =
   Designer: 'Duc Minh'
   specs:
     shield:
-      capacity: [260,330]
-      reload: [7,10]
+      capacity: [220,300]
+      reload: [4,7]
     generator:
       capacity: [150,210]
-      reload: [70,90]
+      reload: [50,70]
     ship:
-      mass: 320
-      speed: [100,120]
-      rotation: [50,80]
-      acceleration: [80,100]  
+      mass: 225
+      speed: [70,90]
+      rotation: [50,70]
+      acceleration: [70,100]  
   bodies:
     main:
       section_segments: 8
@@ -60,12 +60,12 @@ model =
       texture: [17,2,3,2,8,3,8,3,3,1,11,1,10,17,18,17]
       propeller: 0
       laser:
-        damage: [5,7]
+        damage: [4.5,17/2]
         rate: 2
         type: 1
-        speed: [140,160]
+        speed: [180,230]
         recoil: 20
-        number: 15
+        number: 10
         angle: 0
         error: 0      
     deco:
