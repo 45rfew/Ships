@@ -2,20 +2,20 @@ a =
   name: "Armityle"
   level: 5
   model: 5
-  size: 1.5
+  size: 1.4
   Designer: 'Duc Minh'
   specs:
     shield:
-      capacity: [250,360]
-      reload: [7,10]
+      capacity: [220,300]
+      reload: [5,7]
     generator:
-      capacity: [270,310]
-      reload: [80,95]
+      capacity: [100,140]
+      reload: [40,50]
     ship:
-      mass: 320
-      speed: [110,135]
-      rotation: [90,120]
-      acceleration: [120,140]  
+      mass: 175
+      speed: [80,110]
+      rotation: [70,90]
+      acceleration: [100,140]  
   bodies:
     main:
       section_segments: 8
@@ -85,13 +85,12 @@ a =
       height: [0,4,5,13,10,10,10,4,0]
       texture: [16.9,16.9,3,4,13,[15]]
       laser:
-        damage: [14,18]
-        recoil: 20
-        rate: 3.5
+        damage: [7,10]
+        rate: 2
         type: 2
         speed: [160,180]
         number: 1
-        error: 3 
+        error: 0 
     cannon2:
       section_segments: 6
       offset:
@@ -134,13 +133,13 @@ a =
       texture: [16.9,16.9,3.9,2.9,1.9,63]
       propeller: 0
       laser:
-        damage: [80,100]
-        rate: 0.8
+        damage: [43,60]
+        rate: 1
         type: 1
         recoil: 35
-        speed: [150,190]
+        speed: [170,220]
         number: 1
-        error: 1      
+        error: 0      
     deco:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
