@@ -43,7 +43,7 @@ model =
   name: "Goliath"
   level: 5
   model: 6
-  size: 1.5
+  size: 1.6
   specs:
     shield:
       capacity: [300,380]
