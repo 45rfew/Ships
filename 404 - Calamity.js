@@ -51,7 +51,7 @@ model =
   name: "Calamity"
   level: 4
   model: 4
-  size: 1.6
+  size: 1.4
   specs:
     shield:
       capacity: [175,235]
