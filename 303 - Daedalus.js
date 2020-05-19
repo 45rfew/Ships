@@ -51,7 +51,7 @@ model =
   name: 'Daedalus'
   level: 3
   model: 3
-  size: 1.7
+  size: 1.5
   specs:
     shield:
       capacity: [180,210]
@@ -154,7 +154,7 @@ model =
       texture: [16.9,17.9,16.9,3.9,11,2.9,11,16,63,16,[15]]
       laser:
         damage: [22,30]
-        rate: 1
+        rate: 1.3
         type: 1
         speed: [150,180]
         number: 1
@@ -287,7 +287,7 @@ model =
       texture: [16.9,16.9,63,4,18,17,2,11,4,4]
       laser:
         damage: [5,7]
-        rate: 4
+        rate: 3
         type: 2
         speed: [160,180]
         number: 1
