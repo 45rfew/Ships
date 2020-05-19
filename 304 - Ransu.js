@@ -51,7 +51,7 @@ return model =
   name: "Ransu"
   level: 3
   model: 4
-  size: 1.5
+  size: 1.3
   Designer: 'Hallower'
   specs:
     shield:
