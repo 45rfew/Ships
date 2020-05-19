@@ -54,15 +54,15 @@ model =
   size: 1.6
   specs:
     shield:
-      capacity: [300,380]
-      reload: [12,15]
+      capacity: [275,350]
+      reload: [7,9]
     generator:
-      capacity: [200,280]
-      reload: [80,120]
+      capacity: [120,160]
+      reload: [45,60]
     ship:
-      mass: 410
-      speed: [90,105]
-      rotation: [50,80]
+      mass: 270
+      speed: [62,82]
+      rotation: [65,90]
       acceleration: [70,90]
   bodies:
     ring: ring(10,-64,0,8,8,6,.5,.4,0,[4,4,63],0,0)
@@ -87,11 +87,11 @@ model =
       texture: [6,17,63,10,2,17,13,17]
       propeller: true
       laser:
-        damage: [120,140]
-        rate: 2
+        damage: [70,100]
+        rate: 1
         type: 1
-        speed: [160,180]
-        recoil: 180
+        speed: [120,150]
+        recoil: 100
         number: 1
         error: 0
     cockpit:
