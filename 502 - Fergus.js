@@ -58,7 +58,7 @@ return model =
       reload: [4,7]
     generator:
       capacity: [175,250]
-      reload: [160,200]
+      reload: [60,80]
     ship:
       mass: 200
       speed: [70,85]
