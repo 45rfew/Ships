@@ -1,3 +1,4 @@
+  
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -81,14 +82,14 @@ model =
   size: 1.9
   specs:
     shield:
-      capacity: [280,320]
-      reload: [12,15]
+      capacity: [240,320]
+      reload: [5,7]
     generator:
-      capacity: [300,400]
-      reload: [120,150]
+      capacity: [100,150]
+      reload: [40,55]
     ship:
-      mass: 350
-      speed: [95,110]
+      mass: 210
+      speed: [80,100]
       rotation: [70,85]
       acceleration: [100,130]
   bodies:
@@ -180,33 +181,13 @@ model =
       angle: 0
       laser:
         damage: [7,10]
-        rate: 10
+        rate: 6
         type: 1
-        speed: [165,200]
+        speed: [160,190]
         number: 1
-        error: 1.5
+        error: 0
       propeller: false
       texture: [16.9,16.9,3,17,10,17,13,17,3]  
-    laser2:
-      section_segments: 6
-      offset:
-        x: 54.8
-        y: 48
-        z: -11
-      position:
-        x: [0,0,0,0,0,0,0,0,0,-12]
-        y: [-50,-60,-60,-22,-20,0,2,20,22,30]
-        z: [0,0,0,0,0,0,0,0,0,-10]
-      width: [0,2,3,3,3,3,3,3,3,4,2]
-      height: [0,2,3,3,3,3,3,3,4,2]
-      texture: [16.9,16.9,3,17,11,17,13,17,3]   
-      laser:
-        damage: [7,10]
-        rate: 10
-        type: 1
-        speed: [165,200]
-        number: 1
-        error: 1.5   
     laser_deco:
       section_segments: [5,135+30,225,315]
       offset:
@@ -420,7 +401,7 @@ for i in [0...10]
     width: [0,9,9,9,0]
     height: [0,9,9,9,0]
     texture: [63,63,17]
-if(1)
+if (1)
   for k,v of model.bodies
     v.offset.x=-v.offset.x
     if(v.vertical)
