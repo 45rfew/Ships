@@ -51,7 +51,7 @@ model =
   name: 'Romulus'
   level: 5
   model: 7
-  size: 1.6
+  size: 2
   specs:
     shield:
       capacity: [275,350]
