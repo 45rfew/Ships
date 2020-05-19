@@ -9,7 +9,7 @@ a =
       capacity: [220,300]
       reload: [5,7]
     generator:
-      capacity: [100,140]
+      capacity: [80,120]
       reload: [40,50]
     ship:
       mass: 175
