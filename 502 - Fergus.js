@@ -55,21 +55,21 @@ return model =
   specs:
     shield:
       capacity: [250,320]
-      reload: [7,10]
+      reload: [4,7]
     generator:
-      capacity: [266,370]
+      capacity: [175,250]
       reload: [160,200]
     ship:
       mass: 200
-      speed: [110,130]
-      rotation: [90,130]
+      speed: [70,85]
+      rotation: [90,100]
       acceleration: [100,130]
       dash:
-        rate: 0.5
-        burst_speed: [180,200]
-        speed: [120,150]
-        acceleration: [70,80]
-        initial_energy: [25,35]
+        rate: 0.01
+        burst_speed: [70,85]
+        speed: [70,85]
+        acceleration: [100,130]
+        initial_energy: [0.01,0.01]
         energy: [0.01,0.01]
   bodies:
     disc: ring2(0,0,19.7,[45,135,225,315],0.15,1.05,0.3,false,[17,18,3,63,3,18,17],0)     
@@ -263,8 +263,8 @@ return model =
       angle: 0
       texture: [17,17,5,4,11,17,2,11,4,4]
       laser:
-        damage: [100,130]
-        rate: 0.5
+        damage: [40,50]
+        rate: 1
         type: 1
         speed: [120,150]
         number: 1
@@ -295,12 +295,6 @@ return model =
       width: [0,2.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,0]
       height: [0,2.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,0]
       texture: [17,17,5,4,11,17,7,11,4,4]
-      laser:
-        damage: [13,20]
-        rate: 3
-        type: 2
-        speed: [200,230]
-        number: 1
     cannon4:
       section_segments: 8
       offset:
@@ -316,11 +310,11 @@ return model =
       angle: 180
       texture: [16.9,5,4,11,17,7,11,4,4]
       laser:
-        damage: [15,15]
-        rate: 10
+        damage: [20,25]
+        rate: 6
         type: 2
-        recoil: 120
-        speed: [100,180]
+        recoil: 90
+        speed: [140,200]
         number: 1
     end_bit:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
