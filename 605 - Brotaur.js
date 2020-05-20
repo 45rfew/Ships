@@ -67,20 +67,20 @@ model =
   name: "Brotaur"
   level: 6
   model: 5
-  size: 2
+  size: 1.7
   next: [705,706]
   specs:
     shield:
-      capacity: [400,480]
-      reload: [10,15]
+      capacity: [300,420]
+      reload: [9,12]
     generator:
-      capacity: [350,400]
-      reload: [160,200]
+      capacity: [100,160]
+      reload: [40,55]
     ship:
-      mass: 510
-      speed: [100,120]
-      rotation: [100,120]
-      acceleration: [80,100]
+      mass: 230
+      speed: [90,105]
+      rotation: [65,78]
+      acceleration: [90,140]
   bodies:
     main:
       section_segments: [30,60,120,150,210,240,300,330,360]
@@ -98,12 +98,12 @@ model =
       propeller: true
       laser:
         damage: [50,75]
-        rate: 4
+        rate: 2
         type: 1
-        speed: [230,280]
+        speed: [170,200]
         number: 1
         angle: 0
-        error: 3
+        error: 0
     cockpit:
       section_segments: 6
       offset:
@@ -117,14 +117,6 @@ model =
       width: [0,5,10,10,0]
       height: [0,5,10,12,0]
       texture: [9,9,9,4]
-      laser:
-        damage: [60,90]
-        rate: 1
-        type: 2
-        speed: [260,300]
-        number: 1
-        error: 0
-        angle: 1      
     frontsupport:
       section_segments: 6
       offset:
@@ -213,7 +205,7 @@ model =
       texture: [2.8,2.8,2.8,2.8]
       laser:
         damage: [10,25]
-        rate: 8
+        rate: 4
         type: 2
         speed: [160,180]
         number: 1
