@@ -167,7 +167,7 @@ model =
         damage: [55,90]
         rate: 1
         type: 1
-        speed: [150,170]
+        speed: [150,190]
         recoil: 100
         number: 1
         error: 0
