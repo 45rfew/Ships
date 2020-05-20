@@ -27,7 +27,7 @@ model =
   name: "Lancephorhynchus"
   level: 6
   model: 8
-  size: 1.5
+  size: 1.4
   next: [707,708]
   specs:
     shield:
@@ -59,7 +59,7 @@ model =
         damage: [100,175]
         rate: 1
         type: 1
-        speed: [80,110]
+        speed: [80,100]
         number: 1
         recoil: 300
         error: 0      
