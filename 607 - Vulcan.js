@@ -1,3 +1,4 @@
+  
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -56,16 +57,16 @@ return model =
   next: [707,708]
   specs:
     shield:
-      capacity: [450,500]
-      reload: [15,20]
+      capacity: [300,450]
+      reload: [11,14]
     generator:
-      capacity: [400,600]
-      reload: [100,150]
+      capacity: [160,240]
+      reload: [40,70]
     ship:
-      mass: 600
-      speed: [85,105]
+      mass: 300
+      speed: [80,92]
       rotation: [50,70]
-      acceleration: [60,80]
+      acceleration: [60,85]
   bodies:    
     main:
       section_segments: 6
@@ -112,7 +113,7 @@ return model =
         damage: [20,30]
         rate: 5
         type: 1
-        speed: [140,170]
+        speed: [140,180]
         number: 1
       texture: [17,4,17,10,17,4,63,63]
     cannon:
@@ -129,13 +130,13 @@ return model =
       height: [0,5,15,15,15,15,10,0,0]
       angle: 0
       laser:
-        damage: [150,200]
+        damage: [100,140]
         rate: 2
         type: 1
-        speed: [160,200]
+        speed: [130,170]
         number: 1
         angle: 0
-        recoil: 800
+        recoil: 700
         error: 0
       texture: [17,4,17,10,17,4,63,63]      
     arms:
