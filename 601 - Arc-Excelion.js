@@ -71,20 +71,20 @@ model =
   name: 'Arc-Excelion'
   level: 6
   model: 1
-  size: 1.7
+  size: 1.6
   next: [701,702]
   specs:
     shield:
-      capacity: [380,540]
-      reload: [12,16]
+      capacity: [250,370]
+      reload: [6,8]
     generator:
-      capacity: [400,500]
-      reload: [120,190]
+      capacity: [130,210]
+      reload: [55,82]
     ship:
       mass: 400
-      speed: [90,100]
-      rotation: [60,90]
-      acceleration: [85,105]
+      speed: [72,85]
+      rotation: [40,55]
+      acceleration: [80,96]
   bodies:
     ball: ball(0.01,5,0,72,65,10,3,7,0,0)
     ring: ring(78.5,82,-30,12,9,9,1.5,.1,0,[18,17,18,18,17,18,18,17,18],0)
@@ -164,11 +164,11 @@ model =
       texture: [17,13,17,13,17,13,17,17,17,13,17]
       propeller: false
       laser:
-        damage: [150,170]
+        damage: [55,90]
         rate: 1
         type: 1
         speed: [150,170]
-        recoil: 150
+        recoil: 100
         number: 1
         error: 0
     maine:
@@ -226,60 +226,14 @@ model =
       texture: [17,13,17,13,17,13,17,17,17,13,17]
       propeller: false
       laser:
-        damage: [80,100]
-        rate: 2
-        type: 2
-        speed: [130,160]
-        recoil: 50
-        number: 1
-        error: 2  
-        angle:2
-    laser2:
-      section_segments: 12
-      offset:
-        x: 77
-        y: 110-f
-        z: -20-g
-      position:
-        x: [-9,-9,-9,-9,-9,0,0,0,-4,-4,-5,-5,-5]
-        y: [-160,-90,-60,-30,10,40,80,80,108,108,118,118,105]
-        z: [20,10,10,10,10,10,10,10,10,10,6,6,6]
-      width: [0,10,10,10,10,10,10,10,10,9,18,16,0]
-      height: [0,10,10,10,10,10,10,10,10,9,10,8,0]
-      texture: [17,13,17,13,17,13,17,17,17,13,17]
-      propeller: false
-      laser:
-        damage: [45,75]
-        rate: 4
-        type: 2
-        speed: [120,170]
-        recoil: 25
-        number: 1
-        error: 4
-        angle: 4
-    laser3:
-      section_segments: 12
-      offset:
-        x: 77
-        y: 110-f
-        z: -20-g
-      position:
-        x: [-9,-9,-9,-9,-9,0,0,0,-4,-4,-5,-5,-5]
-        y: [-160,-90,-60,-30,10,40,80,80,108,108,118,118,105]
-        z: [20,10,10,10,10,10,10,10,10,10,6,6,6]
-      width: [0,10,10,10,10,10,10,10,10,9,18,16,0]
-      height: [0,10,10,10,10,10,10,10,10,9,10,8,0]
-      texture: [17,13,17,13,17,13,17,17,17,13,17]
-      propeller: false
-      laser:
-        damage: [20,30]
-        rate: 6
+        damage: [10,15]
+        rate: 3
         type: 2
         speed: [150,175]
-        recoil: 10
+        recoil: 0
         number: 1
-        error: 5
-        angle: 5
+        error: 0
+        angle: 0
     front_wing_colour:
       section_segments: [45,135,225,315]
       offset:
