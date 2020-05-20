@@ -68,27 +68,27 @@ return model =
   name: "Ragnarok"
   level: 6
   model: 2
-  size: 2
+  size: 1.9
   next: [701,702]
   specs:
     shield:
-      capacity: [250,320]
-      reload: [22,26]
+      capacity: [300,400]
+      reload: [6,8]
     generator:
-      capacity: [385,485]
+      capacity: [200,300]
       reload: [175,225]
     ship:
       mass: 250
-      speed: [110,125]
-      rotation: [100,130]
-      acceleration: [80,100]
+      speed: [80,95]
+      rotation: [45,70]
+      acceleration: [85,110]
       dash:
-        rate: 0.1
-        burst_speed: [110,125]
-        speed: [110,125]
-        acceleration: [80,100]
-        initial_energy: [1,1]
-        energy: [1,1]      
+        rate: 0.01
+        burst_speed: [80,95]
+        speed: [80,95]
+        acceleration: [85,110]
+        initial_energy: [.01,.01]
+        energy: [.01,.01]      
   bodies:
     ring: ring2(13,-130,1,[45,135,225,315],0.5,2,1.5,false,[4,4,17,4,17,4],0)
     ring2: ring2(13,-115,2,[45,135,225,315],0.5,2,1.5,false,[4,4,17,4,17,4],0)  
@@ -184,10 +184,10 @@ return model =
       height: [0,4,5,15,15,15,0]
       texture: [17,17,3,2,2,2,17]
       laser:
-        damage: [150,200]
-        rate: 0.5
+        damage: [50,75]
+        rate: 1
         type: 1
-        speed: [170,240]
+        speed: [120,160]
         number: 1
         error: 0
     tong_joints:
@@ -530,11 +530,10 @@ return model =
       height: [1]
       angle: 180
       laser:
-        damage: [20,20]
-        rate: 10
+        damage: [20,30]
+        rate: 6
         type: 2
-        speed: [120,140]
+        speed: [160,180]
         number: 1
-        error: 20
+        error: 2
         recoil: 130
-        
