@@ -56,15 +56,15 @@ return model =
   size: 0.9
   specs:
     shield:
-      capacity: [400,500]
-      reload: [10,14]
+      capacity: [300,400]
+      reload: [6,9]
     generator:
-      capacity: [200,360]
-      reload: [130,150]
+      capacity: [100,200]
+      reload: [60,80]
     ship:
-      mass: 520
-      speed: [90,110]
-      rotation: [60,80]
+      mass: 280
+      speed: [70,90]
+      rotation: [50,65]
       acceleration: [80,100]
   bodies:
     ring: ring(18,-46,44+4,6,6,6,.4,.8,0,[17,4,17,4,17,4],0)
@@ -247,34 +247,13 @@ return model =
       height: [0,4,5,5,3,3,5,5,0].mult(1.8)
       texture: [17,17,4,4,13,3,17,3]
       laser:
-        damage: [70,120]
+        damage: [10,20]
         rate: 2
         type: 1
-        speed: [180,230]
-        recoil: 350
-        number: 1
-        error: 0 
-    cannon2:
-      section_segments: 8
-      offset:
-        x: 104
-        y: -170
-        z: -10
-      position:
-        x: [0,0,0,0,0,0,0,3,3]
-        y: [-43,-45,-45,-38,-36,-24,-22,145,145].mult(1.8)
-        z: [0,0,0,0,0,0,0,0,0]
-      width: [0,4,5,5,3,3,5,5,0].mult(1.8)
-      height: [0,4,5,5,3,3,5,5,0].mult(1.8)
-      texture: [17,17,4,4,13,3,17,3]
-      laser:
-        damage: [30,40]
-        rate: 2
-        type: 2
         speed: [170,220]
-        recoil: 60
-        number: 1
-        error: 0         
+        recoil: 25
+        number: 10
+        error: 0 
     side_plates:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
