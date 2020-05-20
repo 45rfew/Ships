@@ -31,16 +31,16 @@ model =
   next: [707,708]
   specs:
     shield:
-      capacity: [500,550]
-      reload: [13,16]
+      capacity: [400,500]
+      reload: [10,12]
     generator:
-      capacity: [440,500]
-      reload: [150,220]
+      capacity: [120,200]
+      reload: [50,65]
     ship:
-      mass: 600
-      speed: [90,100]
-      rotation: [60,90]
-      acceleration: [65,100]
+      mass: 450
+      speed: [75,85]
+      rotation: [32,45]
+      acceleration: [60,85]
   bodies:
     main:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
@@ -56,12 +56,12 @@ model =
       height: [0,20,20,20,0]
       texture: [4,2,2]
       laser:
-        damage: [400,450]
-        rate: 0.8
+        damage: [100,175]
+        rate: 1
         type: 1
-        speed: [80,100]
+        speed: [80,110]
         number: 1
-        recoil: 600
+        recoil: 300
         error: 0      
     main_deco:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
