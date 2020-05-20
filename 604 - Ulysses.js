@@ -51,19 +51,19 @@ model =
   name: "Ulysses"
   level: 6
   model: 4
-  size: 2.4
+  size: 2
   next: [703,704]
   specs:
     shield:
-      capacity: [350,420]
-      reload: [10,15]
+      capacity: [290,380]
+      reload: [9,11]
     generator:
-      capacity: [200,300]
-      reload: [180,240]
+      capacity: [110,180]
+      reload: [36,43]
     ship:
-      mass: 420
-      speed: [120,130]
-      rotation: [100,120]
+      mass: 215
+      speed: [80,110]
+      rotation: [65,78]
       acceleration: [80,120]
   bodies:
     main:
@@ -140,10 +140,10 @@ model =
       height: [0,1.5,1.5,1.5,0]
       texture: [4,63,2]
       laser:
-        damage: [15,18]
-        rate: 10
+        damage: [9,13]
+        rate: 6
         type: 2
-        speed: [170,200]
+        speed: [160,180]
         number: 1
         angle: 0
         error: 3     
@@ -438,14 +438,6 @@ model =
       height: [0,3.5,4,4,5,4,0]
       texture: [17,2,2,63]
       angle: 2
-      laser:
-        damage: [12,14]
-        rate: 1.5
-        type: 2
-        speed: [200,220]
-        number: 3
-        angle: 1
-        error: 2
     detail18:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
