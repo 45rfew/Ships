@@ -52,7 +52,7 @@ return model =
   name: "Vulcan"
   level: 6
   model: 7
-  size: 1
+  size: .9
   zoom: 0.9
   next: [707,708]
   specs:
@@ -61,9 +61,9 @@ return model =
       reload: [11,14]
     generator:
       capacity: [160,240]
-      reload: [40,70]
+      reload: [40,60]
     ship:
-      mass: 300
+      mass: 220
       speed: [80,92]
       rotation: [50,70]
       acceleration: [60,85]
