@@ -68,7 +68,7 @@ return model =
   name: "Ragnarok"
   level: 6
   model: 2
-  size: 1.9
+  size: 1.7
   next: [701,702]
   specs:
     shield:
@@ -184,7 +184,7 @@ return model =
       height: [0,4,5,15,15,15,0]
       texture: [17,17,3,2,2,2,17]
       laser:
-        damage: [50,75]
+        damage: [40,57]
         rate: 1
         type: 1
         speed: [120,160]
@@ -530,10 +530,10 @@ return model =
       height: [1]
       angle: 180
       laser:
-        damage: [20,30]
+        damage: [25,35]
         rate: 6
         type: 2
         speed: [160,180]
         number: 1
         error: 2
-        recoil: 130
+        recoil: 60
