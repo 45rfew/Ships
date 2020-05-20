@@ -51,20 +51,19 @@ model =
   name: "Zirnitron"
   level: 6
   model: 6
-  size: 2
-  zoom: 1
+  size: 1.7
   specs:
     shield:
-      capacity: [420,460]
-      reload: [12,18]
+      capacity: [210,330]
+      reload: [7,10]
     generator:
-      capacity: [250,290]
-      reload: [150,190]
+      capacity: [100,160]
+      reload: [45,60]
     ship:
-      mass: 380
-      speed: [110,135]
-      rotation: [100,120]
-      acceleration: [80,100]
+      mass: 200
+      speed: [90,116]
+      rotation: [70,85]
+      acceleration: [80,120]
   bodies:
     main:
       section_segments: [30,60,120,150,210,240,300,330,360]
@@ -121,6 +120,13 @@ model =
       height: [0,9,13,13,10,9,0]
       propeller: true
       texture: [3,3,3,17,17] 
+      laser:
+        damage: [10,15]
+        rate: 2
+        recoil: 0
+        type: 2
+        speed: [140,200]
+        number: 1  
     backengines2:
       section_segments: 18
       offset:
@@ -150,11 +156,11 @@ model =
       propeller: false
       texture: [2.8,2.8,2.8,2.8]
       laser:
-        damage: [180,200]
+        damage: [60,100]
         rate: 1
-        recoil: 50
+        recoil: 90
         type: 1
-        speed: [160,180]
+        speed: [170,230]
         number: 1      
     frontsupport:
       section_segments: 6
