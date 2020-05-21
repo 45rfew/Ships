@@ -247,12 +247,12 @@ return model =
       height: [0,4,5,5,3,3,5,5,0].mult(1.8)
       texture: [17,17,4,4,13,3,17,3]
       laser:
-        damage: [10/2,20/2]
+        damage: [12.5/2,25/2]
         rate: 2
         type: 1
-        speed: [170,220]
-        recoil: 30
-        number: 10
+        speed: [170,240]
+        recoil: 32
+        number: 8
         error: 0 
     side_plates:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
