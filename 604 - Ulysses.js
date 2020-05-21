@@ -51,7 +51,7 @@ model =
   name: "Ulysses"
   level: 6
   model: 4
-  size: 1.8
+  size: 1.9
   next: [703,704]
   specs:
     shield:
