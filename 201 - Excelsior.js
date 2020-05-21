@@ -100,8 +100,8 @@ model =
         z: [0,0,0,0,0,0,0,0,0,0,0,0]
       width: [0,4,8,19,21,21,21,14,12,12,10,0]
       height: [0,2,6,12,14,16,14,12,10,10,9,0]
-      propeller: true
-      texture: [1,2,2,3,3,4,8,4,12,16.99]      
+      propeller: !true
+      texture: [1,2,2,3,3,18,8,17,12,16.99]      
     cockpit:
       section_segments: 6
       offset:
@@ -143,14 +143,14 @@ model =
       height: [0,1,4,5,11,12,12,10,10,12,12,9,9,8,0]
       texture: [13,3,16.9,[15],3,4,16.9,63,16.9,3.9,3.9,12.9,16.9]
       angle: 1
-      propeller: true   
+      propeller: !true   
       laser:
-        damage: [7,9]
-        rate: 8
+        damage: [5,7]
+        rate: 4
         type: 1
         speed: [150,180]
         number: 1
-        error: 2       
+        error: 1       
     engine2:
       section_segments: 6
       offset:
@@ -207,7 +207,77 @@ model =
       bump:
         position: 30
         size: 0
-      texture: [17]        
+      texture: [17]
+    main4:
+      offset:
+        x: 0
+        y: 70
+        z: 12
+      length: [30,40,0]
+      width: [40,40,40,20].div(2)
+      angle: [-10,-10,10]
+      position: [-10,-10,10,15]
+      doubleside: true
+      bump:
+        position: 30
+        size: 6
+      texture: [4,18.13,3]  
+    main5:
+      offset:
+        x: 0
+        y: 84
+        z: 13.5
+      length: [30,40,0]
+      width: [40,40,40,20].div(10)
+      angle: [-10,-10,10]
+      position: [-10,-10,10,15]
+      doubleside: true
+      bump:
+        position: 30
+        size: 6
+      texture: [4,17,3]        
+    front:
+      offset:
+        x: 0
+        y: -35
+        z: 12
+      length: [75].div(2)
+      width: [50,10].div(2)
+      angle: [-20].div(2)
+      position: [15,70].div(2)
+      texture: [63]      
+      doubleside: true
+      bump:
+        position: -20
+        size: 10  
+    front2:
+      offset:
+        x: 0
+        y: -35
+        z: 12
+      length: [75-1].div(2)
+      width: [50,10].div(2)
+      angle: [-20].div(2)
+      position: [15,70].div(2)
+      texture: [18]      
+      doubleside: true
+      bump:
+        position: -20
+        size: 10  
+    front_lights:
+      offset:
+        x: 0
+        y: -37
+        z: 12
+      length: [75].div(2)
+      width: [50,10].div(2)
+      angle: [-20].div(2)
+      position: [15,71].div(2)
+      texture: [17]      
+      doubleside: true
+      bump:
+        position: -20
+        size: 0          
 for i in [0...7*2-1]
   model.bodies["strike"+i] = 
     section_segments: 6
