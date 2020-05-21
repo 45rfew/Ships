@@ -67,7 +67,7 @@ model =
   name: "Brotaur"
   level: 6
   model: 5
-  size: 1.7
+  size: 1.5
   next: [705,706]
   specs:
     shield:
@@ -530,7 +530,7 @@ model =
       texture: [17]
       bump:
         position: 40
-        size: 12        
+        size: 0        
     topwings:
       doubleside: true
       offset:
@@ -572,7 +572,7 @@ model =
       texture: [17]
       bump:
         position: 45
-        size: 10        
+        size: 0        
     back:
       offset:
         x: 0
@@ -614,7 +614,7 @@ model =
       doubleside: true
       bump:
         position: 35
-        size: 5  
+        size: 0  
     top:
       doubleside: true
       offset:
