@@ -51,7 +51,7 @@ model =
   name: "Zirnitron"
   level: 6
   model: 6
-  size: 1.7
+  size: 1.55
   specs:
     shield:
       capacity: [210,330]
@@ -414,7 +414,7 @@ model =
       doubleside: true
       bump:
         position: 30
-        size: 4           
+        size: 0
     headwings:
       doubleside: true
       offset:
@@ -442,7 +442,7 @@ model =
       texture: [17]
       bump:
         position: 30
-        size: 4    
+        size: 0    
     headwings3:
       doubleside: true
       offset:
