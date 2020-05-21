@@ -51,7 +51,7 @@ model =
   name: "Ulysses"
   level: 6
   model: 4
-  size: 2
+  size: 1.8
   next: [703,704]
   specs:
     shield:
@@ -61,7 +61,7 @@ model =
       capacity: [110,180]
       reload: [36,43]
     ship:
-      mass: 215
+      mass: 240
       speed: [80,110]
       rotation: [65,78]
       acceleration: [80,120]
@@ -80,8 +80,8 @@ model =
       height: [0,1,7-3,7,7,7,0]
       texture: [2.8,3.8,2.8,3.8,3.8]
       laser:
-        damage: [50,75]
-        rate: 1.5
+        damage: [11,18]
+        rate: 8
         type: 1
         speed: [200,230]
         number: 1
