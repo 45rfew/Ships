@@ -1,5 +1,5 @@
-m = 50
-n = 0.4
+m = 30
+n = 0.3
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -66,14 +66,14 @@ model =
   specs:
     shield:
       capacity: [700,700]
-      reload: [20,20]
+      reload: [13,13]
     generator:
-      capacity: [1700,1700]
-      reload: [1700,1700]
+      capacity: [750,750]
+      reload: [750,750]
     ship:
       mass: 500
-      speed: [120,120]
-      rotation: [80,80]
+      speed: [85,85]
+      rotation: [40,40]
       acceleration: [50,50]
   bodies:
     ring: ring(41,73,0,12,14.2,14.2,1,.2,0,[4,17,18,18,17,4,4],0)
@@ -191,7 +191,7 @@ model =
       height: [0,3.5,4,5,3,3,4,5,12.5,15,7,7,7,7,0,0]
       texture: [16.9,16.9,16,12,11,5,17,1,4]
       laser:
-        damage: [150,150]
+        damage: [70,70]
         rate: n
         type: 1
         speed: [120,120]
