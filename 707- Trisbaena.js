@@ -20,16 +20,17 @@ return model =
   level: 7
   model: 7
   size: 1.5
+  Designer: 'Duc Minh'
   specs:
     shield:
-      capacity: [950,950]
-      reload: [18,18]
+      capacity: [800,800]
+      reload: [14,14]
     generator:
-      capacity: [550,550]
-      reload: [100,100]
+      capacity: [300,300]
+      reload: [40,40]
     ship:
       mass: 820
-      speed: [90,90]
+      speed: [60,60]
       rotation: [30,30]
       acceleration: [120,120]
   bodies:
@@ -60,14 +61,14 @@ return model =
       width: [20,40,45,45,20,20,0,0,10]
       height: [20,40,45,45,20,20,0,0,10]
       laser:
-        damage: [430,430]
+        damage: [250,250]
         rate: 1
         type: 1
         speed: [180,180]
         number: 1
         angle: 0
         error: 0
-        recoil: 1100
+        recoil: 1000
       texture: [17,3,1,2,4,81]
     cockpit:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
