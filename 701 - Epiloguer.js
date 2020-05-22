@@ -79,16 +79,16 @@ model =
   size: 2
   specs:
     shield:
-      capacity: [780,780]
-      reload: [19,19]
+      capacity: [450,450]
+      reload: [11,11]
     generator:
-      capacity: [950,950]
-      reload: [220,220]
+      capacity: [300,300]
+      reload: [100,100]
     ship:
-      mass: 600
-      speed: [105,105]
-      rotation: [80,80]
-      acceleration: [70,70]  
+      mass: 400
+      speed: [75,76]
+      rotation: [25,25]
+      acceleration: [130,130]  
   bodies:
     ball: ball(0,-16,0,15,15,10,30,113,!true,0)
     ball2: ball(0,-16,0,15,15,10,30,17,!true,45)
@@ -213,13 +213,13 @@ model =
       height: [0,2,4,6,8,5,3,3,5,10,14,15,15,15,15,15,0]
       texture: [17,4,4,4,4,17,18,8,13,18,17,8,17,18,17,18]   
       laser:
-        damage: [20,20]
-        rate: 1
-        recoil: 20
+        damage: [25,25]
+        rate: 2
+        recoil: 60
         type: 1
         speed: [216,216]
-        number: 20
-        error: 5          
+        number: 5
+        error: 3    
     cannon_discs:
       section_segments: 12
       offset:
