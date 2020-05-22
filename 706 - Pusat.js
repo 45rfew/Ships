@@ -42,19 +42,18 @@ model =
   level: 7
   model: 6
   size: 2
-  zoom: 0.85
   specs:
     shield:
-      capacity: [380,380]
+      capacity: [300,300]
       reload: [20,20]
     generator:
-      capacity: [480,480]
-      reload: [180,180]
+      capacity: [150,150]
+      reload: [60,60]
     ship:
-      mass: 340
+      mass: 260
       speed: [145,145]
       rotation: [85,85]
-      acceleration: [130,130]
+      acceleration: [60,60]
   bodies:
     ring: ring(34.5,79,1.5,[40,45,50,130,135,140,220,225,230,310,315,320],12,13,0.6,.1,0,[18,17,18,18,17,18,18,17,18],0)
     ring2: ring(34.5,69,1.5,[40,45,50,130,135,140,220,225,230,310,315,320],12,13,0.6,.1,0,[18,17,18,18,17,18,18,17,18],0)
@@ -91,7 +90,7 @@ model =
         speed: [240,240]
         number: 1
         error: 0
-        recoil: 80  
+        recoil: 160  
     back:
       section_segments: 6
       offset:
@@ -200,9 +199,9 @@ model =
       propeller: false   
       laser:
         damage: [15,15]
-        rate: 10
+        rate: 8
         type: 2
-        speed: [380,380]
+        speed: [280,280]
         number: 1
         error: 5
         recoil: 20    
@@ -248,15 +247,6 @@ model =
       height: [0,1,7,1,7,1,7,1,7,1,0]
       texture: [17,18,17,18,17,18,17,18,17,18]
       propeller: false 
-      laser:
-        damage: [50,50]
-        rate: 5
-        type: 2
-        speed: [350,350]
-        number: 1
-        angle: 0
-        error: 2
-        recoil: 120      
     cannon_joint:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
@@ -271,7 +261,7 @@ model =
       height: [0,1.3,1.3,0,0,0,0,1.3,1.3,0,0,0,0,1.3,1.3,0,0,0,0,1.3,1.3,0,0,0,0,1.3,1.3,0]
       texture: [17,18,17,18,17,18,17,18,17,18,17,18,1,18,17,18,17,18,17,18,17,18,17,18,17,18,17,18]
       propeller: false 
-      vertical:true
+      vertical: true
     cannon_joint_side:
       section_segments: [80,90,100]
       offset:
