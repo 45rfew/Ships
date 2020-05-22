@@ -11,16 +11,16 @@ return model =
   size: 2
   specs:
     shield:
-      capacity: [3200,3200]
-      reload: [50,50]
+      capacity: [980,980]
+      reload: [25,25]
     generator:
-      capacity: [550,550]
-      reload: [200,200]
+      capacity: [300,300]
+      reload: [100,100]
     ship:
-      mass: 1500
-      speed: [70,70]
+      mass: 900
+      speed: [50,50]
       rotation: [50,50]
-      acceleration: [120,120]
+      acceleration: [170,170]
   bodies:
     sideEngineBody:
       section_segments: 10
@@ -37,8 +37,8 @@ return model =
       texture: [17,3.9,2,10,3.9,3.9,3.9,10,2,4,17]
       propeller: true
       laser:
-        damage: [120,120]
-        rate: 0.8
+        damage: [100,100]
+        rate: 1
         type: 1
         recoil: 180
         speed: [100,100]
@@ -195,11 +195,11 @@ return model =
       width: [0,11,12,13,14,18,20,20,18,0]
       height: [0,11,12,13,14,18,20,20,18,0]
       laser:
-        damage: [40,40]
-        rate: 1
-        recoil: 40
+        damage: [15,15]
+        rate: 2
+        recoil: 30
         type: 2
-        speed: [120,120]
+        speed: [130,130]
         number: 1
         error: 2
       texture: [17,4,4,4,2,4,17,4]
@@ -216,11 +216,11 @@ return model =
       width: [0,5,6,7,8,12,14,14,14,0]
       height: [0,5,6,7,8,12,14,14,14,0]
       laser:
-        damage: [30,30]
-        rate: 1
-        recoil: 30
+        damage: [10,10]
+        rate: 3
+        recoil: 20
         type: 2
-        speed: [130,130]
+        speed: [140,140]
         number: 1
         error: 0
       texture: [17,4,4,4,2,4,17,4]
