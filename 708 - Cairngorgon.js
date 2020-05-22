@@ -30,10 +30,10 @@ return model =
         z: -10
       position:
         x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        y: [30,0,20,30,100,130,190,220,290,300,320,290]
+        y: [30,0,20,30,100,130,190,220,290,300,320,320,290]
         z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-      width: [0,30,40,40,40,0,0,40,40,40,30,0]
-      height: [0,30,40,40,40,0,0,40,40,40,30,0]
+      width: [0,30,40,40,40,0,0,40,40,40,30,28,0]
+      height: [0,30,40,40,40,0,0,40,40,40,30,28,0]
       texture: [17,3.9,2,10,3.9,3.9,3.9,10,2,4,17]
       propeller: true
       laser:
@@ -52,10 +52,10 @@ return model =
         z: -10
       position:
         x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        y: [30,0,20,30,100,130,190,220,290,300,320,290]
+        y: [30,0,20,30,100,130,190,220,290,340,360,360,348]
         z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-      width: [0,45,55,55,55,55,55,55,55,55,41,0]
-      height: [0,30,40,40,40,40,40,40,40,40,30,0]
+      width: [0,45,55,55,55,55,55,55,55,55,45,43,0]
+      height: [0,30,40,40,40,40,40,40,40,40,32,30,0]
       texture: [17,3.9,2,10,3.9,3.9,3.9,10,2,4,17]
       propeller: true
     sideEngineTop:
@@ -100,62 +100,6 @@ return model =
       vertical: true
       angle: 45
       propeller: false
-    toppropulsorsa:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
-      offset:
-        x: 12
-        y: 95
-        z: 0
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0]
-        y: [-20,-15,0,10,20,25,30,40,50,40]
-        z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,15,15,15,10,10,15,10,0]
-      height: [0,10,15,15,15,10,10,15,10,0]
-      texture: [3,4,10,3,3,63,18]
-      propeller: true
-    bottompropulsorsa:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
-      offset:
-        x: 12
-        y: 95
-        z: -20
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0]
-        y: [-20,-15,0,10,20,25,30,40,50,40]
-        z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,15,15,15,10,10,15,10,0]
-      height: [0,10,15,15,15,10,10,15,10,0]
-      texture: [3,4,10,3,3,63,16]
-      propeller: true
-    toppropulsorsb:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
-      offset:
-        x: 35
-        y: 95
-        z: 0
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0]
-        y: [-20,-15,0,10,20,25,30,40,50,40]
-        z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,15,15,15,10,10,15,10,0]
-      height: [0,10,15,15,15,10,10,15,10,0]
-      texture: [3,4,10,3,3,63,16]
-      propeller: true
-    bottompropulsorsb:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
-      offset:
-        x: 33
-        y: 95
-        z: -20
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0]
-        y: [-20,-15,0,10,20,25,30,40,50,40]
-        z: [0,0,0,0,0,0,0,0,0,0]
-      width: [0,10,15,15,15,10,10,15,15,0]
-      height: [0,10,15,15,15,10,10,15,10,0]
-      texture: [3,4,10,3,3,63,13]
-      propeller: true
     cockpit:
       section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
       offset:
@@ -332,48 +276,6 @@ return model =
       height: [0,1,1,0]
       texture: [17]
       angle: 180        
-    engine:
-      section_segments: [40,140,220,320]
-      offset:
-        x: 0
-        y: 135
-        z: -10
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0,0]
-        y: [0,-5,-7,-7,-5,5,7,7,5,0]
-        z: [0,0,0,0,0,0,0,0,0,0,0]
-      width: [65,65,67,70,72,72,70,67,65,65]
-      height: [23,23,25,28,30,30,28,25,23,23]
-      texture: [4]
-      propeller: false
-    engine2:
-      section_segments: [40,140,220,320]
-      offset:
-        x: 0
-        y: 125
-        z: -10
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0,0]
-        y: [0,-10,-10,-10,-10,5,5,5,5,0]
-        z: [0,0,0,0,0,0,0,0,0,0,0]
-      width: [65,65,67,70,72,72,70,67,65,65]
-      height: [23,23,25,28,30,30,28,25,23,23]
-      texture: [3]
-      propeller: false
-    engine3:
-      section_segments: [40,140,220,320]
-      offset:
-        x: 0
-        y: 95
-        z: -10
-      position:
-        x: [0,0,0,0,0,0,0,0,0,0,0]
-        y: [0,-20,-20,-20,-20,20,20,20,20,0]
-        z: [0,0,0,0,0,0,0,0,0,0,0]
-      width: [65,65,67,70,72,72,70,67,65,65]
-      height: [25,25,25,30,32,32,30,27,25,25]
-      texture: [3]
-      propeller: false
     hub:
       section_segments: 20
       offset:
@@ -745,7 +647,7 @@ return model =
     topjoin:
       offset:
         x: 0
-        y: -102
+        y: -95
         z: 0
       doubleside: true
       length: [100]
@@ -756,10 +658,24 @@ return model =
       bump:
         position: 10
         size: 30
+    topjoin_lights:
+      offset:
+        x: 0
+        y: -98
+        z: 0
+      doubleside: true
+      length: [100]
+      width: [20,20]
+      angle: [0]
+      position: [0,0,0,50]
+      texture: [17]
+      bump:
+        position: 10
+        size: 0        
     bottomjoin:
       offset:
         x: 0
-        y: -102
+        y: -95
         z: 0
       doubleside: true
       length: [100]
@@ -770,6 +686,20 @@ return model =
       bump:
         position: -10
         size: 30
+    bottomjoin_lights:
+      offset:
+        x: 0
+        y: -98
+        z: 0
+      doubleside: true
+      length: [100]
+      width: [20,20]
+      angle: [-25]
+      position: [0,0,0,50]
+      texture: [17]
+      bump:
+        position: -10
+        size: 0        
     topjoin1:
       offset:
         x: 0
@@ -784,6 +714,20 @@ return model =
       bump:
         position: 10
         size: 30
+    topjoin1_lights:
+      offset:
+        x: 0
+        y: 131
+        z: 0
+      doubleside: true
+      length: [100]
+      width: [40,40]
+      angle: [0]
+      position: [-210,0,0,50]
+      texture: [17]
+      bump:
+        position: 10
+        size: 0        
     bottomjoin1:
       offset:
         x: 0
@@ -798,31 +742,17 @@ return model =
       bump:
         position: -10
         size: 30
-    topjoin2:
+    bottomjoin1_lights:
       offset:
         x: 0
-        y: 140
-        z: -1
-      doubleside: true
-      length: [100]
-      width: [40,40]
-      angle: [0]
-      position: [-210,0,0,50]
-      texture: [63]
-      bump:
-        position: 10
-        size: 30
-    bottomjoin2:
-      offset:
-        x: 0
-        y: 103
-        z: -1
+        y: 94
+        z: 0
       doubleside: true
       length: [100]
       width: [60,60]
       angle: [-25]
       position: [-210,0,0,50]
-      texture: [63]
+      texture: [17]
       bump:
         position: -10
-        size: 30    
+        size: 0        
