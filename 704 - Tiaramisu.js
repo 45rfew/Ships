@@ -64,22 +64,22 @@ ring2 = (x,y,z,s,w,l,h,v,t,a) ->
     texture: t
     angle: a     
 model =
-  name: "Nirvana"
+  name: "Tiaramisu"
   level: 7
   model: 4
   size: 2
   specs:
     shield:
-      capacity: [700,700]
-      reload: [50,50]
+      capacity: [500,500]
+      reload: [17,17]
     generator:
-      capacity: [600,600]
-      reload: [300,300]
+      capacity: [500,500]
+      reload: [120,120]
     ship:
-      mass: 480
-      speed: [110,110]
-      rotation: [35,35]
-      acceleration: [85,85]
+      mass: 400
+      speed: [80,80]
+      rotation: [20,20]
+      acceleration: [100,100]
   bodies:
     ring: ring(90,39-5,0,[45,135,225,315],5,8,5,-3,0,[17,4,17,4,17,4],90)
     ring2: ring2(122.2,-120,-3,6,.4,0.4,.5,0,[4,17,4,17,4,17,4],9)  
@@ -119,12 +119,12 @@ model =
       height: [0,1,26,26,26,0]
       texture: [17,2.8,2.8,2.8,16.8]
       laser:
-        damage: [50,50]
+        damage: [30,30]
         rate: 1
         type: 1
         speed: [200,200]
         number: 5
-        angle: 0
+        angle: 15
         error: 0        
     lights:
       section_segments: [45,135,225,315]
@@ -466,12 +466,12 @@ model =
       height: [0,3,4,5,3,3,5,7,8,0]
       texture: [16.9,16.9,16.9,4,18,4,16.9,3.9]  
       laser:
-        damage: [40,40]
-        rate: 3
+        damage: [20,20]
+        rate: 5
         type: 2
-        speed: [180,180]
+        speed: [140,140]
         number: 1
-        error: 2   
+        error: 4   
     propeller_sides:
       section_segments: 6
       offset:
