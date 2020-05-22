@@ -19,7 +19,7 @@ return model =
   name: 'Trisbaena'
   level: 7
   model: 7
-  size: 1.5
+  size: 1.2
   Designer: 'Duc Minh'
   specs:
     shield:
