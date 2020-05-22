@@ -38,16 +38,16 @@ model =
   size: 1.7
   specs:
     shield:
-      capacity: [720,720]
-      reload: [40,40]
+      capacity: [420,420]
+      reload: [22,22]
     generator:
-      capacity: [700,700]
-      reload: [210,210]
+      capacity: [450,450]
+      reload: [110,110]
     ship:
-      mass: 700
-      speed: [100,100]
-      rotation: [130,130]
-      acceleration: [70,70]
+      mass: 340
+      speed: [80,80]
+      rotation: [40,40]
+      acceleration: [180,180]
   bodies:
     ring: ring(0,-98,15,18,10,15,1.5,.2,0,16.9,0)
     ring2: ring(19,-115,15,6,7,7,.5,.5,0,16.9,0)
@@ -163,10 +163,10 @@ model =
       propeller: true
       angle: 4
       laser:
-        damage: [100,100]
-        rate: 3
+        damage: [50,50]
+        rate: 1
         type: 1
-        speed: [200,200]
+        speed: [160,160]
         number: 1
         error: 0
     cannons2:
@@ -185,8 +185,8 @@ model =
       propeller: true
       angle: 3
       laser:
-        damage: [25,25]
-        rate: 8
+        damage: [20,20]
+        rate: 7
         type: 2
         speed: [160,160]
         number: 1
