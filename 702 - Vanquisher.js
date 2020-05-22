@@ -3,19 +3,18 @@ return model =
   level: 7
   model: 2
   size: 3
-  zoom: 0.9
   specs:
     shield:
       capacity: [600,600]
-      reload: [30,30]
+      reload: [14,14]
     generator:
-      capacity: [900,900]
-      reload: [250,250]
+      capacity: [250,250]
+      reload: [75,75]
     ship:
       mass: 560
-      speed: [90,90]
-      rotation: [80,80]
-      acceleration: [120,120]
+      speed: [70,70]
+      rotation: [50,50]
+      acceleration: [170,170]
   bodies:
     main:
       section_segments: 12
@@ -31,10 +30,10 @@ return model =
       height: [0,6.7,6.7,12.5,12.5,15,15,20,30,30,0,0]
       texture: [12,18,8,10,1,17,1,10,8,15]
       laser:
-        damage: [170,170]
+        damage: [120,120]
         rate: 1
-        type: 2
-        speed: [170,170]
+        type: 1
+        speed: [150,150]
         recoil: 100
         number: 1
         error: 0
@@ -264,15 +263,6 @@ return model =
       width: [0,2.5,3.5,3.5,2.5,2.5,4,4,0]
       height: [0,2.5,3.5,3.5,2.5,2.5,4,4,0]
       texture: [16.9,8,12,17.9,1.9,3.9,17.9,3.9]
-      laser:
-        damage: [5,5]
-        rate: 6
-        type: 2
-        speed: [160,160]
-        number: 1
-        angle: 0
-        error: 0
-        recoil: 0
     rocketlauncherguns5:
       section_segments: 6
       offset:
@@ -287,15 +277,6 @@ return model =
       height: [0,2.5,3.5,3.5,2.5,2.5,4,4,0]
       texture: [16.9,8,12,17.9,1.9,3.9,17.9,3.9]
       angle: 0
-      laser:
-        damage: [5,5]
-        rate: 6
-        type: 2
-        speed: [160,160]
-        number: 1
-        angle: 0
-        error: 0
-        recoil: 0
     rocketlauncherguns7:
       section_segments: 6
       offset:
@@ -310,15 +291,6 @@ return model =
       height: [0,2.5,3.5,3.5,2.5,2.5,4,4,0]
       texture: [16.9,8,12,17.9,1.9,3.9,17.9,3.9]
       angle: 0
-      laser:
-        damage: [5,5]
-        rate: 1
-        type: 2
-        speed: [160,160]
-        number: 1
-        angle: 0
-        error: 0
-        recoil: 0
     cannon:
       section_segments: 8
       offset:
@@ -333,14 +305,6 @@ return model =
       height: [0,8,9,9,8,0]
       angle: 0
       texture: [3,1,17,1,3]
-      laser:
-        damage: [50,50]
-        rate: 4
-        type: 2
-        speed: [180,180]
-        recoil: 1
-        number: 1
-        error: 0
     cannon2:
       section_segments: 8
       offset:
@@ -355,14 +319,6 @@ return model =
       height: [0,8,10,10,8,0]
       angle: 0
       texture: [3,2,17,1,3]
-      laser:
-        damage: [100,100]
-        rate: 1
-        type: 2
-        speed: [190,190]
-        recoil: 15
-        number: 1
-        error: 0
     cannon9:
       section_segments: 8
       offset:
@@ -377,14 +333,6 @@ return model =
       height: [0,8,10,10,8,0]
       angle: 0
       texture: [3,2,17,1,3]
-      laser:
-        damage: [100,100]
-        rate: 1
-        type: 2
-        speed: [190,190]
-        recoil: 50
-        number: 1
-        error: 0
     cannon3:
       section_segments: 8
       offset:
