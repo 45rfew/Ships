@@ -61,15 +61,15 @@ model =
   name: "Raigeki"
   level: 7
   model: 3
-  size: 4
+  size: 3.5
   zoom: 0.9
   specs:
     shield:
       capacity: [700,700]
       reload: [13,13]
     generator:
-      capacity: [750,750]
-      reload: [750,750]
+      capacity: [850,850]
+      reload: [850,850]
     ship:
       mass: 500
       speed: [85,85]
