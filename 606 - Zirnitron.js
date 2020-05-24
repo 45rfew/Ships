@@ -60,7 +60,7 @@ model =
       capacity: [100,160]
       reload: [45,60]
     ship:
-      mass: 200
+      mass: 220
       speed: [90,116]
       rotation: [70,85]
       acceleration: [80,120]
