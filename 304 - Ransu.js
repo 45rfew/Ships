@@ -51,7 +51,7 @@ return model =
   name: "Ransu"
   level: 3
   model: 4
-  size: 1.3
+  size: 1.4
   Designer: 'Hallower'
   specs:
     shield:
@@ -89,7 +89,7 @@ return model =
       propeller: true
       laser:
         damage: [35,60]
-        rate: 2
+        rate: 1
         type: 1
         speed: [100,130]
         recoil: 40
