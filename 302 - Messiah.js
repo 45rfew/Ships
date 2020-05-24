@@ -128,7 +128,7 @@ model =
       propeller: 1
       laser:
         damage: [8,14]
-        rate: 8
+        rate: 4
         type: 1
         speed: [175,185]
         recoil: 10
