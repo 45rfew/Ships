@@ -1,33 +1,19 @@
-r = 1.2
-t = 1
-s = 20
-ypos = []
-for i in [0...15] by 0.24
-  ypos.push(i*1)
-xpos = []
-for i in [0...5*s] by 0.4
-  xpos.push(r*Math.sin(i))
-zpos = []
-for i in [0...5*s] by 0.4
-  zpos.push(r*Math.cos(i))
-tub = []
-for i in [0...5*s] by 1
-  tub.push(t)
-spring = (px,py,pz,ang)->
-  angle: ang
-  section_segments: 6
-  offset:
-    x: px
-    y: py
-    z: pz
-  position:
-    x: xpos
-    y: ypos
-    z: zpos
-  width: tub
-  height: tub
-  texture: [[17]]
-  vertical: !true
+ring = (xx, yy, zz, segments, l, w, t, tcc, vert, tx, angle, z) ->
+  return k =
+    section_segments: segments
+    offset:
+      x: xx
+      y: yy
+      z: zz
+    position:
+      x: [].fill(0,13)
+      y: [-2.25,-1.75,-1.25,0,1.25,1.75,2.25,1.75,1.25,0,-1.25,-1.75,-2.25].mult(t+tcc)
+      z: [].fill(0,13)
+    width: [w,w+1*t,w+2*t,w+2.5*t,w+2*t,w+1*t,w,w-1*t,w-2*t,w-2.5*t,w-2*t,w-1*t,w]
+    height: [l,l+1*t,l+2*t,l+2.5*t,l+2*t,l+1*t,l,l-1*t,l-2*t,l-2.5*t,l-2*t,l-1*t,l]
+    vertical: vert
+    texture: tx
+    angle: angle
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -59,7 +45,7 @@ model =
       reload: [9,11]
     generator:
       capacity: [110,180]
-      reload: [36,43]
+      reload: [40,50]
     ship:
       mass: 240
       speed: [80,110]
@@ -792,7 +778,7 @@ model =
         z: [0,0,0,0,0,0,0,0,0,0]
       width: [10,10,10,12,12,12,12,12,10,10].div(1.1)
       height: [10,10,10,12,12,12,12,12,10,10].div(0.65)
-      texture: [17,17.87,17,17,17,17.87,17,17]       
+      texture: [17,17.87,17,17,17,17.87,17,17]      
     rod:
       section_segments: [45,135,225,315].add(20)
       offset:
@@ -958,10 +944,6 @@ model =
       width: [0,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,0]
       height: [0,2,2,2,2,2,2,2,2,0]
       texture: [5,18.2,13,18,13,18,13,18]         
-    spring: spring(22,90,20,0)
-    spring2: spring(17,90,20,0) 
-    spring3: spring(22,90.3,20,0)
-    spring4: spring(17,90.3,20,0)        
   wings: 
     main:
       doubleside: true
@@ -1032,7 +1014,7 @@ model =
       bump:
         position: 10
         size: 20
-      texture: [2]    
+      texture: [3]    
     sides2:
       length: [2]
       width: [7.6,7]
@@ -1060,7 +1042,7 @@ model =
       bump:
         position: 10
         size: 20
-      texture: [2] 
+      texture: [3] 
     sides4:
       length: [2]
       width: [7.8,6.5]
@@ -1090,7 +1072,23 @@ for i in [1...9]
     height: [0,1,1,11,9.7,0]
     texture: [17.8,17.8,[15],16.8,[15]]
     angle: i*45
-    vertical: true    
+    vertical: true   
+for i in [0..4]
+  for j in [0..1]
+    model.bodies["eqwe"+i+j] = 
+      section_segments: [45,135,225,315]
+      offset:
+        x: 21.7-j*4.3
+        y: 92+(i*4)
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [7.5,7.5,1,1,1,2,6,7.5,7.5,7.5].div(5.5)
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [10,10,10,12,12,12,12,12,10,10].div(5.5)
+      height: [10,10,10,12,12,12,12,12,10,10].div(5.5)
+      texture: [4,4,4,4,4,17,4,4]      
+      angle: 140-j*140*2    
 t = -50    
 if(1)
   for y,v of model.bodies
