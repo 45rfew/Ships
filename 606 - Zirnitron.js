@@ -51,7 +51,7 @@ model =
   name: "Zirnitron"
   level: 6
   model: 6
-  size: 1.55
+  size: 1.4
   specs:
     shield:
       capacity: [210,330]
