@@ -230,22 +230,22 @@ d = [30,45,60,120,135,150,210,225,240,300,315,330]
 q = 30
 p = 10
 model =
-  name: 'Fly'
-  level: 1
-  model: 1
-  size: 1.05
+  name: "Vanquisher"
+  level: 7
+  model: 2
+  size: 1.2
   specs:
     shield:
-      capacity: [75,100]
-      reload: [2,3]
+      capacity: [460,460]
+      reload: [13,13]
     generator:
-      capacity: [40,60]
-      reload: [10,15]
+      capacity: [300,300]
+      reload: [80,80]
     ship:
-      mass: 60
-      speed: [125,145]
-      rotation: [110,130]
-      acceleration: [100,120]  
+      mass: 420
+      speed: [70,70]
+      rotation: [50,50]
+      acceleration: [130,130] 
   bodies:
     ring: ring(100,-230,0,6,30,30.5,34,0,0,16.9)
     ring2: ring(100,-190,0,6,30,33,34,0,0,16.9)
@@ -314,6 +314,13 @@ model =
       width: [0,3,23.5,25,35,40,40,40,40,35,0,0,35,40,40,40,40,40,0]
       height: [0,4,28.5,30,40,40,40,40,40,35,0,0,35,40,40,40,40,40,0]
       texture: [16.9,3.9,17,3.9,3.9,3.9,16.9,18,16.9,112.9,1,112.9,16.9,18,3.9,16.9,3.9]
+      laser:
+        damage: [60,60]
+        rate: 3
+        type: 1
+        speed: [220,220]
+        recoil: 160
+        number: 1
     side_cannons:
       section_segments: 6
       offset:
