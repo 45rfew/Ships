@@ -230,17 +230,17 @@ d = [30,45,60,120,135,150,210,225,240,300,315,330]
 q = 30
 p = 10
 model =
-  name: "Vanquisher"
+  name: "Vuaniha"
   level: 7
   model: 2
-  size: 1.2
+  size: 1
   specs:
     shield:
       capacity: [460,460]
       reload: [13,13]
     generator:
-      capacity: [300,300]
-      reload: [80,80]
+      capacity: [320,320]
+      reload: [70,70]
     ship:
       mass: 420
       speed: [70,70]
