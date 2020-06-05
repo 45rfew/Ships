@@ -1,4 +1,3 @@
-  
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -66,7 +65,7 @@ return model =
       mass: 220
       speed: [80,92]
       rotation: [50,70]
-      acceleration: [60,85]
+      acceleration: [50,70]
   bodies:    
     main:
       section_segments: 6
@@ -113,7 +112,7 @@ return model =
         damage: [20,30]
         rate: 5
         type: 1
-        speed: [140,180]
+        speed: [140,160]
         number: 1
       texture: [17,4,17,10,17,4,63,63]
     cannon:
