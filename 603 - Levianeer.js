@@ -60,7 +60,7 @@ return model =
       reload: [6,9]
     generator:
       capacity: [120,250]
-      reload: [60,80]
+      reload: [65,85]
     ship:
       mass: 280
       speed: [70,90]
@@ -251,7 +251,7 @@ return model =
         rate: 2
         type: 1
         speed: [170,240]
-        recoil: 32
+        recoil: 38
         number: 8
         error: 0 
     side_plates:
