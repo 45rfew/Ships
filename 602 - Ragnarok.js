@@ -185,7 +185,7 @@ return model =
       texture: [17,17,3,2,2,2,17]
       laser:
         damage: [40,57]
-        rate: .5
+        rate: .7
         type: 1
         speed: [120,160]
         number: 1
@@ -533,7 +533,7 @@ return model =
         damage: [25,35]
         rate: 6
         type: 2
-        speed: [160,180]
+        speed: [180,220]
         number: 1
-        error: 2
-        recoil: 60
+        error: 1
+        recoil: 80
