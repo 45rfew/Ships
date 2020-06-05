@@ -58,11 +58,11 @@ model =
       reload: [7,10]
     generator:
       capacity: [100,160]
-      reload: [45,60]
+      reload: [45,65]
     ship:
-      mass: 220
+      mass: 210
       speed: [90,116]
-      rotation: [70,85]
+      rotation: [70,90]
       acceleration: [80,120]
   bodies:
     main:
