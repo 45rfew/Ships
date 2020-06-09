@@ -279,7 +279,7 @@ model =
     ship:
       mass: 250
       speed: [70,95]
-      rotation: [40,65]
+      rotation: [40,55]
       acceleration: [100,120]
   bodies:
     main:
@@ -323,12 +323,12 @@ model =
       height: [0,5,7,7,8,8,7,0]
       texture: [17,63,2,13,3,63,2]
       laser:
-        damage: [40,50]
+        damage: [30,40]
         recoil: 50
         speed: [90,120]
         error: 0
         angle: 0
-        rate: 0.8
+        rate: 0.6
         number: 1
     turret_platforms:
       section_segments: [45,135,225,315]
