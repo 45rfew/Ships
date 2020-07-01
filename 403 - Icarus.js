@@ -27,7 +27,7 @@ model =
       reload: [4,6]
     generator:
       capacity: [100,160]
-      reload: [65,80]
+      reload: [60,75]
     ship:
       mass: 210
       speed: [90,110]
@@ -183,7 +183,7 @@ model =
         damage: [6,8]
         rate: 6
         type: 2
-        speed: [150,180]
+        speed: [120,150]
         recoil: 20
         number: 1
         error: 1
