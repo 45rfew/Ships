@@ -164,8 +164,8 @@ model =
       propeller: true
       texture: [16.9,12.9,17,10,16.9]
       laser:
-        damage: [15,20]
-        rate: 3
+        damage: [10,15]
+        rate: 1.5
         type: 1
         speed: [120,170]
         number: 1
