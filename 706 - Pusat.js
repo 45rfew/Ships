@@ -567,7 +567,7 @@ model =
         speed: [300,300]
         number: 1
         error: 0
-        recoil: 100
+        recoil: 300
     front_cannon_deco:
       section_segments: 8
       offset:
