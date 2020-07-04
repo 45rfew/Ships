@@ -93,7 +93,7 @@ ballSide = (z,angle)->
       z: [0,0,0,0,0,0,0,0,0,0]
     width: [0,20,30,10,25,25].mult(1.3)
     height: [0,10,12,8,22,22].mult(1.3)
-    texture: [16.83,63,0.9,17,11]
+    texture: [16.83,17,0.9,17,18]
     vertical: true
 ballTori = (z,angle)->
   return t = 
