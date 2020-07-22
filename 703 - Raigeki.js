@@ -1,5 +1,5 @@
-m = 40
-n = 0.3
+m = 25
+n = 0.25
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -72,7 +72,7 @@ model =
       reload: [850,850]
     ship:
       mass: 500
-      speed: [85,85]
+      speed: [80,80]
       rotation: [40,40]
       acceleration: [50,50]
   bodies:
