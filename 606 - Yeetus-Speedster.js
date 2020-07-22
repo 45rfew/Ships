@@ -1,19 +1,19 @@
 model =
   name: 'Yeetus-Speedster'
   level: 6
-  model: 5
+  model: 6
   size: 1.5
   scale: 2.8
   Designer: 'Duc Minh'
   specs:
     shield:
-      capacity: [210,330]
+      capacity: [210,300]
       reload: [7,10]
     generator:
       capacity: [100,160]
-      reload: [45,65]
+      reload: [45,60]
     ship:
-      mass: 210
+      mass: 190
       speed: [90,116]
       rotation: [70,90]
       acceleration: [80,120]
