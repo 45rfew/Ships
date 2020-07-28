@@ -242,7 +242,7 @@ model =
       capacity: [320,320]
       reload: [70,70]
     ship:
-      mass: 420
+      mass: 460
       speed: [70,70]
       rotation: [50,50]
       acceleration: [130,130] 
@@ -318,7 +318,7 @@ model =
         damage: [60,60]
         rate: 3
         type: 1
-        speed: [220,220]
+        speed: [230,230]
         recoil: 160
         number: 1
     side_cannons:
