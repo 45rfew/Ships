@@ -15,27 +15,27 @@ for key, value of []
     value: value
     configurable: true
     enumerable: false
-ring = (xx, yy, zz, segments, l, w, t, tcc, vert, tx, angle, z) ->
+ring = (x,y,z,s,l,w,h,a,v,t,j=0) ->
   return k =
-    section_segments: segments
+    section_segments: s
     offset:
-      x: xx
-      y: yy
-      z: zz
+      x: x
+      y: y
+      z: z
     position:
-      x: [].fill(0,13)
-      y: [-2.25,-1.75,-1.25,0,1.25,1.75,2.25,1.75,1.25,0,-1.25,-1.75,-2.25].mult(t+tcc)
-      z: [].fill(0,13)
-    width: [w,w+1*t,w+2*t,w+2.5*t,w+2*t,w+1*t,w,w-1*t,w-2*t,w-2.5*t,w-2*t,w-1*t,w]
-    height: [l,l+1*t,l+2*t,l+2.5*t,l+2*t,l+1*t,l,l-1*t,l-2*t,l-2.5*t,l-2*t,l-1*t,l]
-    vertical: vert
-    texture: tx
-    angle: angle
+      x: [0,0,0,0,0,0,0,0,0,0]
+      y: [3,3,0,0,0,0,0,3,3,3].div(10).mult(l)
+      z: [0,0,0,0,0,0,0,0,0,0]
+    width: [10-j,10-j,10-j,12,12,12,12,12,10-j,10-j].div(10).mult(w)
+    height: [10-j,10-j,10-j,12,12,12,12,12,10-j,10-j].div(10).mult(h)
+    texture: t        
+    angle: a
+    vertical: v
 model =
   name: "Tsimtsum"
   level: 7
   model: 5
-  size: 1.7
+  size: 1.6
   specs:
     shield:
       capacity: [420,420]
@@ -49,9 +49,9 @@ model =
       rotation: [40,40]
       acceleration: [180,180]
   bodies:
-    ring: ring(0,-98,15,18,10,15,1.5,.2,0,16.9,0)
-    ring2: ring(19,-115,15,6,7,7,.5,.5,0,16.9,0)
-    ring3: ring(19,-105,15,6,7,7,.5,.5,0,16.9,0)
+    ring: ring(0,-100,14,12,14,15,10,.2,0,17,0)
+    ring2: ring(19,-117,14,12,12,7,7,0,0,17,0)
+    ring3: ring(19,-107,14,12,12,7,7,0,0,17,0)
     main:
       section_segments: 8
       offset:
@@ -316,7 +316,7 @@ model =
       height: [0,1,1,1,1,0]
       texture: [17]
     reactor:  
-      section_segments: 30
+      section_segments: 12
       offset:
         x: 0
         y: 28
@@ -357,7 +357,7 @@ model =
       texture: [4]       
       angle: 90
     reactor2:  
-      section_segments: 30
+      section_segments: 12
       offset:
         x: 0
         y: 50
@@ -412,7 +412,7 @@ model =
       texture: [4]          
       angle: 90  
     back_hubs:  
-      section_segments: 30
+      section_segments: 12
       offset:
         x: 18
         y: 33
@@ -426,7 +426,7 @@ model =
       texture: [1,3,18,17,18,16,17]
       vertical: true     
     back_hubs2:  
-      section_segments: 30
+      section_segments: 12
       offset:
         x: 18
         y: 33
@@ -736,8 +736,8 @@ model =
     lights:
       section_segments: [45,135,225,315]
       offset:
-        x: 15
-        y: 3
+        x: 14
+        y: 5
         z: 38
       position:
         x: [0,0,0,0,0]
@@ -746,7 +746,7 @@ model =
       width: [0,3,3,2,0]
       height: [0,53,53,51,0]
       texture: [63,17,63]
-      angle: 30
+      angle: 40
       vertical: true  
     lights2:
       section_segments: [45,135,225,315]
