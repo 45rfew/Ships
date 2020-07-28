@@ -1,5 +1,5 @@
 m = 25
-n = 0.25
+n = 0.3
 Array::add = (mod) -> @map (val) -> val + mod
 Array::mult = (mod) -> @map (val) -> val * mod
 Array::div = (mod) -> @map (val) -> val / mod
@@ -332,7 +332,7 @@ model =
         damage: [70,70]
         rate: n
         type: 1
-        speed: [120,120]
+        speed: [210,200]
         recoil: 200
         number: 1
         error: 0
