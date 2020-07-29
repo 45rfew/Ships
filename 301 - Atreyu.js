@@ -58,10 +58,10 @@ model =
       capacity: [160,195]
       reload: [3,5]
     generator:
-      capacity: [70,110]
-      reload: [25,35]
+      capacity: [70,120]
+      reload: [27,42]
     ship:
-      mass: 90
+      mass: 100
       speed: [100,120]
       rotation: [50,70]
       acceleration: [100,130]
@@ -167,7 +167,7 @@ model =
       texture: [16.9,16.9,3,10,18,63]
       laser:
         damage: [4,6]
-        rate: 8
+        rate: 5
         type: 2
         speed: [140,160]
         number: 1
