@@ -15,22 +15,6 @@ for key, value of []
     value: value
     configurable: true
     enumerable: false
-ring = (xx, yy, zz, segments, l, w, t, tcc, vert, tx, angle, z) ->
-  return k =
-    section_segments: segments
-    offset:
-      x: xx
-      y: yy
-      z: zz
-    position:
-      x: [].fill(0,13)
-      y: [-2.25,-1.75,-1.25,0,1.25,1.75,2.25,1.75,1.25,0,-1.25,-1.75,-2.25].mult(t+tcc)
-      z: [].fill(0,13)
-    width: [w,w+1*t,w+2*t,w+2.5*t,w+2*t,w+1*t,w,w-1*t,w-2*t,w-2.5*t,w-2*t,w-1*t,w]
-    height: [l,l+1*t,l+2*t,l+2.5*t,l+2*t,l+1*t,l,l-1*t,l-2*t,l-2.5*t,l-2*t,l-1*t,l]
-    vertical: vert
-    texture: tx
-    angle: angle
 hub = (x,y,z,s,w,h,v,a,t) ->
   return k =
     section_segments: s
@@ -47,6 +31,22 @@ hub = (x,y,z,s,w,h,v,a,t) ->
     texture: t     
     vertical: v     
     angle: a 
+ring = (x,y,z,s,l,w,h,a,v,t,j=0) ->
+  return k =
+    section_segments: s
+    offset:
+      x: x
+      y: y
+      z: z
+    position:
+      x: [0,0,0,0,0,0,0,0,0,0]
+      y: [3,3,0,0,0,0,0,3,3,3].div(10).mult(l)
+      z: [0,0,0,0,0,0,0,0,0,0]
+    width: [10-j,10-j,10-j,12,12,12,12,12,10-j,10-j].div(10).mult(w)
+    height: [10-j,10-j,10-j,12,12,12,12,12,10-j,10-j].div(10).mult(h)
+    texture: t        
+    angle: a
+    vertical: v    
 return model =
   name: "Yeetus"
   level: 1
@@ -65,10 +65,10 @@ return model =
       rotation: [100,120]
       acceleration: [110,130]
   bodies:
-    ring: ring(17,65,0,18,23,15,1,.2,0,[4,17,18,18,17,4,4],0)
-    ring2: ring(19,55,0,18,25,15,1,.2,0,[4,17,18,18,17,4,4],0)
+    ring: ring(17,63,5,14,15,15,14,.2,0,[17],0)
+    ring2: ring(19,54,5,14,15,15,15,.2,0,[17],0)
     reactor: hub(9,31,-37,16,4,5,1,35,[18,17,17,18,18,17])
-    ring3: ring(0,37,30,18,10,11,.7,.2,0,[4,17,[15],[15],17,4,4],0)
+    ring3: ring(0,35,30,12,10,11,11,.2,0,[[15]],0)
     front:
       section_segments: 6
       offset:
@@ -81,7 +81,7 @@ return model =
         z: [0,0,0,0,0,0,0]
       width: [0,7,14,15,35,30,20]
       height: [0,1.5,3,4,40,30,8]
-      texture: [[15],63,17,2.9,1.9,63]
+      texture: [[15],63,17,2.9,3.9,63]
       laser:
         damage: [16,23]
         rate: 2
@@ -181,7 +181,21 @@ return model =
         z: [0,0,0,0,0,0]
       width: [10,10,10,8,8,10]
       height: [13,13,13,11,11,13]
-      texture: [3.9,63,3.9]          
+      texture: [3.9,63,3.9]     
+    lgihts:
+      section_segments: 4
+      offset:
+        x: 0
+        y: 1
+        z: 3
+      position:
+        x: [0,0,0,0]
+        y: [40,40,100,100]
+        z: [0,14.5,1,0]
+      width: [0,5,1.5,0]
+      height: [0,2,1,0]
+      texture: [17]
+      angle: 180
   wings:
     main:
       doubleside: true
