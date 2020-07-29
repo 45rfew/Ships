@@ -101,7 +101,7 @@ return model =
       angle: 45
       propeller: false
     cockpit:
-      section_segments: [40,45,50,130,135,140,220,225,230,310,315,320]
+      section_segments: [40,90,180,270,320]
       offset:
         x: 0
         y: -135
@@ -112,7 +112,7 @@ return model =
         z: [0,0,0,0,-10,-10,0]
       width: [0,20,20,20,40,40,0]
       height: [0,10,12,12,20,20,0]
-      texture: [9,8.95,8.95,3,8.18,8.18]
+      texture: [9,8.98,8.98,3,8.18,8.18]
     backsupport:
       section_segments: 10
       offset:
@@ -755,4 +755,4 @@ return model =
       texture: [17]
       bump:
         position: -10
-        size: 0        
+        size: 0    
