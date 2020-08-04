@@ -37,3 +37,18 @@ skewedCircleWing = (xx, yy, zz, segments, radius, widths, positions, bumpPos, bu
   positions.push(positions[positions.length-1])
   angles.push(angles[angles.length-1]);
   lengths.push(0)
+  
+  return k =
+    length: lengths
+    width: widths
+    angle: angles
+    position: positions
+    doubleside: true
+    bump:
+      position: bumpPos
+      size: bumpH
+    texture: tx
+    offset:
+      x: xx
+      y: yy
+      z: zz-(radius/Math.cos(Math.PI/(segments-1)))
