@@ -22,7 +22,7 @@ for key, value of []
     value: value
     configurable: true
     enumerable: false
-a = [1,2,3,4,5,7,6,0,63]
+a = [1,2,3,4,5,7,6,0,8]
 model =
   name: 'Julia set'
   level: 1
