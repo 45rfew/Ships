@@ -1,1 +1,1 @@
-![](https://cdn.discordapp.com/attachments/823137414650265680/925675486175182868/ship_render.png)
+![](https://raw.githubusercontent.com/45rfew/Ships/refs/heads/master/pewpew.png)
